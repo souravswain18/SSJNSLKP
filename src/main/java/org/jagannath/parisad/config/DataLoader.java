@@ -454,7 +454,7 @@ public class DataLoader implements CommandLineRunner {
                 "87/ 18201800077 of 2018-2019",
                 "Office of the Registrar of Societies, Odisha (Cuttack)",
                 "2019",
-                "Official legal registration certificate under Societies Registration Act (No. XXI of 1860) granted to Sri Sri Jagannath Nam Sankirtan Parisad at Sambadbhavan, Rasulgarh, Khurdha, Odisha, PIN - 751010.",
+                "Official legal registration certificate under Societies Registration Act (No. XXI of 1860) granted to Sri Sri Jagannath Nam Sankirtan Parisad at Baramunda, Bhubaneswar, Khurdha, Odisha.",
                 "society-registration-certificate.jpg",
                 "assets/docs/society-registration-certificate.jpg",
                 "IMAGE",

@@ -1336,7 +1336,7 @@ const DEFAULT_AUTH_DOCUMENTS = [
     documentNumber: '87/ 18201800077 of 2018-2019',
     issuingAuthority: 'Office of the Registrar of Societies, Odisha (Cuttack)',
     issueYear: '2019',
-    description: 'Official legal registration certificate under Societies Registration Act (No. XXI of 1860) granted to Sri Sri Jagannath Nam Sankirtan Parisad at Sambadbhavan, Rasulgarh, Khurdha, Odisha, PIN - 751010.',
+    description: 'Official legal registration certificate under Societies Registration Act (No. XXI of 1860) granted to Sri Sri Jagannath Nam Sankirtan Parisad at Baramunda, Bhubaneswar, Khurdha, Odisha.',
     fileName: 'society-registration-certificate.jpg',
     fileUrl: 'assets/docs/society-registration-certificate.jpg',
     fileType: 'IMAGE',
