@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="goldGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF3C4"/>
+      <stop offset="50%" stop-color="#E5A93C"/>
+      <stop offset="100%" stop-color="#B27411"/>
+    </radialGradient>
+    <linearGradient id="maroonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7B1113"/>
+      <stop offset="50%" stop-color="#54080B"/>
+      <stop offset="100%" stop-color="#2D0204"/>
+    </linearGradient>
+    <linearGradient id="sunGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF9933"/>
+      <stop offset="100%" stop-color="#D9531E"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Outer Ring with Sacred Petals -->
+  <circle cx="200" cy="200" r="190" fill="url(#maroonGradient)" stroke="url(#goldGradient)" stroke-width="8"/>
+  <circle cx="200" cy="200" r="172" fill="none" stroke="url(#goldGradient)" stroke-width="2" stroke-dasharray="6,4"/>
+
+  <!-- Sun Rays / 16 Petals -->
+  <g stroke="url(#goldGradient)" stroke-width="2.5" opacity="0.6">
+    <line x1="200" y1="12" x2="200" y2="28"/>
+    <line x1="200" y1="372" x2="200" y2="388"/>
+    <line x1="12" y1="200" x2="28" y2="200"/>
+    <line x1="372" y1="200" x2="388" y2="200"/>
+    <line x1="67" y1="67" x2="79" y2="79"/>
+    <line x1="321" y1="321" x2="333" y2="333"/>
+    <line x1="67" y1="333" x2="79" y2="321"/>
+    <line x1="321" y1="79" x2="333" y2="67"/>
+  </g>
+
+  <!-- Inner Sacred Medallion -->
+  <circle cx="200" cy="200" r="156" fill="#1A0204" stroke="#E5A93C" stroke-width="3"/>
+
+  <!-- Aura of Mahaprabhu -->
+  <circle cx="200" cy="180" r="105" fill="url(#sunGlow)" opacity="0.18" filter="url(#glow)"/>
+
+  <!-- Jagannath Face Representation (Sacred Mahaprabhu Eyes) -->
+  <g transform="translate(0, 5)">
+    <!-- Face Silhouette -->
+    <path d="M 120,130 C 120,105 280,105 280,130 C 290,175 280,225 200,245 C 120,225 110,175 120,130 Z" 
+          fill="#111111" stroke="#E5A93C" stroke-width="3"/>
+
+    <!-- Sacred Tilak / Chita -->
+    <path d="M 194,115 Q 200,85 206,115 Q 203,155 194,115 Z" fill="#FFFFFF"/>
+    <circle cx="200" cy="128" r="4.5" fill="#E22424"/>
+    <path d="M 188,140 Q 200,152 212,140" stroke="#FFFFFF" stroke-width="3" fill="none"/>
+
+    <!-- Left Eye (Viewer's Left) -->
+    <circle cx="158" cy="168" r="28" fill="#FFFFFF" stroke="#E5A93C" stroke-width="2"/>
+    <circle cx="158" cy="168" r="23" fill="#C62828"/>
+    <circle cx="158" cy="168" r="13" fill="#000000"/>
+    <circle cx="154" cy="163" r="3.5" fill="#FFFFFF"/>
+
+    <!-- Right Eye (Viewer's Right) -->
+    <circle cx="242" cy="168" r="28" fill="#FFFFFF" stroke="#E5A93C" stroke-width="2"/>
+    <circle cx="242" cy="168" r="23" fill="#C62828"/>
+    <circle cx="242" cy="168" r="13" fill="#000000"/>
+    <circle cx="238" cy="163" r="3.5" fill="#FFFFFF"/>
+
+    <!-- Divine Smile (Adhara) -->
+    <path d="M 172,210 Q 200,230 228,210" stroke="#E53935" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <path d="M 180,214 Q 200,226 220,214" stroke="#FFE082" stroke-width="2" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Mridanga & Kartal (Sankirtan Motifs) -->
+  <g transform="translate(200, 290)">
+    <ellipse cx="-70" cy="0" rx="14" ry="7" fill="url(#goldGradient)" transform="rotate(-25, -70, 0)"/>
+    <circle cx="-70" cy="0" r="3" fill="#7B1113"/>
+    
+    <ellipse cx="70" cy="0" rx="14" ry="7" fill="url(#goldGradient)" transform="rotate(25, 70, 0)"/>
+    <circle cx="70" cy="0" r="3" fill="#7B1113"/>
+
+    <path d="M 0,-15 C -8,-2 0,12 0,12 C 0,12 8,-2 0,-15 Z" fill="#FF8A80"/>
+    <path d="M -10,-10 C -18,2 -5,12 -5,12 C -5,12 2,2 -10,-10 Z" fill="#E57373"/>
+    <path d="M 10,-10 C 18,2 5,12 5,12 C 5,12 -2,2 10,-10 Z" fill="#E57373"/>
+    <circle cx="0" cy="7" r="4" fill="#FFD54F"/>
+  </g>
+
+  <!-- Circular Text Path -->
+  <path id="textArcTop" d="M 45,200 A 155,155 0 0,1 355,200" fill="none"/>
+  <text font-family="'Cinzel', 'Noto Serif', serif" font-size="14.2" font-weight="bold" fill="url(#goldGradient)" letter-spacing="2.2">
+    <textPath href="#textArcTop" startOffset="50%" text-anchor="middle">
+      SRI SRI JAGANNATH NAM SANKIRTAN
+    </textPath>
+  </text>
+
+  <path id="textArcBottom" d="M 355,200 A 155,155 0 0,1 45,200" fill="none"/>
+  <text font-family="'Cinzel', 'Noto Serif', serif" font-size="13.2" font-weight="bold" fill="#FFE082" letter-spacing="2.5">
+    <textPath href="#textArcBottom" startOffset="50%" text-anchor="middle">
+      LOKA KALA PARISAD ODISHA
+    </textPath>
+  </text>
+</svg>

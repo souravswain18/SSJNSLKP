@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#BA135D"/>
+      <stop offset="100%" stop-color="#FF416C"/>
+    </linearGradient>
+    <linearGradient id="goldText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFF5C2"/>
+      <stop offset="100%" stop-color="#E5A93C"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="550" fill="url(#bgGrad)"/>
+
+  <!-- Ornate Decorative Borders -->
+  <rect x="20" y="20" width="760" height="510" rx="14" fill="none" stroke="#FFE082" stroke-width="2" opacity="0.4"/>
+  <rect x="28" y="28" width="744" height="494" rx="10" fill="none" stroke="#FFE082" stroke-width="1" stroke-dasharray="6,4" opacity="0.3"/>
+
+  <!-- Corner Lotus Motifs -->
+  <g fill="#FFE082" opacity="0.6">
+    <circle cx="36" cy="36" r="6"/>
+    <circle cx="764" cy="36" r="6"/>
+    <circle cx="36" cy="514" r="6"/>
+    <circle cx="764" cy="514" r="6"/>
+  </g>
+
+  <!-- Background Glow & Circular Aura -->
+  <circle cx="400" cy="270" r="160" fill="#FFE082" opacity="0.08"/>
+  <circle cx="400" cy="270" r="110" fill="#FFFFFF" opacity="0.05"/>
+
+  <!-- Top Badges -->
+  <g transform="translate(45, 65)">
+    <!-- City Badge -->
+    <rect x="0" y="0" width="150" height="34" rx="17" fill="rgba(0,0,0,0.4)" stroke="#FFE082" stroke-width="1.5"/>
+    <text x="75" y="22" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="bold" fill="#FFE082" text-anchor="middle">📍 New Delhi</text>
+
+    <!-- Category Badge -->
+    <rect x="165" y="0" width="140" height="34" rx="17" fill="rgba(255,255,255,0.15)" stroke="#FFF" stroke-width="1"/>
+    <text x="235" y="22" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">Lok Kala</text>
+  </g>
+
+  <!-- Year Tag (Top Right) -->
+  <g transform="translate(680, 65)">
+    <rect x="0" y="0" width="75" height="34" rx="17" fill="rgba(0,0,0,0.5)" stroke="#FFE082" stroke-width="1"/>
+    <text x="37" y="22" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#FFE082" text-anchor="middle">✨ 2025</text>
+  </g>
+
+  <!-- Central Graphic -->
+  
+      <!-- Musical Flute / Veena / Sangeet Motif -->
+      <g transform="translate(400, 270) scale(1.2)">
+        <line x1="-90" y1="20" x2="90" y2="-30" stroke="#FFE082" stroke-width="7" stroke-linecap="round"/>
+        <!-- Peacock Feather / Mor Pankh -->
+        <g transform="translate(-80, 15) rotate(-35)">
+          <path d="M 0,0 C -25,-35 0,-70 20,-50 C 35,-35 15,0 0,0 Z" fill="#1ABC9C"/>
+          <ellipse cx="8" cy="-45" rx="9" ry="14" fill="#3498DB"/>
+          <circle cx="8" cy="-45" r="5" fill="#8E44AD"/>
+        </g>
+        <circle cx="-30" cy="8" r="4" fill="#8E0E00"/>
+        <circle cx="0" cy="0" r="4" fill="#8E0E00"/>
+        <circle cx="30" cy="-8" r="4" fill="#8E0E00"/>
+        <circle cx="60" cy="-17" r="4" fill="#8E0E00"/>
+      </g>
+    
+
+  <!-- Bottom Details Overlay -->
+  <rect x="35" y="405" width="730" height="105" rx="12" fill="rgba(10, 5, 5, 0.72)" stroke="rgba(255, 224, 130, 0.3)" stroke-width="1"/>
+
+  <text x="55" y="442" font-family="'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="bold" fill="url(#goldText)" filter="url(#shadow)">
+    Rashtriya Jagannath Sanskriti Mahotsav
+  </text>
+  <text x="55" y="475" font-family="'Segoe UI', Roboto, sans-serif" font-size="14.5" fill="#E0E0E0">
+    National capital exhibition of traditional Odia devotional music & art
+  </text>
+  <text x="55" y="497" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" fill="#FFCC80">
+    Organisation: Sri Sri Jagannath Nam Sankirtan Lok Kalaparisad • Click to enlarge
+  </text>
+</svg>
