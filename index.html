@@ -259,6 +259,7 @@
               <button type="button" class="doc-pill" data-category="government">Govt. / MoSJ&E</button>
               <button type="button" class="doc-pill" data-category="bylaws">Bylaws</button>
               <button type="button" class="doc-pill" data-category="tax">Tax / 80G</button>
+              <button type="button" class="doc-pill" data-category="donation">Donation / Seva</button>
             </div>
           </div>
 
@@ -502,6 +503,57 @@
                 </div>
               </div>
             </article>
+
+            <!-- 6. Official Bank Account & UPI Donation QR -->
+            <article class="doc-card" data-id="6">
+              <div class="doc-thumbnail-wrap" onclick="openDocDetails(6)" title="Click to view full QR: Official Bank Account & UPI Donation QR (State Bank of India)">
+                <img src="assets/docs/sbi-upi-donation-qr.png" alt="Official Bank Account & UPI Donation QR (State Bank of India)" class="doc-thumbnail-img" loading="eager">
+                <div class="doc-zoom-overlay">
+                  <i class="fas fa-qrcode"></i>
+                  <span>Click to Scan &amp; View QR</span>
+                </div>
+              </div>
+              <div class="doc-card-body">
+                <div class="doc-card-top">
+                  <div class="doc-type-box">
+                    <div class="doc-icon-badge image-type">
+                      <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <div>
+                      <h4 class="doc-title">Official Bank Account &amp; UPI Donation QR (State Bank of India)</h4>
+                      <div style="font-size: 0.8rem; color: var(--gold-light); margin-top: 0.15rem;">
+                        <strong>UPI ID:</strong> <span style="color: #FFF; font-weight: 600;">srisrijagannath@sbi</span>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="doc-badge-verified">
+                    <i class="fas fa-check-circle"></i> Official Verified
+                  </span>
+                </div>
+                <p class="doc-desc">Helping hand to poor tribal artists and hari bhaktas , all donations are used in distribution of musical instruments, clothings and mahaprasad annadan, Youth seva, etc.</p>
+                <div class="doc-meta">
+                  <span><i class="fas fa-university"></i> <strong>Bank:</strong> State Bank of India (SBI) • SRI SRIJAGANNATH NAMA SANKIRT</span>
+                  <span><i class="fas fa-calendar-alt"></i> <strong>Year:</strong> 2026</span>
+                  <span><i class="fas fa-file"></i> 742 KB</span>
+                </div>
+                <div class="doc-card-actions">
+                  <span class="doc-file-info">
+                    <i class="fas fa-qrcode"></i> SBI Scan &amp; Pay QR
+                  </span>
+                  <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                    <button type="button" class="doc-btn-view" onclick="openDocDetails(6)">
+                      <i class="fas fa-eye"></i> View QR
+                    </button>
+                    <a href="upi://pay?pa=srisrijagannath@sbi&pn=SRI%20SRIJAGANNATH%20NAMA%20SANKIRT&cu=INR" class="doc-btn-view" style="text-decoration: none; background: rgba(30, 130, 60, 0.35); border-color: #81C784;">
+                      <i class="fas fa-mobile-alt"></i> Pay via UPI
+                    </a>
+                    <a href="assets/docs/sbi-upi-donation-qr.png" target="_blank" download class="doc-btn-view" style="text-decoration: none;">
+                      <i class="fas fa-download"></i> Download
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
 
@@ -531,6 +583,7 @@
                   <option value="government">Govt. of India / MoSJ&E / NITI Aayog</option>
                   <option value="bylaws">Parishad Bylaws & Constitution</option>
                   <option value="tax">Tax Exemption (12A / 80G)</option>
+                  <option value="donation">Donation &amp; Bank Account / UPI</option>
                   <option value="audit">Audit & Annual Financial Return</option>
                   <option value="gazette">Official Notification & Gazette</option>
                 </select>
@@ -986,6 +1039,6 @@
   </button>
 
   <!-- Application Script -->
-  <script src="js/app.js?v=20261108j"></script>
+  <script src="js/app.js?v=20261108k"></script>
 </body>
 </html>

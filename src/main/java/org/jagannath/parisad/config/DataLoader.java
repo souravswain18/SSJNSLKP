@@ -64,6 +64,19 @@ public class DataLoader implements CommandLineRunner {
         }
         if (documentRepository.count() == 0) {
             seedDocuments();
+        } else if (documentRepository.searchDocuments("srisrijagannath@sbi").isEmpty()) {
+            documentRepository.save(new AuthDocument(
+                "Official Bank Account & UPI Donation QR (State Bank of India)",
+                "donation",
+                "UPI ID: srisrijagannath@sbi",
+                "State Bank of India (SBI) • SRI SRIJAGANNATH NAMA SANKIRT",
+                "2026",
+                "Helping hand to poor tribal artists and hari bhaktas , all donations are used in distribution of musical instruments, clothings and mahaprasad annadan, Youth seva, etc.",
+                "sbi-upi-donation-qr.png",
+                "assets/docs/sbi-upi-donation-qr.png",
+                "IMAGE",
+                "742 KB"
+            ));
         }
         System.out.println("🕉️ Sri Sri Jagannath Nam Sankirtan Loka Kala parisad Odisha: 17 Chapters & Auth Docs Initialized!");
     }
@@ -552,6 +565,18 @@ public class DataLoader implements CommandLineRunner {
                 "assets/docs/society-registration-money-receipt.jpg",
                 "IMAGE",
                 "297 KB"
+            ),
+            new AuthDocument(
+                "Official Bank Account & UPI Donation QR (State Bank of India)",
+                "donation",
+                "UPI ID: srisrijagannath@sbi",
+                "State Bank of India (SBI) • SRI SRIJAGANNATH NAMA SANKIRT",
+                "2026",
+                "Helping hand to poor tribal artists and hari bhaktas , all donations are used in distribution of musical instruments, clothings and mahaprasad annadan, Youth seva, etc.",
+                "sbi-upi-donation-qr.png",
+                "assets/docs/sbi-upi-donation-qr.png",
+                "IMAGE",
+                "742 KB"
             )
         );
 

@@ -1463,6 +1463,21 @@ const DEFAULT_AUTH_DOCUMENTS = [
     fileSizeFormatted: '297 KB',
     verifiedStatus: true,
     uploadDate: '2026-11-08'
+  },
+  {
+    id: 6,
+    title: 'Official Bank Account & UPI Donation QR (State Bank of India)',
+    category: 'donation',
+    documentNumber: 'UPI ID: srisrijagannath@sbi',
+    issuingAuthority: 'State Bank of India (SBI) • SRI SRIJAGANNATH NAMA SANKIRT',
+    issueYear: '2026',
+    description: 'Helping hand to poor tribal artists and hari bhaktas , all donations are used in distribution of musical instruments, clothings and mahaprasad annadan, Youth seva, etc.',
+    fileName: 'sbi-upi-donation-qr.png',
+    fileUrl: 'assets/docs/sbi-upi-donation-qr.png',
+    fileType: 'IMAGE',
+    fileSizeFormatted: '742 KB',
+    verifiedStatus: true,
+    uploadDate: '2026-11-08'
   }
 ];
 
@@ -1801,8 +1816,13 @@ window.openDocDetails = function(id) {
         </div>
       ` : ''}
 
-      <div style="display: flex; justify-content: flex-end; gap: 0.75rem; margin-top: 0.5rem; padding-top: 1rem; border-top: 1px solid rgba(212,175,55,0.2);">
+      <div style="display: flex; justify-content: flex-end; gap: 0.75rem; margin-top: 0.5rem; padding-top: 1rem; border-top: 1px solid rgba(212,175,55,0.2); flex-wrap: wrap;">
         <button type="button" class="btn-secondary" onclick="document.getElementById('docModal').close()">Close</button>
+        ${doc.category === 'donation' || (doc.documentNumber && doc.documentNumber.includes('@')) ? `
+          <a href="upi://pay?pa=srisrijagannath@sbi&pn=SRI%20SRIJAGANNATH%20NAMA%20SANKIRT&cu=INR" class="btn-primary" style="text-decoration: none; background: #2e7d32; border-color: #81C784;">
+            <i class="fas fa-mobile-alt"></i> Pay via UPI
+          </a>
+        ` : ''}
         ${doc.fileUrl && doc.fileUrl !== '#' ? `
           <a href="${doc.fileUrl}" target="_blank" download class="btn-primary" style="text-decoration: none;">
             <i class="fas fa-download"></i> Download Document
