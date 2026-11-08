@@ -2,7 +2,7 @@
  * Sri Sri Jagannath Nam Sankirtan Loka Kala parisad Odisha
  * Interactive Devotional Catalogue & Gallery Application Script
  * 
- * Supports all 17 Odisha Regional Chapters:
+ * Supports all 18 Odisha Regional Chapters:
  * 1. Puri Dham (ପୁରୀ)
  * 2. Malkangiri (ମାଲକାନଗିରି)
  * 3. Koraput (କୋରାପୁଟ)
@@ -20,6 +20,7 @@
  * 15. Boudh (ବୌଦ୍ଧ)
  * 16. Bargarh (ବରଗଡ଼)
  * 17. Jharsuguda (ଝାରସୁଗୁଡ଼ା)
+ * 18. Kalahandi (କଳାହାଣ୍ଡି)
  * 
  * Connected to Java Spring Boot REST API Backend:
  * - GET  /api/chapters
@@ -29,7 +30,7 @@
  */
 
 // ==========================================================================
-// 1. DEFAULT DATA: 17 Odisha City Chapters (Used as fallback/seed)
+// 1. DEFAULT DATA: 18 Odisha City Chapters (Used as fallback/seed)
 // ==========================================================================
 let cityChaptersData = [
   {
@@ -390,11 +391,42 @@ let cityChaptersData = [
         desc: 'Community Annadan and prasada distribution for tribal and rural families in Kolabira and Laikera blocks.'
       }
     ]
+  },
+  {
+    id: 'kalahandi',
+    name: 'Kalahandi',
+    subName: 'କଳାହାଣ୍ଡି • Manikeswari Peetha & Tel Valley Sankirtan Kendra',
+    coordinator: 'Kalahandi District Sankirtan Seva Samiti & Maa Manikeswari Mandali',
+    contact: '+91 94379 XXXXX',
+    badge: 'Manikeswari Peetha',
+    activities: [
+      'Maa Manikeswari Chhatar Yatra Mahotsav mass Harinam Sankirtan procession',
+      'Ancient Tel river valley Jagannath temple parikrama and Prabhat Pheri yatras',
+      'Gramin Annadan seva shivir & famine relief grain bank for tribal settlements in Thuamul Rampur',
+      'Free Ghanta, Kartal & Mridanga instrument distribution to 20+ village kirtan mandalis'
+    ],
+    photoCount: 2,
+    photos: [
+      {
+        id: 'kalahandi-photo-1',
+        title: 'କଳାହାଣ୍ଡି ମାଣିକେଶ୍ୱରୀ ଛତର ଯାତ୍ରା ସଂକୀର୍ତ୍ତନ',
+        subTitle: 'Maa Manikeswari Chhatar Yatra Sankirtan',
+        src: 'assets/images/kalahandi-chhatar-yatra.svg',
+        desc: 'Ecstatic Harinam Sankirtan procession accompanying Maa Manikeswari during the historic Bhawanipatna Chhatar Yatra.'
+      },
+      {
+        id: 'kalahandi-photo-2',
+        title: 'ଥୁଆମୂଳ ରାମପୁର ଗ୍ରାମୀଣ ଅନ୍ନଦାନ ଓ ସେବା ଶିବିର',
+        subTitle: 'Thuamul Rampur Gramin Annadan & Seva',
+        src: 'assets/images/kalahandi-gramin-seva.svg',
+        desc: 'Community Annadan, dry rations and winter blanket distribution for indigenous families across Thuamul Rampur.'
+      }
+    ]
   }
 ];
 
 // ==========================================================================
-// 2. DEFAULT DATA: 34 Activity Photos across 17 Odisha Districts
+// 2. DEFAULT DATA: 36 Activity Photos across 18 Odisha Districts
 // ==========================================================================
 let activitiesData = [
   // 1. Puri
@@ -923,6 +955,34 @@ let activitiesData = [
     desc: 'Community Annadan and warm clothes distribution for industrial and rural laborers in Kolabira and Laikera.',
     location: 'Kolabira & Laikera Blocks, Jharsuguda',
     tags: ['Jharsuguda', 'Gramin Seva', 'Annadan']
+  },
+
+  // 18. Kalahandi
+  {
+    id: 'photo-kalahandi-1',
+    title: 'Maa Manikeswari Chhatar Yatra Sankirtan',
+    city: 'Kalahandi',
+    cityKey: 'kalahandi',
+    category: 'sankirtan',
+    categoryLabel: 'Harinam Sankirtan',
+    year: '2025',
+    imageSrc: 'assets/images/kalahandi-chhatar-yatra.svg',
+    desc: 'Ecstatic Harinam Sankirtan procession accompanying Maa Manikeswari during the historic Bhawanipatna Chhatar Yatra.',
+    location: 'Bhawanipatna & Manikeswari Temple, Kalahandi',
+    tags: ['Kalahandi', 'Chhatar Yatra', 'Manikeswari', 'Sankirtan']
+  },
+  {
+    id: 'photo-kalahandi-2',
+    title: 'Thuamul Rampur Tribal & Gramin Seva',
+    city: 'Kalahandi',
+    cityKey: 'kalahandi',
+    category: 'annadan',
+    categoryLabel: 'Annadan Seva',
+    year: '2025',
+    imageSrc: 'assets/images/kalahandi-gramin-seva.svg',
+    desc: 'Community Annadan, dry rations and winter blanket distribution for indigenous families across Thuamul Rampur.',
+    location: 'Thuamul Rampur & Lanjigarh, Kalahandi',
+    tags: ['Kalahandi', 'Thuamul Rampur', 'Gramin Seva', 'Annadan']
   }
 ];
 
@@ -988,7 +1048,7 @@ async function loadDataFromBackend() {
         renderGalleryPhotos();
       }
     }
-    console.log('✅ Connected to Java Spring Boot REST API Backend with all 17 Odisha Chapters!');
+    console.log('✅ Connected to Java Spring Boot REST API Backend with all 18 Odisha Chapters!');
   } catch (err) {
     console.info('ℹ️ Running in standalone mode with embedded data.');
   }
@@ -1112,7 +1172,7 @@ function renderGalleryPhotos() {
           Try resetting your city, category, or search keywords.
         </p>
         <button type="button" class="btn-secondary" style="margin-top: 1.2rem;" onclick="resetAllFilters()">
-          Show All 17 Odisha Activities & Photos
+          Show All 18 Odisha Activities & Photos
         </button>
       </div>
     `;
@@ -2066,5 +2126,5 @@ document.addEventListener('DOMContentLoaded', () => {
   setupSevaForm();
   setupDocumentsModule();
   loadDataFromBackend();
-  console.log('🕉️ Sri Sri Jagannath Nam Sankirtan Loka Kala parisad Odisha: All 17 Odisha Chapters & Auth Docs Ready!');
+  console.log('🕉️ Sri Sri Jagannath Nam Sankirtan Loka Kala parisad Odisha: All 18 Odisha Chapters & Auth Docs Ready!');
 });

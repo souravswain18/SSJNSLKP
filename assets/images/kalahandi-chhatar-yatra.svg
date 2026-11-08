@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7B1FA2"/>
+      <stop offset="100%" stop-color="#1A0028"/>
+    </linearGradient>
+    <linearGradient id="goldText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFF5C2"/>
+      <stop offset="100%" stop-color="#E5A93C"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="550" fill="url(#bgGrad)"/>
+  <rect x="20" y="20" width="760" height="510" rx="14" fill="none" stroke="#FFE082" stroke-width="2" opacity="0.4"/>
+  <rect x="28" y="28" width="744" height="494" rx="10" fill="none" stroke="#FFE082" stroke-width="1" stroke-dasharray="6,4" opacity="0.3"/>
+
+  <g fill="#FFE082" opacity="0.6">
+    <circle cx="36" cy="36" r="6"/>
+    <circle cx="764" cy="36" r="6"/>
+    <circle cx="36" cy="514" r="6"/>
+    <circle cx="764" cy="514" r="6"/>
+  </g>
+
+  <circle cx="400" cy="270" r="160" fill="#FFE082" opacity="0.08"/>
+  <circle cx="400" cy="270" r="110" fill="#FFFFFF" opacity="0.05"/>
+
+  <g transform="translate(45, 65)">
+    <rect x="0" y="0" width="185" height="34" rx="17" fill="rgba(0,0,0,0.45)" stroke="#FFE082" stroke-width="1.5"/>
+    <text x="92" y="22" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="bold" fill="#FFE082" text-anchor="middle">📍 Kalahandi, Odisha</text>
+
+    <rect x="200" y="0" width="155" height="34" rx="17" fill="rgba(255,255,255,0.15)" stroke="#FFF" stroke-width="1"/>
+    <text x="277" y="22" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">Chhatar Yatra Kirtan</text>
+  </g>
+
+  <g transform="translate(680, 65)">
+    <rect x="0" y="0" width="75" height="34" rx="17" fill="rgba(0,0,0,0.5)" stroke="#FFE082" stroke-width="1"/>
+    <text x="37" y="22" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#FFE082" text-anchor="middle">✨ 2025</text>
+  </g>
+
+  <!-- Sacred Chhatar (Umbrella) & Mridanga Emblem -->
+  <g transform="translate(400, 260) scale(1.15)">
+    <!-- Chhatar / Sacred Canopy -->
+    <path d="M -70,-30 Q 0,-85 70,-30 Z" fill="#E5A93C" stroke="#FFE082" stroke-width="2.5"/>
+    <line x1="0" y1="-85" x2="0" y2="40" stroke="#FFE082" stroke-width="3.5"/>
+    <circle cx="0" cy="-90" r="7" fill="#FFE082"/>
+    <!-- Ghanta / Cymbals -->
+    <ellipse cx="-45" cy="25" rx="26" ry="12" fill="#FFB74D" stroke="#FFF" stroke-width="1.5"/>
+    <ellipse cx="45" cy="25" rx="26" ry="12" fill="#FFB74D" stroke="#FFF" stroke-width="1.5"/>
+    <path d="M -70,-30 Q -50,-15 -35,-30 Q -20,-15 0,-30 Q 20,-15 35,-30 Q 50,-15 70,-30" fill="none" stroke="#FFF" stroke-width="2"/>
+  </g>
+
+  <rect x="35" y="405" width="730" height="105" rx="12" fill="rgba(10, 5, 20, 0.8)" stroke="rgba(255, 224, 130, 0.3)" stroke-width="1"/>
+  <text x="55" y="442" font-family="'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="bold" fill="url(#goldText)" filter="url(#shadow)">
+    କଳାହାଣ୍ଡି ମାଣିକେଶ୍ୱରୀ ଛତର ଯାତ୍ରା ସଂକୀର୍ତ୍ତନ
+  </text>
+  <text x="55" y="475" font-family="'Segoe UI', Roboto, sans-serif" font-size="14.5" fill="#E0E0E0">
+    Ecstatic Harinam Sankirtan procession accompanying Maa Manikeswari during the historic Bhawanipatna Chhatar Yatra
+  </text>
+  <text x="55" y="497" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" fill="#FFCC80">
+    Sri Sri Jagannath Nam Sankirtan Loka Kala Parisad (Odisha) • Chapter 18
+  </text>
+</svg>
