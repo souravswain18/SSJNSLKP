@@ -13,7 +13,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Seeds the database on startup with all 16 Odisha regional chapters
+ * Seeds the database on startup with all 17 Odisha regional chapters
  * and curated devotional photo catalogue entries.
  */
 @Component
@@ -35,14 +35,37 @@ public class DataLoader implements CommandLineRunner {
     public void run(String... args) {
         if (chapterRepository.count() == 0) {
             seedChapters();
+        } else if (!chapterRepository.existsByCityKey("jharsuguda")) {
+            chapterRepository.save(new CityChapter("jharsuguda", "Jharsuguda", 
+                "ଝାରସୁଗୁଡ଼ା • Brajrajnagar & Paschima Odisha Industrial-Tribal Sankirtan Peetha",
+                "Jharsuguda District Seva Sangha & Mridanga Mandali Acharyas", "+91 94378 XXXXX", "Paschima Odisha Kirtan", 2,
+                Arrays.asList(
+                    "Grand Nagar Sankirtan & Prabhat Pheri across Jharsuguda, Brajrajnagar & Belpahar",
+                    "Preservation of traditional Sambalpuri-Jagannath folk kirtan & Dhol-Nishan seva",
+                    "Gramin Annadan seva shivir & warm clothes distribution for industrial and rural laborers",
+                    "Youth Mridanga (Khol) training camps and Ramachandi-Jagannath satsang sabhas"
+                )));
         }
         if (photoRepository.count() == 0) {
             seedPhotos();
+        } else if (photoRepository.findByCityKey("jharsuguda").isEmpty()) {
+            photoRepository.saveAll(Arrays.asList(
+                new ActivityPhoto("photo-jharsuguda-1", "Jharsuguda & Brajrajnagar Nagar Sankirtan", "Jharsuguda", "jharsuguda",
+                    "sankirtan", "Harinam Sankirtan", "2025", "assets/images/jharsuguda-kirtan-mandali.svg",
+                    "Harinam Sankirtan procession through Jharsuguda and Brajrajnagar town peethas with dhol and mridanga.",
+                    "Jharsuguda & Brajrajnagar Towns, Jharsuguda",
+                    Arrays.asList("Jharsuguda", "Brajrajnagar", "Nagar Sankirtan")),
+                new ActivityPhoto("photo-jharsuguda-2", "Paschima Odisha Tribal & Gramin Seva", "Jharsuguda", "jharsuguda",
+                    "annadan", "Annadan Seva", "2025", "assets/images/jharsuguda-gramin-seva.svg",
+                    "Community Annadan and warm clothes distribution for industrial and rural laborers in Kolabira and Laikera.",
+                    "Kolabira & Laikera Blocks, Jharsuguda",
+                    Arrays.asList("Jharsuguda", "Gramin Seva", "Annadan"))
+            ));
         }
         if (documentRepository.count() == 0) {
             seedDocuments();
         }
-        System.out.println("🕉️ Sri Sri Jagannath Nam Sankirtan Loka Kala parisad Odisha: 16 Chapters & Auth Docs Initialized!");
+        System.out.println("🕉️ Sri Sri Jagannath Nam Sankirtan Loka Kala parisad Odisha: 17 Chapters & Auth Docs Initialized!");
     }
 
     private void seedChapters() {
@@ -205,6 +228,16 @@ public class DataLoader implements CommandLineRunner {
                     "Nrusinghanath Kshetra sacred stream parikrama and kirtan camp",
                     "Agricultural community devotional unity and sanskar gatherings",
                     "Free mridanga instrument distribution to 25+ farmer kirtan mandalis"
+                )),
+
+            // 17. Jharsuguda
+            new CityChapter("jharsuguda", "Jharsuguda", "ଝାରସୁଗୁଡ଼ା • Brajrajnagar & Paschima Odisha Industrial-Tribal Sankirtan Peetha",
+                "Jharsuguda District Seva Sangha & Mridanga Mandali Acharyas", "+91 94378 XXXXX", "Paschima Odisha Kirtan", 2,
+                Arrays.asList(
+                    "Grand Nagar Sankirtan & Prabhat Pheri across Jharsuguda, Brajrajnagar & Belpahar",
+                    "Preservation of traditional Sambalpuri-Jagannath folk kirtan & Dhol-Nishan seva",
+                    "Gramin Annadan seva shivir & warm clothes distribution for industrial and rural laborers",
+                    "Youth Mridanga (Khol) training camps and Ramachandi-Jagannath satsang sabhas"
                 ))
         );
 
@@ -440,7 +473,19 @@ public class DataLoader implements CommandLineRunner {
                 "satsang", "Satsang & Youth", "2025", "assets/images/bargarh-nrusinghanath-seva.svg",
                 "Empowering village kirtaniyas with mridanga instruments and organising spiritual discourses.",
                 "Nrusinghanath Temple Peetha, Bargarh",
-                Arrays.asList("Bargarh", "Nrusinghanath", "Gramin Seva"))
+                Arrays.asList("Bargarh", "Nrusinghanath", "Gramin Seva")),
+
+            // 17. Jharsuguda
+            new ActivityPhoto("photo-jharsuguda-1", "Jharsuguda & Brajrajnagar Nagar Sankirtan", "Jharsuguda", "jharsuguda",
+                "sankirtan", "Harinam Sankirtan", "2025", "assets/images/jharsuguda-kirtan-mandali.svg",
+                "Harinam Sankirtan procession through Jharsuguda and Brajrajnagar town peethas with dhol and mridanga.",
+                "Jharsuguda & Brajrajnagar Towns, Jharsuguda",
+                Arrays.asList("Jharsuguda", "Brajrajnagar", "Nagar Sankirtan")),
+            new ActivityPhoto("photo-jharsuguda-2", "Paschima Odisha Tribal & Gramin Seva", "Jharsuguda", "jharsuguda",
+                "annadan", "Annadan Seva", "2025", "assets/images/jharsuguda-gramin-seva.svg",
+                "Community Annadan and warm clothes distribution for industrial and rural laborers in Kolabira and Laikera.",
+                "Kolabira & Laikera Blocks, Jharsuguda",
+                Arrays.asList("Jharsuguda", "Gramin Seva", "Annadan"))
         );
 
         photoRepository.saveAll(photos);

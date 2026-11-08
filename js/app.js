@@ -2,7 +2,7 @@
  * Sri Sri Jagannath Nam Sankirtan Loka Kala parisad Odisha
  * Interactive Devotional Catalogue & Gallery Application Script
  * 
- * Supports all 16 Odisha Regional Chapters:
+ * Supports all 17 Odisha Regional Chapters:
  * 1. Puri Dham (ପୁରୀ)
  * 2. Malkangiri (ମାଲକାନଗିରି)
  * 3. Koraput (କୋରାପୁଟ)
@@ -19,6 +19,7 @@
  * 14. Balangir (ବଲାଙ୍ଗୀର)
  * 15. Boudh (ବୌଦ୍ଧ)
  * 16. Bargarh (ବରଗଡ଼)
+ * 17. Jharsuguda (ଝାରସୁଗୁଡ଼ା)
  * 
  * Connected to Java Spring Boot REST API Backend:
  * - GET  /api/chapters
@@ -28,7 +29,7 @@
  */
 
 // ==========================================================================
-// 1. DEFAULT DATA: 16 Odisha City Chapters (Used as fallback/seed)
+// 1. DEFAULT DATA: 17 Odisha City Chapters (Used as fallback/seed)
 // ==========================================================================
 let cityChaptersData = [
   {
@@ -358,11 +359,42 @@ let cityChaptersData = [
       'Free mridanga instrument distribution to 25+ farmer kirtan mandalis'
     ],
     photoCount: 2
+  },
+  {
+    id: 'jharsuguda',
+    name: 'Jharsuguda',
+    subName: 'ଝାରସୁଗୁଡ଼ା • Brajrajnagar & Paschima Odisha Industrial-Tribal Sankirtan Peetha',
+    coordinator: 'Jharsuguda District Seva Sangha & Mridanga Mandali Acharyas',
+    contact: '+91 94378 XXXXX',
+    badge: 'Paschima Odisha Kirtan',
+    activities: [
+      'Grand Nagar Sankirtan & Prabhat Pheri across Jharsuguda, Brajrajnagar & Belpahar',
+      'Preservation of traditional Sambalpuri-Jagannath folk kirtan & Dhol-Nishan seva',
+      'Gramin Annadan seva shivir & warm clothes distribution for industrial and rural laborers',
+      'Youth Mridanga (Khol) training camps and Ramachandi-Jagannath satsang sabhas'
+    ],
+    photoCount: 2,
+    photos: [
+      {
+        id: 'jharsuguda-photo-1',
+        title: 'ଝାରସୁଗୁଡ଼ା ଓ ବ୍ରଜରାଜନଗର ନଗର ସଂକୀର୍ତ୍ତନ',
+        subTitle: 'Nagar Sankirtan & Shobhayatra',
+        src: 'assets/images/jharsuguda-kirtan-mandali.svg',
+        desc: 'Harinam Sankirtan procession through Jharsuguda and Brajrajnagar town peethas with dhol and mridanga.'
+      },
+      {
+        id: 'jharsuguda-photo-2',
+        title: 'ଗ୍ରାମୀଣ ଅନ୍ନଦାନ ଓ ଆଦିବାସୀ ସେବା ଶିବିର',
+        subTitle: 'Gramin Annadan & Seva Shivir',
+        src: 'assets/images/jharsuguda-gramin-seva.svg',
+        desc: 'Community Annadan and prasada distribution for tribal and rural families in Kolabira and Laikera blocks.'
+      }
+    ]
   }
 ];
 
 // ==========================================================================
-// 2. DEFAULT DATA: 32 Activity Photos across 16 Odisha Districts
+// 2. DEFAULT DATA: 34 Activity Photos across 17 Odisha Districts
 // ==========================================================================
 let activitiesData = [
   // 1. Puri
@@ -863,6 +895,34 @@ let activitiesData = [
     desc: 'Empowering village kirtaniyas with mridanga instruments and organising spiritual discourses.',
     location: 'Nrusinghanath Temple Peetha, Bargarh',
     tags: ['Bargarh', 'Nrusinghanath', 'Gramin Seva']
+  },
+
+  // 17. Jharsuguda
+  {
+    id: 'photo-jharsuguda-1',
+    title: 'Jharsuguda & Brajrajnagar Nagar Sankirtan',
+    city: 'Jharsuguda',
+    cityKey: 'jharsuguda',
+    category: 'sankirtan',
+    categoryLabel: 'Harinam Sankirtan',
+    year: '2025',
+    imageSrc: 'assets/images/jharsuguda-kirtan-mandali.svg',
+    desc: 'Harinam Sankirtan procession through Jharsuguda and Brajrajnagar town peethas with dhol and mridanga.',
+    location: 'Jharsuguda & Brajrajnagar Towns, Jharsuguda',
+    tags: ['Jharsuguda', 'Brajrajnagar', 'Nagar Sankirtan']
+  },
+  {
+    id: 'photo-jharsuguda-2',
+    title: 'Paschima Odisha Tribal & Gramin Seva',
+    city: 'Jharsuguda',
+    cityKey: 'jharsuguda',
+    category: 'annadan',
+    categoryLabel: 'Annadan Seva',
+    year: '2025',
+    imageSrc: 'assets/images/jharsuguda-gramin-seva.svg',
+    desc: 'Community Annadan and warm clothes distribution for industrial and rural laborers in Kolabira and Laikera.',
+    location: 'Kolabira & Laikera Blocks, Jharsuguda',
+    tags: ['Jharsuguda', 'Gramin Seva', 'Annadan']
   }
 ];
 
@@ -928,7 +988,7 @@ async function loadDataFromBackend() {
         renderGalleryPhotos();
       }
     }
-    console.log('✅ Connected to Java Spring Boot REST API Backend with all 16 Odisha Chapters!');
+    console.log('✅ Connected to Java Spring Boot REST API Backend with all 17 Odisha Chapters!');
   } catch (err) {
     console.info('ℹ️ Running in standalone mode with embedded data.');
   }
@@ -1052,7 +1112,7 @@ function renderGalleryPhotos() {
           Try resetting your city, category, or search keywords.
         </p>
         <button type="button" class="btn-secondary" style="margin-top: 1.2rem;" onclick="resetAllFilters()">
-          Show All 16 Odisha Activities & Photos
+          Show All 17 Odisha Activities & Photos
         </button>
       </div>
     `;
@@ -1986,5 +2046,5 @@ document.addEventListener('DOMContentLoaded', () => {
   setupSevaForm();
   setupDocumentsModule();
   loadDataFromBackend();
-  console.log('🕉️ Sri Sri Jagannath Nam Sankirtan Loka Kala parisad Odisha: All 16 Odisha Chapters & Auth Docs Ready!');
+  console.log('🕉️ Sri Sri Jagannath Nam Sankirtan Loka Kala parisad Odisha: All 17 Odisha Chapters & Auth Docs Ready!');
 });
