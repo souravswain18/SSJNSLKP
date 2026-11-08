@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: ssjnsp
+    name: ssjnslkp
     runtime: docker
     plan: free
     region: singapore
