@@ -170,16 +170,133 @@ let cityChaptersData = [
     id: 'nabrangpur',
     name: 'Nabarangpur',
     subName: 'ନବରଙ୍ଗପୁର • Southern Odisha Cultural & Youth Kendra',
-    coordinator: 'Indravati Teer Sankirtan Parishad',
+    coordinator: 'Indravati Teer Sankirtan Parishad & District Samabesa Seva Sangha',
     contact: '+91 94375 XXXXX',
     badge: 'Sankirtan Kendra',
     activities: [
       'Mass congregational Harinam Samavesh on the banks of river Indravati',
+      'District Level Sankirtan and Loka Kala Samabesa uniting 328+ village mandalis',
       'Gramin Sanskar Kendra imparting Gita shlokas and character education',
-      'Assistance and musical instrument distribution to rural kirtaniyas',
+      'Preservation of traditional tribal Desia, Dhemsa folk arts & musical instruments',
       'Monthly village Parikrama and community prasad distribution'
     ],
-    photoCount: 2
+    photoCount: 11,
+    photos: [
+      {
+        id: 'nab-photo-1',
+        title: 'ଜିଲ୍ଲାପାଳଙ୍କ ସହ ଆଲୋଚନା ଓ ଉତ୍ତରୀୟ ପ୍ରଦାନ',
+        subTitle: 'Delegation Meeting with District Magistrate & Collector, Nabarangpur',
+        src: 'assets/images/nabarangpur-collector-meeting.jpg',
+        desc: 'Parishad leadership presenting ceremonial Uttariya and extending auspicious invitation to District Collector & Magistrate Shri Kamal Lochan Mishra, IAS, for the District Sankirtan & Loka Kala Samabesa.',
+        year: '2024'
+      },
+      {
+        id: 'nab-photo-2',
+        title: 'ଉପଜିଲ୍ଲାପାଳଙ୍କୁ ସମ୍ମାନ ଓ ସ୍ୱାଗତ',
+        subTitle: 'Meeting with Sub-Collector & SDM, Nabarangpur',
+        src: 'assets/images/nabarangpur-subcollector-meeting.jpg',
+        desc: 'State President Sri Sidhartha Sankar Swain and parishad delegation meeting Sub-Collector Shri Prasanta Kumar Rout with ceremonial floral greeting and samabesa outline.',
+        year: '2024'
+      },
+      {
+        id: 'nab-photo-3',
+        title: 'ଚାମୁରିଆଗୁଡ଼ା ଭୈରବ ମନ୍ଦିର ପ୍ରାଙ୍ଗଣରେ ମଣ୍ଡଳୀ ସମାବେଶ',
+        subTitle: 'Kirtan Mandalis & Folk Artistes Congregation at Bhairav Temple',
+        src: 'assets/images/nabarangpur-mandali-temple-gathering.jpg',
+        desc: 'Hundreds of village sankirtaniyas, dholak vadakas, and traditional folk artistes assembling with official parishad banner at Chamuriaguda Bhairav temple before the grand shobhayatra.',
+        year: '2024'
+      },
+      {
+        id: 'nab-photo-4',
+        title: 'ରାଜ୍ୟ ଓ ଜିଲ୍ଲା କର୍ମକର୍ତ୍ତାଙ୍କ ସହ ମଞ୍ଚାସୀନ ମହାସମାବେଶ',
+        subTitle: 'Grand Dais Congregation with MLAs, Sadhus & Parishad Leaders',
+        src: 'assets/images/nabarangpur-samabesa-stage-bhaktas.jpg',
+        desc: 'Distinguished dignitaries on stage including District Planning Board Chairman & MLA Gouri Sankar Majhi, Dabugam MLA Manohar Randhari, Puri Mahant Dibyananda Das, Vrindavan Acharya Avishesha Pathak, and State President Sidhartha Sankar Swain.',
+        year: '2024'
+      },
+      {
+        id: 'nab-photo-5',
+        title: 'ନବରଙ୍ଗପୁର ଜିଲ୍ଲାସ୍ତରୀୟ ସଂକୀର୍ତ୍ତନ ଓ ଲୋକ କଳା ସମାବେଶ ମୁଖ୍ୟ ବ୍ୟାନର',
+        subTitle: 'Official Sammilani Graphic with Holy Trinity & IGR Regd No',
+        src: 'assets/images/nabarangpur-parishad-banner-deities.jpg',
+        desc: 'Official banner of Sri Sri Jagannath Nama Sankirtan Loka Kala Parishad Odisha, District Branch Nabarangpur (IGR Regd No 87/8201800077 of 2018-19) featuring Mahaprabhu Jagannath, Balabhadra, Subhadra, and Sudarshan.',
+        year: '2024'
+      },
+      {
+        id: 'nab-photo-6',
+        title: 'ସହର ପରିକ୍ରମା ମହା ଶୋଭାଯାତ୍ରା ଓ ହରିନାମ ସଂକୀର୍ତ୍ତନ',
+        subTitle: 'Massive Nagar Sankirtan Shobhayatra Across Nabarangpur Town',
+        src: 'assets/images/nabarangpur-shobhayatra-nagar-parikrama.jpg',
+        desc: 'Spectacular street procession of 328 village kirtan groups dancing with khol, kartal, jhanja, and saffron flags along Nabarangpur main thoroughfares to PM Shri Raja Chaitanya Deb grounds.',
+        year: '2024'
+      },
+      {
+        id: 'nab-photo-7',
+        title: 'ପୁରୀ ମହନ୍ତ ଓ ବୃନ୍ଦାବନ ଆଚାର୍ଯ୍ୟଙ୍କ ସହ ସାଧୁ ସମ୍ମିଳନୀ',
+        subTitle: 'Revered Vaishnava Acharyas & Gurus at Samabesa Pandal',
+        src: 'assets/images/nabarangpur-sadhu-sants-pandal-darshan.jpg',
+        desc: 'Revered Mahants, sannyasis, and senior acharyas blessing devotees under the ceremonial pandal pavilion with sacred discourses and divine kirtan.',
+        year: '2024'
+      },
+      {
+        id: 'nab-photo-8',
+        title: '‘ସମାଜ’ ଖବରକାଗଜରେ ୩୨୮ ସଂକୀର୍ତ୍ତନ ମଣ୍ଡଳୀ ଶୋଭାଯାତ୍ରା',
+        subTitle: 'The Samaja Press Coverage — 328 Mandalis Shobhayatra & Sammilani',
+        src: 'assets/images/nabarangpur-samaja-press-coverage.jpg',
+        desc: 'Front-page publication by renowned daily The Samaja detailing the 3rd annual district session with 328 sankirtan and folk troupes at Mini Stadium, attended by Collector Kamal Lochan Mishra and MP Ramesh Chandra Majhi.',
+        year: '2024'
+      },
+      {
+        id: 'nab-photo-9',
+        title: '‘ପ୍ରମେୟ’ ଖବରକାଗଜରେ ଆଦିବାସୀ ନୃତ୍ୟର ବିଶେଷ ଆକର୍ଷଣ',
+        subTitle: 'The Prameya Press Coverage — Traditional Tribal Folk Dance',
+        src: 'assets/images/nabarangpur-prameya-tribal-dance.jpg',
+        desc: 'Feature report in The Prameya celebrating the preservation of indigenous culture: tribal artistes performing traditional Rinjha, Dhemsa, and Desia folk dances alongside Harinam Sankirtan.',
+        year: '2024'
+      },
+      {
+        id: 'nab-photo-10',
+        title: '‘ସମ୍ବାଦ’ ଖବରକାଗଜରେ ଜିଲ୍ଲାସ୍ତରୀୟ ସଂକୀର୍ତ୍ତନ ଓ ଲୋକକଳା ମହାସମାବେଶ',
+        subTitle: 'The Sambad Press Coverage — District Level Grand Assembly',
+        src: 'assets/images/nabarangpur-sambad-mahasamabesa-press.jpg',
+        desc: 'Prominent reportage by The Sambad highlighting the arrival of 328 mandalis from 10 blocks, speeches by dignitaries on spiritual upliftment, and upcoming Bhagavat patha & blood donation camps.',
+        year: '2024'
+      },
+      {
+        id: 'nab-photo-11',
+        title: '‘ଧରିତ୍ରୀ’ ଖବରକାଗଜରେ ୩୨୮ ସଂକୀର୍ତ୍ତନ ଦଳଙ୍କୁ ଉତ୍ତରୀୟ ସମ୍ବର୍ଦ୍ଧନା',
+        subTitle: 'The Dharitri Press Coverage — Ceremonial Uttariya Felicitation',
+        src: 'assets/images/nabarangpur-dharitri-mandali-felicitation.jpg',
+        desc: 'Extensive media coverage by leading daily Dharitri reporting on the ceremonial honoring and Uttariya felicitation of representatives from all 328 participating sankirtan and folk groups.',
+        year: '2024'
+      }
+    ],
+    videos: [
+      {
+        id: 'nab-video-1',
+        title: 'ନବରଙ୍ଗପୁର ଜିଲ୍ଲାସ୍ତରୀୟ ସଂକୀର୍ତ୍ତନ ମହାସମାବେଶ ଓ ଶୋଭାଯାତ୍ରା (Nabarangpur Maha Sankirtan Shobhayatra - Part 1)',
+        subTitle: '328 Sankirtan & Folk Art Mandalis Street Procession',
+        src: 'assets/videos/nabarangpur-sankirtan-samabesa-video-1.mp4',
+        desc: 'Vibrant congregational Harinam Nagar Sankirtan with traditional mridanga, jhanja, dhol, and hundreds of village kirtaniyas marching through Nabarangpur.',
+        sizeBadge: '14 MB HD MP4'
+      },
+      {
+        id: 'nab-video-2',
+        title: 'ନବରଙ୍ଗପୁର ଆଦିବାସୀ ଲୋକନୃତ୍ୟ ଓ ଢେମସା ସେବା (Nabarangpur Traditional Tribal Folk Dance - Part 2)',
+        subTitle: 'Indigenous Folk Artistes Performing Traditional Desia & Dhemsa Dance',
+        src: 'assets/videos/nabarangpur-sankirtan-samabesa-video-2.mp4',
+        desc: 'Authentic tribal cultural preservation and folk dance performance by indigenous artistes celebrating Mahaprabhu Jagannath with traditional attire and instruments.',
+        sizeBadge: '9 MB HD MP4'
+      },
+      {
+        id: 'nab-video-3',
+        title: 'ନବରଙ୍ଗପୁର ମହାମଞ୍ଚ ସଂକୀର୍ତ୍ତନ ଓ ଭକ୍ତ ସମାଗମ (Nabarangpur Stage Congregation & Harinam - Part 3)',
+        subTitle: 'Grand Stage Gathering & Congregational Chanting',
+        src: 'assets/videos/nabarangpur-sankirtan-samabesa-video-3.mp4',
+        desc: 'Devotees and artistes singing the Maha-mantra together before the sacred deities on the grand pavilion stage at PM Shri Raja Chaitanya Deb grounds.',
+        sizeBadge: '6 MB HD MP4'
+      }
+    ]
   },
   {
     id: 'dhenkanal',
@@ -565,32 +682,45 @@ let activitiesData = [
     tags: ['Koraput', 'Pahari Bhajan', 'Sankirtan']
   },
 
-  // 4. Nabarangpur
+  // 4. Nabarangpur (Real Photos from Official District Samabesa)
   {
     id: 'photo-nabrangpur-1',
-    title: 'Indravati Teer Harinam Samavesh',
+    title: 'ଜିଲ୍ଲାସ୍ତରୀୟ ସଂକୀର୍ତ୍ତନ ଓ ଲୋକ କଳା ମହା ଶୋଭାଯାତ୍ରା',
     city: 'Nabarangpur',
     cityKey: 'nabrangpur',
     category: 'sankirtan',
     categoryLabel: 'Harinam Sankirtan',
-    year: '2025',
-    imageSrc: 'assets/images/nabarangpur-kirtan-mandali.svg',
-    desc: 'Mass congregational singing on the riverfront of Indravati, filling the air with divine vibration.',
-    location: 'Indravati River Ghat, Nabarangpur',
-    tags: ['Nabarangpur', 'Indravati', 'Harinam Samavesh']
+    year: '2024',
+    imageSrc: 'assets/images/nabarangpur-shobhayatra-nagar-parikrama.jpg',
+    desc: 'Spectacular street procession of 328 village kirtan groups dancing with khol, kartal, jhanja, and saffron flags along Nabarangpur main thoroughfares.',
+    location: 'Main Road & Mini Stadium, Nabarangpur',
+    tags: ['Nabarangpur', 'Shobhayatra', '328 Mandalis', 'Harinam']
   },
   {
     id: 'photo-nabrangpur-2',
-    title: 'Gramin Sanskar & Gita Patha Kendra',
+    title: 'ଆଦିବାସୀ ପାରମ୍ପରିକ ଲୋକକଳା ଓ ନୃତ୍ୟ ସଂରକ୍ଷଣ',
+    city: 'Nabarangpur',
+    cityKey: 'nabrangpur',
+    category: 'lok-kala',
+    categoryLabel: 'Lok Kala & Tribal Art',
+    year: '2024',
+    imageSrc: 'assets/images/nabarangpur-prameya-tribal-dance.jpg',
+    desc: 'Preservation of indigenous culture: tribal artistes performing traditional Rinjha, Dhemsa, and Desia folk dances alongside Harinam Sankirtan.',
+    location: 'PM Shri Raja Chaitanya Deb Ground, Nabarangpur',
+    tags: ['Nabarangpur', 'Tribal Dance', 'Dhemsa', 'Lok Kala']
+  },
+  {
+    id: 'photo-nabrangpur-3',
+    title: 'ଜିଲ୍ଲାପାଳଙ୍କ ସହ ଆଲୋଚନା ଓ ଉତ୍ତରୀୟ ପ୍ରଦାନ',
     city: 'Nabarangpur',
     cityKey: 'nabrangpur',
     category: 'satsang',
-    categoryLabel: 'Satsang & Youth',
-    year: '2025',
-    imageSrc: 'assets/images/nabarangpur-gramin-sanskar.svg',
-    desc: 'Imparting timeless values, Vedic recitation, and moral education to young village students.',
-    location: 'Umerkote & Chandahandi villages, Nabarangpur',
-    tags: ['Nabarangpur', 'Gita Patha', 'Youth']
+    categoryLabel: 'Official Meeting',
+    year: '2024',
+    imageSrc: 'assets/images/nabarangpur-collector-meeting.jpg',
+    desc: 'Parishad leadership presenting ceremonial Uttariya to District Collector & Magistrate Shri Kamal Lochan Mishra, IAS.',
+    location: 'Collectorate Office, Nabarangpur',
+    tags: ['Nabarangpur', 'District Collector', 'Official Meeting']
   },
 
   // 5. Dhenkanal

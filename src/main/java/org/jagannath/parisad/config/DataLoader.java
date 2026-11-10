@@ -33,6 +33,19 @@ public class DataLoader implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
+        chapterRepository.findByCityKey("nabrangpur").ifPresent(ch -> {
+            if (ch.getPhotoCount() != 11) {
+                ch.setPhotoCount(11);
+                ch.setActivities(Arrays.asList(
+                    "Mass congregational Harinam Samavesh on the banks of river Indravati",
+                    "District Level Sankirtan and Loka Kala Samabesa uniting 328+ village mandalis",
+                    "Gramin Sanskar Kendra imparting Gita shlokas and character education",
+                    "Preservation of traditional tribal Desia, Dhemsa folk arts & musical instruments",
+                    "Monthly village Parikrama and community prasad distribution"
+                ));
+                chapterRepository.save(ch);
+            }
+        });
         if (chapterRepository.count() == 0) {
             seedChapters();
         } else {
@@ -144,11 +157,12 @@ public class DataLoader implements CommandLineRunner {
 
             // 4. Nabarangpur
             new CityChapter("nabrangpur", "Nabarangpur", "ନବରଙ୍ଗପୁର • Southern Odisha Cultural & Youth Kendra",
-                "Indravati Teer Sankirtan Parishad", "+91 94375 XXXXX", "Sankirtan Kendra", 2,
+                "Indravati Teer Sankirtan Parishad & District Samabesa Seva Sangha", "+91 94375 XXXXX", "Sankirtan Kendra", 11,
                 Arrays.asList(
                     "Mass congregational Harinam Samavesh on the banks of river Indravati",
+                    "District Level Sankirtan and Loka Kala Samabesa uniting 328+ village mandalis",
                     "Gramin Sanskar Kendra imparting Gita shlokas and character education",
-                    "Assistance and musical instrument distribution to rural kirtaniyas",
+                    "Preservation of traditional tribal Desia, Dhemsa folk arts & musical instruments",
                     "Monthly village Parikrama and community prasad distribution"
                 )),
 
@@ -371,17 +385,22 @@ public class DataLoader implements CommandLineRunner {
                 "Jeypore & Sunabeda Foothills, Koraput",
                 Arrays.asList("Koraput", "Pahari Bhajan", "Sankirtan")),
 
-            // 4. Nabarangpur
-            new ActivityPhoto("photo-nabrangpur-1", "Indravati Teer Harinam Samavesh", "Nabarangpur", "nabrangpur",
-                "sankirtan", "Harinam Sankirtan", "2025", "assets/images/nabarangpur-kirtan-mandali.svg",
-                "Mass congregational singing on the riverfront of Indravati, filling the air with divine vibration.",
-                "Indravati River Ghat, Nabarangpur",
-                Arrays.asList("Nabarangpur", "Indravati", "Harinam Samavesh")),
-            new ActivityPhoto("photo-nabrangpur-2", "Gramin Sanskar & Gita Patha Kendra", "Nabarangpur", "nabrangpur",
-                "satsang", "Satsang & Youth", "2025", "assets/images/nabarangpur-gramin-sanskar.svg",
-                "Imparting timeless values, Vedic recitation, and moral education to young village students.",
-                "Umerkote & Chandahandi villages, Nabarangpur",
-                Arrays.asList("Nabarangpur", "Gita Patha", "Youth")),
+            // 4. Nabarangpur (Real Photos from Official District Samabesa)
+            new ActivityPhoto("photo-nabrangpur-1", "ଜିଲ୍ଲାସ୍ତରୀୟ ସଂକୀର୍ତ୍ତନ ଓ ଲୋକ କଳା ମହା ଶୋଭାଯାତ୍ରା", "Nabarangpur", "nabrangpur",
+                "sankirtan", "Harinam Sankirtan", "2024", "assets/images/nabarangpur-shobhayatra-nagar-parikrama.jpg",
+                "Spectacular street procession of 328 village kirtan groups dancing with khol, kartal, jhanja, and saffron flags along Nabarangpur main thoroughfares.",
+                "Main Road & Mini Stadium, Nabarangpur",
+                Arrays.asList("Nabarangpur", "Shobhayatra", "328 Mandalis", "Harinam")),
+            new ActivityPhoto("photo-nabrangpur-2", "ଆଦିବାସୀ ପାରମ୍ପରିକ ଲୋକକଳା ଓ ନୃତ୍ୟ ସଂରକ୍ଷଣ", "Nabarangpur", "nabrangpur",
+                "lok-kala", "Lok Kala & Tribal Art", "2024", "assets/images/nabarangpur-prameya-tribal-dance.jpg",
+                "Preservation of indigenous culture: tribal artistes performing traditional Rinjha, Dhemsa, and Desia folk dances alongside Harinam Sankirtan.",
+                "PM Shri Raja Chaitanya Deb Ground, Nabarangpur",
+                Arrays.asList("Nabarangpur", "Tribal Dance", "Dhemsa", "Lok Kala")),
+            new ActivityPhoto("photo-nabrangpur-3", "ଜିଲ୍ଲାପାଳଙ୍କ ସହ ଆଲୋଚନା ଓ ଉତ୍ତରୀୟ ପ୍ରଦାନ", "Nabarangpur", "nabrangpur",
+                "satsang", "Official Meeting", "2024", "assets/images/nabarangpur-collector-meeting.jpg",
+                "Parishad leadership presenting ceremonial Uttariya to District Collector & Magistrate Shri Kamal Lochan Mishra, IAS.",
+                "Collectorate Office, Nabarangpur",
+                Arrays.asList("Nabarangpur", "District Collector", "Official Meeting")),
 
             // 5. Dhenkanal
             new ActivityPhoto("photo-dhenkanal-1", "Kapilash Kshetra Akhanda Harinam Yajna", "Dhenkanal", "dhenkanal",
