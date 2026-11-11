@@ -460,7 +460,7 @@ public class DataLoader implements CommandLineRunner {
                 Arrays.asList("Nabarangpur", "Tribal Dance", "Dhemsa", "Lok Kala")),
             new ActivityPhoto("photo-nabrangpur-3", "ଜିଲ୍ଲାପାଳଙ୍କ ସହ ଆଲୋଚନା ଓ ଉତ୍ତରୀୟ ପ୍ରଦାନ", "Nabarangpur", "nabrangpur",
                 "satsang", "Official Meeting", "2024", "assets/images/nabarangpur-collector-meeting.jpg",
-                "Parishad leadership presenting ceremonial Uttariya to District Collector & Magistrate Shri Kamal Lochan Mishra, IAS.",
+                "Parishad leadership presenting ceremonial Uttariya to District Collector & Magistrate Shri Maheswar Swain, IAS.",
                 "Collectorate Office, Nabarangpur",
                 Arrays.asList("Nabarangpur", "District Collector", "Official Meeting")),
             new ActivityPhoto("photo-nabrangpur-4", "ମାନ୍ୟବର ବିଧାୟକ ଶ୍ରୀ ନିତ୍ୟାନନ୍ଦ ଗଣ୍ଡଙ୍କୁ ସ୍ମାରକପତ୍ର ପ୍ରଦାନ", "Nabarangpur", "nabrangpur",

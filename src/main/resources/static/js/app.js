@@ -303,7 +303,7 @@ let cityChaptersData = [
         title: 'ଜିଲ୍ଲାପାଳଙ୍କ ସହ ଆଲୋଚନା ଓ ଉତ୍ତରୀୟ ପ୍ରଦାନ',
         subTitle: 'Delegation Meeting with District Magistrate & Collector, Nabarangpur',
         src: 'assets/images/nabarangpur-collector-meeting.jpg',
-        desc: 'Parishad leadership presenting ceremonial Uttariya and extending auspicious invitation to District Collector & Magistrate Shri Kamal Lochan Mishra, IAS, for the District Sankirtan & Loka Kala Samabesa.',
+        desc: 'Parishad leadership presenting ceremonial Uttariya and extending auspicious invitation to District Collector & Magistrate Shri Maheswar Swain, IAS, for the District Sankirtan & Loka Kala Samabesa.',
         year: '2024'
       },
       {
@@ -359,7 +359,7 @@ let cityChaptersData = [
         title: '‘ସମାଜ’ ଖବରକାଗଜରେ ୩୨୮ ସଂକୀର୍ତ୍ତନ ମଣ୍ଡଳୀ ଶୋଭାଯାତ୍ରା',
         subTitle: 'The Samaja Press Coverage — 328 Mandalis Shobhayatra & Sammilani',
         src: 'assets/images/nabarangpur-samaja-press-coverage.jpg',
-        desc: 'Front-page publication by renowned daily The Samaja detailing the 3rd annual district session with 328 sankirtan and folk troupes at Mini Stadium, attended by Collector Kamal Lochan Mishra and MP Ramesh Chandra Majhi.',
+        desc: 'Front-page publication by renowned daily The Samaja detailing the 3rd annual district session with 328 sankirtan and folk troupes at Mini Stadium, attended by District Collector Shri Maheswar Swain, IAS and MP Ramesh Chandra Majhi.',
         year: '2024'
       },
       {
@@ -970,7 +970,7 @@ let activitiesData = [
     categoryLabel: 'Official Meeting',
     year: '2024',
     imageSrc: 'assets/images/nabarangpur-collector-meeting.jpg',
-    desc: 'Parishad leadership presenting ceremonial Uttariya to District Collector & Magistrate Shri Kamal Lochan Mishra, IAS.',
+    desc: 'Parishad leadership presenting ceremonial Uttariya to District Collector & Magistrate Shri Maheswar Swain, IAS.',
     location: 'Collectorate Office, Nabarangpur',
     tags: ['Nabarangpur', 'District Collector', 'Official Meeting']
   },
