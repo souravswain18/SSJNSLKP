@@ -33,6 +33,18 @@ public class DataLoader implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
+        chapterRepository.findByCityKey("sambalpur").ifPresent(ch -> {
+            if (ch.getPhotoCount() != 3) {
+                ch.setPhotoCount(3);
+                ch.setActivities(Arrays.asList(
+                    "Administrative coordination & patronization of traditional Sambalpuri folk artistes",
+                    "Paschima Odisha Grand Kirtan Samavesh (50+ Village Mandalis)",
+                    "Free training camps for youth in traditional Mridanga (Khol) & Jhanja",
+                    "Gramin Seva Yatra, women kirtan mandali empowerment & evening sanskar camps"
+                ));
+                chapterRepository.save(ch);
+            }
+        });
         chapterRepository.findByCityKey("koraput").ifPresent(ch -> {
             if (ch.getPhotoCount() != 7) {
                 ch.setPhotoCount(7);
@@ -190,12 +202,12 @@ public class DataLoader implements CommandLineRunner {
 
             // 6. Sambalpur
             new CityChapter("sambalpur", "Sambalpur", "ସମ୍ବଲପୁର • Western Odisha Lok Kala & Mridanga Hub",
-                "Maa Samaleswari Bhakti Sangha Coordinators", "+91 99380 XXXXX", "Western Odisha Hub", 2,
+                "Maa Samaleswari Bhakti Sangha & Sambalpur District Seva Mandali", "+91 99380 XXXXX", "Western Odisha Hub", 3,
                 Arrays.asList(
+                    "Administrative coordination & patronization of traditional Sambalpuri folk artistes",
                     "Paschima Odisha Grand Kirtan Samavesh (50+ Village Mandalis)",
                     "Free training camps for youth in traditional Mridanga (Khol) & Jhanja",
-                    "Gramin Seva Yatra & evening sanskar camps across villages",
-                    "Empowerment of underprivileged traditional folk kirtan performers"
+                    "Gramin Seva Yatra, women kirtan mandali empowerment & evening sanskar camps"
                 )),
 
             // 7. Khordha & Bhubaneswar
@@ -431,13 +443,18 @@ public class DataLoader implements CommandLineRunner {
                 "Dhenkanal Town Hall Auditorium",
                 Arrays.asList("Dhenkanal", "Pala", "Lok Kala")),
 
-            // 6. Sambalpur
-            new ActivityPhoto("photo-sambalpur-1", "Maa Samaleswari Mahotsav Kirtan", "Sambalpur", "sambalpur",
+            // 6. Sambalpur (Real Ground Photo & Folk Activities)
+            new ActivityPhoto("photo-sambalpur-1", "ସମ୍ବଲପୁର ପ୍ରଶାସନିକ ଆଲୋଚନା ଓ ମଣ୍ଡଳୀ ସମ୍ବର୍ଦ୍ଧନା", "Sambalpur", "sambalpur",
+                "satsang", "Official Meeting", "2024", "assets/images/sambalpur-collector-meeting.jpg",
+                "State President Sri Sidhartha Sankar Swain and women seva mandali members in traditional Sambalpuri sarees meeting district administration.",
+                "District Collectorate Office, Sambalpur",
+                Arrays.asList("Sambalpur", "District Administration", "Official Meeting", "Women Seva")),
+            new ActivityPhoto("photo-sambalpur-2", "Maa Samaleswari Mahotsav Kirtan", "Sambalpur", "sambalpur",
                 "sankirtan", "Harinam Sankirtan", "2025", "assets/images/sambalpur-kirtan-samavesh.svg",
                 "Western Odisha grand kirtan congregation where village mandalis unite with mridanga beats.",
                 "Maa Samaleswari Temple Grounds, Sambalpur",
                 Arrays.asList("Sambalpur", "Samaleswari", "Western Odisha")),
-            new ActivityPhoto("photo-sambalpur-2", "Folk Mridanga (Khol) Training Camp", "Sambalpur", "sambalpur",
+            new ActivityPhoto("photo-sambalpur-3", "Folk Mridanga (Khol) Training Camp", "Sambalpur", "sambalpur",
                 "lok-kala", "Lok Kala & Music", "2024", "assets/images/sambalpur-mridanga-seva.svg",
                 "Free residential workshop training village youth in the rhythmic arts of authentic Odissi Khol.",
                 "Burla & Hirakud Cultural Centre, Sambalpur",

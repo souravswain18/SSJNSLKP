@@ -375,16 +375,42 @@ let cityChaptersData = [
     id: 'sambalpur',
     name: 'Sambalpur',
     subName: 'ସମ୍ବଲପୁର • Western Odisha Lok Kala & Mridanga Hub',
-    coordinator: 'Maa Samaleswari Bhakti Sangha Coordinators',
+    coordinator: 'Maa Samaleswari Bhakti Sangha & Sambalpur District Seva Mandali',
     contact: '+91 99380 XXXXX',
     badge: 'Western Odisha Hub',
     activities: [
+      'Administrative coordination & patronization of traditional Sambalpuri folk artistes',
       'Paschima Odisha Grand Kirtan Samavesh (50+ Village Mandalis)',
       'Free training camps for youth in traditional Mridanga (Khol) & Jhanja',
-      'Gramin Seva Yatra & evening sanskar camps across villages',
-      'Empowerment of underprivileged traditional folk kirtan performers'
+      'Gramin Seva Yatra, women kirtan mandali empowerment & evening sanskar camps'
     ],
-    photoCount: 2
+    photoCount: 3,
+    photos: [
+      {
+        id: 'sambalpur-photo-1',
+        title: 'ସମ୍ବଲପୁର ପ୍ରଶାସନ ଓ ଜିଲ୍ଲାପାଳଙ୍କୁ ସମ୍ବର୍ଦ୍ଧନା ଓ ଆଲୋଚନା',
+        subTitle: 'Official Meeting with Sambalpur District Administration & Collectorate',
+        src: 'assets/images/sambalpur-collector-meeting.jpg',
+        desc: 'Parishad State President Sri Sidhartha Sankar Swain along with women kirtan seva mandali representatives in traditional Sambalpuri sarees presenting sacred uttariya and floral greeting to Sambalpur administrative officers for district-wide Lok Kala and Sankirtan patronization.',
+        year: '2024'
+      },
+      {
+        id: 'sambalpur-photo-2',
+        title: 'ମା’ ସମଲେଶ୍ଵରୀ ମହୋତ୍ସବ ସଂକୀର୍ତ୍ତନ ସମାବେଶ',
+        subTitle: 'Maa Samaleswari Mahotsav Kirtan Samavesh',
+        src: 'assets/images/sambalpur-kirtan-samavesh.svg',
+        desc: 'Western Odisha grand congregational sankirtan where 50+ village mandalis unite in rhythmic devotion.',
+        year: '2025'
+      },
+      {
+        id: 'sambalpur-photo-3',
+        title: 'ପାରମ୍ପରିକ ଖୋଳ-ମୃଦଙ୍ଗ ଓ ଝାଞ୍ଜ ପ୍ରଶିକ୍ଷଣ ଶିବିର',
+        subTitle: 'Traditional Mridanga (Khol) & Folk Rhythm Training Camp',
+        src: 'assets/images/sambalpur-mridanga-seva.svg',
+        desc: 'Free residential workshop empowering rural youth and folk artistes in the traditional percussion rhythms of Sri Jagannath sankirtan.',
+        year: '2024'
+      }
+    ]
   },
   {
     id: 'khordha',
@@ -822,9 +848,22 @@ let activitiesData = [
     tags: ['Dhenkanal', 'Pala', 'Lok Kala']
   },
 
-  // 6. Sambalpur
+  // 6. Sambalpur (Real Ground Photo & Folk Activities)
   {
     id: 'photo-sambalpur-1',
+    title: 'ସମ୍ବଲପୁର ପ୍ରଶାସନିକ ଆଲୋଚନା ଓ ମଣ୍ଡଳୀ ସମ୍ବର୍ଦ୍ଧନା',
+    city: 'Sambalpur',
+    cityKey: 'sambalpur',
+    category: 'satsang',
+    categoryLabel: 'Official Meeting',
+    year: '2024',
+    imageSrc: 'assets/images/sambalpur-collector-meeting.jpg',
+    desc: 'State President Sri Sidhartha Sankar Swain and women seva mandali members in traditional Sambalpuri sarees meeting district administration.',
+    location: 'District Collectorate Office, Sambalpur',
+    tags: ['Sambalpur', 'District Administration', 'Official Meeting', 'Women Seva']
+  },
+  {
+    id: 'photo-sambalpur-2',
     title: 'Maa Samaleswari Mahotsav Kirtan',
     city: 'Sambalpur',
     cityKey: 'sambalpur',
@@ -837,7 +876,7 @@ let activitiesData = [
     tags: ['Sambalpur', 'Samaleswari', 'Western Odisha']
   },
   {
-    id: 'photo-sambalpur-2',
+    id: 'photo-sambalpur-3',
     title: 'Folk Mridanga (Khol) Training Camp',
     city: 'Sambalpur',
     category: 'lok-kala',
