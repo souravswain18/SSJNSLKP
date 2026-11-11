@@ -238,7 +238,7 @@ let cityChaptersData = [
       'Preservation of traditional tribal Desia, Dhemsa folk arts & musical instruments',
       'Monthly village Parikrama and community prasad distribution'
     ],
-    photoCount: 11,
+    photoCount: 14,
     photos: [
       {
         id: 'nab-photo-1',
@@ -326,6 +326,30 @@ let cityChaptersData = [
         subTitle: 'The Dharitri Press Coverage — Ceremonial Uttariya Felicitation',
         src: 'assets/images/nabarangpur-dharitri-mandali-felicitation.jpg',
         desc: 'Extensive media coverage by leading daily Dharitri reporting on the ceremonial honoring and Uttariya felicitation of representatives from all 328 participating sankirtan and folk groups.',
+        year: '2024'
+      },
+      {
+        id: 'nab-photo-12',
+        title: 'ବିଧାୟକ ତଥା ମୁଖ୍ୟ ଅତିଥିଙ୍କୁ ସ୍ମାରକପତ୍ର ପ୍ରଦାନ ଓ ଆଲୋଚନା',
+        subTitle: 'Memorandum Submission to Chief Guest & MLA, Nabarangpur',
+        src: 'assets/images/nabarangpur-mla-memorandum-review.jpg',
+        desc: 'Parishad delegation and rural kirtan leaders presenting demand letter and memorandum to Chief Guest & MLA Manohar Randhari / Gouri Sankar Majhi for the welfare and patronization of traditional sankirtaniyas.',
+        year: '2024'
+      },
+      {
+        id: 'nab-photo-13',
+        title: 'ଜିଲ୍ଲା ସଂକୀର୍ତ୍ତନ ନେତୃବୃନ୍ଦ ଓ ଅତିଥିଙ୍କ ସମାବେଶ',
+        subTitle: 'District Kirtan Leaders & Dignitaries Resolution Summit',
+        src: 'assets/images/nabarangpur-dignitaries-kirtan-leaders-assembly.jpg',
+        desc: 'Rural sankirtan mandali leaders and Parishad sevaks reviewing cultural preservation charter with dignitaries and key organizers at Nabarangpur.',
+        year: '2024'
+      },
+      {
+        id: 'nab-photo-14',
+        title: '‘ସକାଳ’ ଖବରକାଗଜରେ କୋଷାଗୁମୁଡ଼ା-ତିରମା ଚଢେଇଆ ନୃତ୍ୟ ସଚେତନତା',
+        subTitle: 'The Sakala Press Coverage — Koshagumuda Tribal Folk Dance Revival',
+        src: 'assets/images/nabarangpur-sakala-chadeia-dance-press.jpg',
+        desc: 'Special news feature in daily The Sakala highlighting the revival and social awareness of indigenous Chadeia-Chadeiani folk dance organized at Tirma, Koshagumuda block, Nabarangpur district, supported by Parishad leadership.',
         year: '2024'
       }
     ],
@@ -852,6 +876,19 @@ let activitiesData = [
     desc: 'Parishad leadership presenting ceremonial Uttariya to District Collector & Magistrate Shri Kamal Lochan Mishra, IAS.',
     location: 'Collectorate Office, Nabarangpur',
     tags: ['Nabarangpur', 'District Collector', 'Official Meeting']
+  },
+  {
+    id: 'photo-nabrangpur-4',
+    title: 'ବିଧାୟକ ତଥା ମୁଖ୍ୟ ଅତିଥିଙ୍କୁ ସ୍ମାରକପତ୍ର ପ୍ରଦାନ',
+    city: 'Nabarangpur',
+    cityKey: 'nabrangpur',
+    category: 'satsang',
+    categoryLabel: 'Official Meeting',
+    year: '2024',
+    imageSrc: 'assets/images/nabarangpur-mla-memorandum-review.jpg',
+    desc: 'Parishad delegation presenting memorandum and demand letter to Hon’ble MLA for rural sankirtan welfare.',
+    location: 'District Samabesa Venue, Nabarangpur',
+    tags: ['Nabarangpur', 'MLA', 'Memorandum', 'Sankirtan Seva']
   },
 
   // 5. Dhenkanal

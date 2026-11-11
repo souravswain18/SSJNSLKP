@@ -70,8 +70,8 @@ public class DataLoader implements CommandLineRunner {
             }
         });
         chapterRepository.findByCityKey("nabrangpur").ifPresent(ch -> {
-            if (ch.getPhotoCount() != 11) {
-                ch.setPhotoCount(11);
+            if (ch.getPhotoCount() != 14) {
+                ch.setPhotoCount(14);
                 ch.setActivities(Arrays.asList(
                     "Mass congregational Harinam Samavesh on the banks of river Indravati",
                     "District Level Sankirtan and Loka Kala Samabesa uniting 328+ village mandalis",
@@ -193,7 +193,7 @@ public class DataLoader implements CommandLineRunner {
 
             // 4. Nabarangpur
             new CityChapter("nabrangpur", "Nabarangpur", "ନବରଙ୍ଗପୁର • Southern Odisha Cultural & Youth Kendra",
-                "Indravati Teer Sankirtan Parishad & District Samabesa Seva Sangha", "+91 94375 XXXXX", "Sankirtan Kendra", 11,
+                "Indravati Teer Sankirtan Parishad & District Samabesa Seva Sangha", "+91 94375 XXXXX", "Sankirtan Kendra", 14,
                 Arrays.asList(
                     "Mass congregational Harinam Samavesh on the banks of river Indravati",
                     "District Level Sankirtan and Loka Kala Samabesa uniting 328+ village mandalis",
@@ -442,6 +442,11 @@ public class DataLoader implements CommandLineRunner {
                 "Parishad leadership presenting ceremonial Uttariya to District Collector & Magistrate Shri Kamal Lochan Mishra, IAS.",
                 "Collectorate Office, Nabarangpur",
                 Arrays.asList("Nabarangpur", "District Collector", "Official Meeting")),
+            new ActivityPhoto("photo-nabrangpur-4", "ବିଧାୟକ ତଥା ମୁଖ୍ୟ ଅତିଥିଙ୍କୁ ସ୍ମାରକପତ୍ର ପ୍ରଦାନ", "Nabarangpur", "nabrangpur",
+                "satsang", "Official Meeting", "2024", "assets/images/nabarangpur-mla-memorandum-review.jpg",
+                "Parishad delegation presenting memorandum and demand letter to Hon’ble MLA for rural sankirtan welfare.",
+                "District Samabesa Venue, Nabarangpur",
+                Arrays.asList("Nabarangpur", "MLA", "Memorandum", "Sankirtan Seva")),
 
             // 5. Dhenkanal
             new ActivityPhoto("photo-dhenkanal-1", "Kapilash Kshetra Akhanda Harinam Yajna", "Dhenkanal", "dhenkanal",
