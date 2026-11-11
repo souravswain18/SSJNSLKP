@@ -45,6 +45,12 @@ public class DataLoader implements CommandLineRunner {
                 chapterRepository.save(ch);
             }
         });
+                chapterRepository.findByCityKey("puri").ifPresent(ch -> {
+            if (ch.getPhotoCount() != 6) {
+                ch.setPhotoCount(6);
+                chapterRepository.save(ch);
+            }
+        });
         chapterRepository.findByCityKey("sambalpur").ifPresent(ch -> {
             if (ch.getPhotoCount() != 3) {
                 ch.setPhotoCount(3);
@@ -163,7 +169,7 @@ public class DataLoader implements CommandLineRunner {
         List<CityChapter> chapters = Arrays.asList(
             // 1. Puri
             new CityChapter("puri", "Puri Dham", "ଶ୍ରୀକ୍ଷେତ୍ର ପୁରୀ • Mula Peetha & Central Headquarters",
-                "Shri Jagannath Seva Samiti & Senior Kirtan Acharyas", "+91 94370 XXXXX", "Mula Peetha", 2,
+                "Shri Jagannath Seva Samiti & Senior Kirtan Acharyas", "+91 94370 XXXXX", "Mula Peetha", 6,
                 Arrays.asList(
                     "Daily Badadanda Harinam Nagar Sankirtan & Prabhat Pheri",
                     "Grand Ratha Yatra & Snana Yatra Seva Shivir along chariot route",
@@ -349,16 +355,26 @@ public class DataLoader implements CommandLineRunner {
     private void seedPhotos() {
         List<ActivityPhoto> photos = Arrays.asList(
             // 1. Puri
-            new ActivityPhoto("photo-puri-1", "Badadanda Grand Nagar Sankirtan", "Puri Dham", "puri",
-                "sankirtan", "Harinam Sankirtan", "2025", "assets/images/puri-rath-kirtan.svg",
-                "Thousands of devotees chanting the Maha-Mantra along Badadanda before Lord Jagannath chariot.",
-                "Badadanda, Sri Jagannath Temple, Puri",
-                Arrays.asList("Ratha Yatra", "Puri", "Nagar Kirtan")),
-            new ActivityPhoto("photo-puri-2", "Ananda Bazar Mahaprasad Seva", "Puri Dham", "puri",
-                "annadan", "Annadan Seva", "2025", "assets/images/puri-mahaprasad-seva.svg",
-                "Volunteers distributing warm, holy Mahaprasad to visiting pilgrims, ascetics, and devotees.",
-                "Ananda Bazar & Lions Gate, Puri",
-                Arrays.asList("Mahaprasad", "Annadan", "Pilgrim Seva")),
+            new ActivityPhoto("photo-puri-1", "ଶ୍ରୀକ୍ଷେତ୍ର ସିଂହଦ୍ୱାର ପ୍ରତିଦିନ ସଂକୀର୍ତ୍ତନ ମଣ୍ଡଳୀ ଓ ହରିନାମ", "Puri Dham", "puri",
+                "sankirtan", "Harinam Sankirtan", "2024", "assets/images/puri-singhadwara-daily-sankirtan-mandali.jpg",
+                "Daily divine Harinam Sankirtan at holy Sri Jagannath Mandir Singhadwara with senior acharyas and rural mandalis.",
+                "Singhadwara & Aruna Stambha, Sri Jagannath Temple, Puri",
+                Arrays.asList("Puri", "Singhadwara", "Argus News", "Harinam Sankirtan")),
+            new ActivityPhoto("photo-puri-2", "ପୁରୀ ବଡ଼ଦାଣ୍ଡ ମହିଳା ସଂକୀର୍ତ୍ତନ ମହା ଶୋଭାଯାତ୍ରା", "Puri Dham", "puri",
+                "sankirtan", "Harinam Sankirtan", "2024", "assets/images/puri-badadanda-women-sankirtan-shobhayatra.jpg",
+                "Hundreds of traditional women sankirtan artistes in traditional attire performing Harinam and playing gini on Grand Road.",
+                "Badadanda, Puri",
+                Arrays.asList("Puri", "Women Mandali", "Shobhayatra", "Badadanda")),
+            new ActivityPhoto("photo-puri-3", "‘ଅର୍ଗସ ନ୍ୟୁଜ’ରେ ଶ୍ରୀ ଶ୍ରୀ ଜଗନ୍ନାଥ ନାମ ସଂକୀର୍ତ୍ତନ ଲୋକକଳା ପରିଷଦ", "Puri Dham", "puri",
+                "satsang", "Media Feature", "2024", "assets/images/puri-argus-news-parisad-official-broadcast.jpg",
+                "Official television broadcast feature honoring Sri Sri Jagannath Nam Sankirtan Loka Kala Parisad and its leadership.",
+                "Srikhetra Puri",
+                Arrays.asList("Puri", "Argus News", "Official Feature", "State Leadership")),
+            new ActivityPhoto("photo-puri-4", "ପୁରୀ ବଡ଼ଦାଣ୍ଡରେ ପରିଷଦ ନେତୃତ୍ୱଙ୍କ ଗଣମାଧ୍ୟମ ବକ୍ତବ୍ୟ", "Puri Dham", "puri",
+                "satsang", "Media Address", "2024", "assets/images/puri-badadanda-leadership-media-interview.jpg",
+                "Parishad leadership addressing media on Puri Badadanda regarding statewide kirtaniyas welfare and cultural patronization.",
+                "Badadanda, Puri",
+                Arrays.asList("Puri", "Media Interview", "Leadership", "Badadanda")),
 
             // 2. Malkangiri (Authentic Ground Meeting Photos)
             new ActivityPhoto("photo-malkangiri-1", 

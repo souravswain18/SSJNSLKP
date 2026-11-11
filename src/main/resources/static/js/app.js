@@ -46,35 +46,85 @@ let cityChaptersData = [
       'Continuous Ananda Bazar Mahaprasad distribution to sadhus & pilgrims',
       'Kartik Niyam Seva Akhanda Kirtan & Traditional Bhajan Samaroh'
     ],
-    photoCount: 2,
+    photoCount: 6,
     photos: [
       {
         id: 'puri-photo-1',
-        title: 'ଶ୍ରୀକ୍ଷେତ୍ର ବଡ଼ଦାଣ୍ଡ ପ୍ରଭାତ ଫେରୀ ଓ ନଗର ସଂକୀର୍ତ୍ତନ',
-        subTitle: 'Badadanda Prabhat Pheri & Harinam Sankirtan',
-        src: 'assets/images/puri-rath-yatra-kirtan.svg',
-        desc: 'Daily divine Harinam Sankirtan along Puri Badadanda leading up to Sri Jagannath Mandir Singhadwara with senior acharyas.'
+        title: 'ଶ୍ରୀକ୍ଷେତ୍ର ସିଂହଦ୍ୱାର ପ୍ରତିଦିନ ସଂକୀର୍ତ୍ତନ ମଣ୍ଡଳୀ ଓ ହରିନାମ',
+        subTitle: 'Daily Srikhetra Singhadwara Sankirtan — Argus News',
+        src: 'assets/images/puri-singhadwara-daily-sankirtan-mandali.jpg',
+        desc: 'Village sankirtan mandalis and acharyas dancing with mridanga and kartal in front of holy Sri Jagannath Mandir Singhadwara for universal peace.',
+        year: '2024'
       },
       {
         id: 'puri-photo-2',
+        title: '‘ଅର୍ଗସ ନ୍ୟୁଜ’ରେ ଶ୍ରୀ ଶ୍ରୀ ଜଗନ୍ନାଥ ନାମ ସଂକୀର୍ତ୍ତନ ଲୋକକଳା ପରିଷଦ',
+        subTitle: 'Argus News Special Feature & Parisad Leadership',
+        src: 'assets/images/puri-argus-news-parisad-official-broadcast.jpg',
+        desc: 'Official television broadcast feature honoring Sri Sri Jagannath Nam Sankirtan Loka Kala Parisad and state leadership spearheading the sankirtan revival movement.',
+        year: '2024'
+      },
+      {
+        id: 'puri-photo-3',
+        title: 'ପୁରୀ ବଡ଼ଦାଣ୍ଡ ମହିଳା ସଂକୀର୍ତ୍ତନ ଦଳ ମହା ଶୋଭାଯାତ୍ରା',
+        subTitle: 'Puri Badadanda Women Sankirtan Mandali Procession',
+        src: 'assets/images/puri-badadanda-women-sankirtan-shobhayatra.jpg',
+        desc: 'Hundreds of women sankirtan artistes in traditional attire performing ecstatic Harinam with gini and singing bhajans on Puri Grand Road.',
+        year: '2024'
+      },
+      {
+        id: 'puri-photo-4',
+        title: 'ପୁରୀ ବଡ଼ଦାଣ୍ଡରେ ପରିଷଦ ନେତୃତ୍ୱଙ୍କ ଗଣମାଧ୍ୟମ ବକ୍ତବ୍ୟ',
+        subTitle: 'Parishad Leadership Live Media Address at Puri Badadanda',
+        src: 'assets/images/puri-badadanda-leadership-media-interview.jpg',
+        desc: 'Parishad leadership interacting with media representatives on Puri Badadanda highlighting the state-wide expansion of traditional sankirtan and artistes welfare.',
+        year: '2024'
+      },
+      {
+        id: 'puri-photo-5',
+        title: 'ଶ୍ରୀକ୍ଷେତ୍ର ବଡ଼ଦାଣ୍ଡ ପ୍ରଭାତ ଫେରୀ ଓ ନଗର ସଂକୀର୍ତ୍ତନ',
+        subTitle: 'Badadanda Prabhat Pheri & Harinam Sankirtan',
+        src: 'assets/images/puri-rath-yatra-kirtan.svg',
+        desc: 'Daily divine Harinam Sankirtan along Puri Badadanda leading up to Sri Jagannath Mandir Singhadwara with senior acharyas.',
+        year: '2024'
+      },
+      {
+        id: 'puri-photo-6',
         title: 'ଆନନ୍ଦ ବଜାର ମହାପ୍ରସାଦ ସେବା ଶିବିର',
         subTitle: 'Ananda Bazar Mahaprasad & Sadhu Seva',
         src: 'assets/images/puri-mahaprasad-seva.svg',
-        desc: 'Parishad volunteers offering warm holy Mahaprasad to visiting pilgrims, ascetics, and devotees at Lions Gate.'
+        desc: 'Parishad volunteers offering warm holy Mahaprasad to visiting pilgrims, ascetics, and devotees at Lions Gate.',
+        year: '2024'
       }
     ],
     videos: [
       {
         id: 'puri-video-1',
-        title: 'ପୁରୀ ବଡ଼ଦାଣ୍ଡ ହରିନାମ ନଗର ସଂକୀର୍ତ୍ତନ (Puri Badadanda Harinam Sankirtan - Part 1)',
+        title: 'ଶ୍ରୀକ୍ଷେତ୍ର ସିଂହଦ୍ୱାର ପ୍ରତିଦିନ ସଂକୀର୍ତ୍ତନ (Puri Singhadwara Harinam - Argus News)',
+        subTitle: 'Daily Srikhetra Singhadwara Kirtan Mandali & Viswashanti Harinam',
+        src: 'assets/videos/puri-dham-singhadwara-sankirtan-argus.mp4',
+        desc: 'Official television broadcast on Argus News: Rural and state sankirtan mandalis performing daily devotional kirtan with mridanga and kartal before holy Singhadwara and Aruna Stambha of Sri Jagannath Mandir.',
+        sizeBadge: '26 MB HD MP4'
+      },
+      {
+        id: 'puri-video-2',
+        title: 'ପୁରୀ ବଡ଼ଦାଣ୍ଡ ମହିଳା ଓ ଗ୍ରାମୀଣ ସଂକୀର୍ତ୍ତନ ଶୋଭାଯାତ୍ରା (Puri Badadanda Women Shobhayatra)',
+        subTitle: 'Grand Badadanda Nagar Sankirtan & Parishad Leadership Interview',
+        src: 'assets/videos/puri-dham-women-shobhayatra-argus.mp4',
+        desc: 'Spectacular live coverage on Argus News: Hundreds of women sankirtaniyas in traditional attire performing Harinam along Puri Badadanda, with mridanga acharyas and on-field leadership interview on traditional artists patronage.',
+        sizeBadge: '41 MB HD MP4'
+      },
+      {
+        id: 'puri-video-3',
+        title: 'ପୁରୀ ବଡ଼ଦାଣ୍ଡ ହରିନାମ ନଗର ସଂକୀର୍ତ୍ତନ (Puri Badadanda Harinam Sankirtan - Part 3)',
         subTitle: 'Srikhetra Badadanda Prabhat Pheri & Chariot Route Shobhayatra',
         src: 'assets/videos/puri-dham-badadanda-sankirtan-darshan-1.mp4',
         desc: 'Divine Harinam Sankirtan procession along holy Puri Badadanda with traditional mridanga, jhanja, and joyous devotee congregation before Mahaprabhu Sri Jagannath.',
         sizeBadge: '20 MB HD MP4'
       },
       {
-        id: 'puri-video-2',
-        title: 'ପୁରୀ ଧାମ ମହାସଂକୀର୍ତ୍ତନ ଓ ଭକ୍ତ ସମାବେଶ (Puri Dham Maha Sankirtan Assembly - Part 2)',
+        id: 'puri-video-4',
+        title: 'ପୁରୀ ଧାମ ମହାସଂକୀର୍ତ୍ତନ ଓ ଭକ୍ତ ସମାବେଶ (Puri Dham Maha Sankirtan Assembly - Part 4)',
         subTitle: 'Ananda Bazar & Lions Gate Devotional Congregation',
         src: 'assets/videos/puri-dham-badadanda-sankirtan-darshan-2.mp4',
         desc: 'Hundreds of devotees and village kirtan mandalis singing in ecstatic bliss, carrying sacred flags and invoking Mahaprabhu Jagannath at the holy Srikhetra Peetha.',
@@ -691,29 +741,55 @@ let activitiesData = [
   // 1. Puri
   {
     id: 'photo-puri-1',
-    title: 'Badadanda Grand Nagar Sankirtan',
+    title: 'ଶ୍ରୀକ୍ଷେତ୍ର ସିଂହଦ୍ୱାର ପ୍ରତିଦିନ ସଂକୀର୍ତ୍ତନ ମଣ୍ଡଳୀ ଓ ହରିନାମ',
     city: 'Puri Dham',
     cityKey: 'puri',
     category: 'sankirtan',
     categoryLabel: 'Harinam Sankirtan',
-    year: '2025',
-    imageSrc: 'assets/images/puri-rath-kirtan.svg',
-    desc: 'Thousands of devotees chanting the Maha-Mantra along Badadanda before Lord Jagannath’s chariot.',
-    location: 'Badadanda, Sri Jagannath Temple, Puri',
-    tags: ['Ratha Yatra', 'Puri', 'Nagar Kirtan']
+    year: '2024',
+    imageSrc: 'assets/images/puri-singhadwara-daily-sankirtan-mandali.jpg',
+    desc: 'Daily divine Harinam Sankirtan at holy Sri Jagannath Mandir Singhadwara with senior acharyas and rural mandalis.',
+    location: 'Singhadwara & Aruna Stambha, Sri Jagannath Temple, Puri',
+    tags: ['Puri', 'Singhadwara', 'Argus News', 'Harinam Sankirtan']
   },
   {
     id: 'photo-puri-2',
-    title: 'Ananda Bazar Mahaprasad Seva',
+    title: 'ପୁରୀ ବଡ଼ଦାଣ୍ଡ ମହିଳା ସଂକୀର୍ତ୍ତନ ମହା ଶୋଭାଯାତ୍ରା',
     city: 'Puri Dham',
     cityKey: 'puri',
-    category: 'annadan',
-    categoryLabel: 'Annadan Seva',
-    year: '2025',
-    imageSrc: 'assets/images/puri-mahaprasad-seva.svg',
-    desc: 'Volunteers distributing warm, holy Mahaprasad to visiting pilgrims, ascetics, and devotees.',
-    location: 'Ananda Bazar & Lions Gate, Puri',
-    tags: ['Mahaprasad', 'Annadan', 'Pilgrim Seva']
+    category: 'sankirtan',
+    categoryLabel: 'Harinam Sankirtan',
+    year: '2024',
+    imageSrc: 'assets/images/puri-badadanda-women-sankirtan-shobhayatra.jpg',
+    desc: 'Hundreds of traditional women sankirtan artistes in traditional attire performing Harinam and playing gini on Grand Road.',
+    location: 'Badadanda, Puri',
+    tags: ['Puri', 'Women Mandali', 'Shobhayatra', 'Badadanda']
+  },
+  {
+    id: 'photo-puri-3',
+    title: '‘ଅର୍ଗସ ନ୍ୟୁଜ’ରେ ଶ୍ରୀ ଶ୍ରୀ ଜଗନ୍ନାଥ ନାମ ସଂକୀର୍ତ୍ତନ ଲୋକକଳା ପରିଷଦ',
+    city: 'Puri Dham',
+    cityKey: 'puri',
+    category: 'satsang',
+    categoryLabel: 'Media Feature',
+    year: '2024',
+    imageSrc: 'assets/images/puri-argus-news-parisad-official-broadcast.jpg',
+    desc: 'Official television broadcast feature honoring Sri Sri Jagannath Nam Sankirtan Loka Kala Parisad and its leadership.',
+    location: 'Srikhetra Puri',
+    tags: ['Puri', 'Argus News', 'Official Feature', 'State Leadership']
+  },
+  {
+    id: 'photo-puri-4',
+    title: 'ପୁରୀ ବଡ଼ଦାଣ୍ଡରେ ପରିଷଦ ନେତୃତ୍ୱଙ୍କ ଗଣମାଧ୍ୟମ ବକ୍ତବ୍ୟ',
+    city: 'Puri Dham',
+    cityKey: 'puri',
+    category: 'satsang',
+    categoryLabel: 'Media Address',
+    year: '2024',
+    imageSrc: 'assets/images/puri-badadanda-leadership-media-interview.jpg',
+    desc: 'Parishad leadership addressing media on Puri Badadanda regarding statewide kirtaniyas welfare and cultural patronization.',
+    location: 'Badadanda, Puri',
+    tags: ['Puri', 'Media Interview', 'Leadership', 'Badadanda']
   },
 
   // 2. Malkangiri (Authentic Ground Meeting Photos)
