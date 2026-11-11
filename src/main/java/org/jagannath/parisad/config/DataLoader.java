@@ -33,6 +33,18 @@ public class DataLoader implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
+        chapterRepository.findByCityKey("balasore").ifPresent(ch -> {
+            if (ch.getPhotoCount() != 4) {
+                ch.setPhotoCount(4);
+                ch.setActivities(Arrays.asList(
+                    "Administrative coordination & patronization of Balasore district folk artistes",
+                    "Khirachora Gopinath Kshetra Grand Nagar Sankirtan & Remuna Parikrama",
+                    "Coastal fishermen community Annadan & devotional welfare seva",
+                    "Preservation of northern Odisha Vaishnava kirtan & traditional pala heritage"
+                ));
+                chapterRepository.save(ch);
+            }
+        });
         chapterRepository.findByCityKey("sambalpur").ifPresent(ch -> {
             if (ch.getPhotoCount() != 3) {
                 ch.setPhotoCount(3);
@@ -222,12 +234,12 @@ public class DataLoader implements CommandLineRunner {
 
             // 8. Balasore
             new CityChapter("balasore", "Balasore", "ବାଲେଶ୍ୱର • Khirachora Gopinath & Coastal Heritage",
-                "Baleswar Bhakti Sankirtan Parishad", "+91 94371 XXXXX", "Coastal Heritage", 2,
+                "Baleswar Bhakti Sankirtan Parishad & District Seva Samiti", "+91 94371 XXXXX", "Coastal Heritage", 4,
                 Arrays.asList(
+                    "Administrative coordination & patronization of Balasore district folk artistes",
                     "Khirachora Gopinath Kshetra Grand Nagar Sankirtan & Remuna Parikrama",
                     "Coastal fishermen community Annadan & devotional welfare seva",
-                    "Preservation of northern Odisha Vaishnava kirtan traditions",
-                    "Monthly Harinam Prabhat Pheri along Chandipur coastline"
+                    "Preservation of northern Odisha Vaishnava kirtan & traditional pala heritage"
                 )),
 
             // 9. Mayurbhanj
@@ -472,13 +484,23 @@ public class DataLoader implements CommandLineRunner {
                 "Jatni & Khordha Town Satsang Bhavan",
                 Arrays.asList("Khordha", "Bhagavata", "Youth")),
 
-            // 8. Balasore
-            new ActivityPhoto("photo-balasore-1", "Khirachora Gopinath Nagar Kirtan", "Balasore", "balasore",
+            // 8. Balasore (Real Ground Photos & Coastal Activities)
+            new ActivityPhoto("photo-balasore-1", "ବାଲେଶ୍ୱର ଜିଲ୍ଲାପାଳଙ୍କୁ ସ୍ମାରକପତ୍ର ପ୍ରଦାନ", "Balasore", "balasore",
+                "satsang", "Official Meeting", "2024", "assets/images/balasore-collector-memorandum.jpg",
+                "Official representation and memorandum submission to District Collector & Magistrate Balasore at Collectorate office.",
+                "District Collectorate Office, Balasore",
+                Arrays.asList("Balasore", "District Collector", "Official Meeting", "Memorandum")),
+            new ActivityPhoto("photo-balasore-2", "ଜିଲ୍ଲାପାଳଙ୍କୁ ସମ୍ବର୍ଦ୍ଧନା ଓ ଅଭିନନ୍ଦନ ପତ୍ର ପ୍ରଦାନ", "Balasore", "balasore",
+                "satsang", "Official Felicitation", "2024", "assets/images/balasore-collector-felicitation-citation.jpg",
+                "Presenting framed honorary Felicitation Citation (ଅଭିନନ୍ଦନ ପତ୍ର) to Balasore District Magistrate & Collector.",
+                "District Collectorate Office, Balasore",
+                Arrays.asList("Balasore", "Felicitation", "Citation", "Official Meeting")),
+            new ActivityPhoto("photo-balasore-3", "Khirachora Gopinath Nagar Kirtan", "Balasore", "balasore",
                 "sankirtan", "Harinam Sankirtan", "2025", "assets/images/balasore-kirtan-samaroh.svg",
                 "Grand congregational Harinam procession around the historic Remuna & Balasore heritage peethas.",
                 "Remuna Khirachora Gopinath Temple, Balasore",
                 Arrays.asList("Balasore", "Remuna", "Gopinath", "Nagar Kirtan")),
-            new ActivityPhoto("photo-balasore-2", "Coastal Pilgrim & Sadhu Annadan", "Balasore", "balasore",
+            new ActivityPhoto("photo-balasore-4", "Coastal Pilgrim & Sadhu Annadan", "Balasore", "balasore",
                 "annadan", "Annadan Seva", "2024", "assets/images/balasore-annadan-seva.svg",
                 "Free nutritious Mahaprasad distribution to coastal fishermen communities and visiting pilgrims.",
                 "Chandipur & Baleswar Town, Balasore",

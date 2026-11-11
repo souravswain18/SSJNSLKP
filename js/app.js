@@ -431,16 +431,50 @@ let cityChaptersData = [
     id: 'balasore',
     name: 'Balasore',
     subName: 'ବାଲେଶ୍ୱର • Khirachora Gopinath & Coastal Heritage',
-    coordinator: 'Baleswar Bhakti Sankirtan Parishad',
+    coordinator: 'Baleswar Bhakti Sankirtan Parishad & District Seva Samiti',
     contact: '+91 94371 XXXXX',
     badge: 'Coastal Heritage',
     activities: [
+      'Administrative coordination & patronization of Balasore district folk artistes',
       'Khirachora Gopinath Kshetra Grand Nagar Sankirtan & Remuna Parikrama',
       'Coastal fishermen community Annadan & devotional welfare seva',
-      'Preservation of northern Odisha Vaishnava kirtan traditions',
-      'Monthly Harinam Prabhat Pheri along Chandipur coastline'
+      'Preservation of northern Odisha Vaishnava kirtan & traditional pala heritage'
     ],
-    photoCount: 2
+    photoCount: 4,
+    photos: [
+      {
+        id: 'balasore-photo-1',
+        title: 'ବାଲେଶ୍ୱର ଜିଲ୍ଲାପାଳଙ୍କୁ ସ୍ମାରକପତ୍ର ପ୍ରଦାନ ଓ ପ୍ରଶାସନିକ ଆଲୋଚନା',
+        subTitle: 'Memorandum Submission & Official Summit with District Magistrate & Collector, Balasore',
+        src: 'assets/images/balasore-collector-memorandum.jpg',
+        desc: 'Parishad leadership submitting official representation and memorandum to the District Collector & Magistrate Balasore at the Collectorate office for safeguarding folk artistes, sankirtan mandalis, and heritage preservation.',
+        year: '2024'
+      },
+      {
+        id: 'balasore-photo-2',
+        title: 'ଜିଲ୍ଲାପାଳଙ୍କୁ ଅଭିନନ୍ଦନ ପତ୍ର ଓ ସମ୍ବର୍ଦ୍ଧନା ସ୍ମାରକୀ ପ୍ରଦାନ',
+        subTitle: 'Presenting Honorary Felicitation Citation & Memento to Balasore Collector',
+        src: 'assets/images/balasore-collector-felicitation-citation.jpg',
+        desc: 'Parishad representatives presenting the official framed Felicitation Citation (ଅଭିନନ୍ଦନ ପତ୍ର) and honorary memento to the District Magistrate & Collector Balasore in recognition of administrative support for spiritual and cultural activities.',
+        year: '2024'
+      },
+      {
+        id: 'balasore-photo-3',
+        title: 'କ୍ଷୀରଚୋରା ଗୋପୀନାଥ ନଗର ସଂକୀର୍ତ୍ତନ',
+        subTitle: 'Khirachora Gopinath Nagar Kirtan & Heritage Parikrama',
+        src: 'assets/images/balasore-kirtan-samaroh.svg',
+        desc: 'Grand congregational Harinam procession around the historic Remuna & Balasore heritage peethas.',
+        year: '2025'
+      },
+      {
+        id: 'balasore-photo-4',
+        title: 'ଉପକୂଳବର୍ତ୍ତୀ ସାଧୁ ଓ ତୀର୍ଥଯାତ୍ରୀ ଅନ୍ନଦାନ ସେବା',
+        subTitle: 'Coastal Pilgrim & Fishermen Community Annadan Seva',
+        src: 'assets/images/balasore-annadan-seva.svg',
+        desc: 'Free nutritious Mahaprasad distribution to coastal fishermen communities and visiting pilgrims.',
+        year: '2024'
+      }
+    ]
   },
   {
     id: 'mayurbhanj',
@@ -917,9 +951,35 @@ let activitiesData = [
     tags: ['Khordha', 'Bhagavata', 'Youth']
   },
 
-  // 8. Balasore
+  // 8. Balasore (Real Ground Photos & Coastal Activities)
   {
     id: 'photo-balasore-1',
+    title: 'ବାଲେଶ୍ୱର ଜିଲ୍ଲାପାଳଙ୍କୁ ସ୍ମାରକପତ୍ର ପ୍ରଦାନ',
+    city: 'Balasore',
+    cityKey: 'balasore',
+    category: 'satsang',
+    categoryLabel: 'Official Meeting',
+    year: '2024',
+    imageSrc: 'assets/images/balasore-collector-memorandum.jpg',
+    desc: 'Official representation and memorandum submission to District Collector & Magistrate Balasore at Collectorate office.',
+    location: 'District Collectorate Office, Balasore',
+    tags: ['Balasore', 'District Collector', 'Official Meeting', 'Memorandum']
+  },
+  {
+    id: 'photo-balasore-2',
+    title: 'ଜିଲ୍ଲାପାଳଙ୍କୁ ସମ୍ବର୍ଦ୍ଧନା ଓ ଅଭିନନ୍ଦନ ପତ୍ର ପ୍ରଦାନ',
+    city: 'Balasore',
+    cityKey: 'balasore',
+    category: 'satsang',
+    categoryLabel: 'Official Felicitation',
+    year: '2024',
+    imageSrc: 'assets/images/balasore-collector-felicitation-citation.jpg',
+    desc: 'Presenting framed honorary Felicitation Citation (ଅଭିନନ୍ଦନ ପତ୍ର) to Balasore District Magistrate & Collector.',
+    location: 'District Collectorate Office, Balasore',
+    tags: ['Balasore', 'Felicitation', 'Citation', 'Official Meeting']
+  },
+  {
+    id: 'photo-balasore-3',
     title: 'Khirachora Gopinath Nagar Kirtan',
     city: 'Balasore',
     cityKey: 'balasore',
@@ -932,7 +992,7 @@ let activitiesData = [
     tags: ['Balasore', 'Remuna', 'Gopinath', 'Nagar Kirtan']
   },
   {
-    id: 'photo-balasore-2',
+    id: 'photo-balasore-4',
     title: 'Coastal Pilgrim & Sadhu Annadan',
     city: 'Balasore',
     cityKey: 'balasore',
