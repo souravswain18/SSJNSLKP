@@ -46,10 +46,18 @@ let cityChaptersData = [
       'Continuous Ananda Bazar Mahaprasad distribution to sadhus & pilgrims',
       'Kartik Niyam Seva Akhanda Kirtan & Traditional Bhajan Samaroh'
     ],
-    photoCount: 6,
+    photoCount: 7,
     photos: [
       {
         id: 'puri-photo-1',
+        title: 'ଶ୍ରୀକ୍ଷେତ୍ର ବଡ଼ଦାଣ୍ଡ ରଥଯାତ୍ରା ମହା ସମାରୋହ ଓ ଆକାଶ ମାର୍ଗ ଦର୍ଶନ',
+        subTitle: 'Grand Puri Ratha Yatra Aerial Twilight Darshan & Badadanda Chariots',
+        src: 'assets/images/puri-badadanda-rath-yatra-aerial-darshan.jpg',
+        desc: 'Spectacular aerial night view of holy Nandighosha, Taladhwaja, and Darpadalana rathas on Badadanda surrounded by lakhs of ecstatic chanting devotees before the illuminated Srimandir.',
+        year: '2024'
+      },
+      {
+        id: 'puri-photo-2',
         title: 'ଶ୍ରୀକ୍ଷେତ୍ର ସିଂହଦ୍ୱାର ପ୍ରତିଦିନ ସଂକୀର୍ତ୍ତନ ମଣ୍ଡଳୀ ଓ ହରିନାମ',
         subTitle: 'Daily Srikhetra Singhadwara Sankirtan — Argus News',
         src: 'assets/images/puri-singhadwara-daily-sankirtan-mandali.jpg',
@@ -57,7 +65,7 @@ let cityChaptersData = [
         year: '2024'
       },
       {
-        id: 'puri-photo-2',
+        id: 'puri-photo-3',
         title: '‘ଅର୍ଗସ ନ୍ୟୁଜ’ରେ ଶ୍ରୀ ଶ୍ରୀ ଜଗନ୍ନାଥ ନାମ ସଂକୀର୍ତ୍ତନ ଲୋକକଳା ପରିଷଦ',
         subTitle: 'Argus News Special Feature & Parisad Leadership',
         src: 'assets/images/puri-argus-news-parisad-official-broadcast.jpg',
@@ -65,7 +73,7 @@ let cityChaptersData = [
         year: '2024'
       },
       {
-        id: 'puri-photo-3',
+        id: 'puri-photo-4',
         title: 'ପୁରୀ ବଡ଼ଦାଣ୍ଡ ମହିଳା ସଂକୀର୍ତ୍ତନ ଦଳ ମହା ଶୋଭାଯାତ୍ରା',
         subTitle: 'Puri Badadanda Women Sankirtan Mandali Procession',
         src: 'assets/images/puri-badadanda-women-sankirtan-shobhayatra.jpg',
@@ -73,7 +81,7 @@ let cityChaptersData = [
         year: '2024'
       },
       {
-        id: 'puri-photo-4',
+        id: 'puri-photo-5',
         title: 'ପୁରୀ ବଡ଼ଦାଣ୍ଡରେ ପରିଷଦ ନେତୃତ୍ୱଙ୍କ ଗଣମାଧ୍ୟମ ବକ୍ତବ୍ୟ',
         subTitle: 'Parishad Leadership Live Media Address at Puri Badadanda',
         src: 'assets/images/puri-badadanda-leadership-media-interview.jpg',
@@ -81,7 +89,7 @@ let cityChaptersData = [
         year: '2024'
       },
       {
-        id: 'puri-photo-5',
+        id: 'puri-photo-6',
         title: 'ଶ୍ରୀକ୍ଷେତ୍ର ବଡ଼ଦାଣ୍ଡ ପ୍ରଭାତ ଫେରୀ ଓ ନଗର ସଂକୀର୍ତ୍ତନ',
         subTitle: 'Badadanda Prabhat Pheri & Harinam Sankirtan',
         src: 'assets/images/puri-rath-yatra-kirtan.svg',
@@ -89,7 +97,7 @@ let cityChaptersData = [
         year: '2024'
       },
       {
-        id: 'puri-photo-6',
+        id: 'puri-photo-7',
         title: 'ଆନନ୍ଦ ବଜାର ମହାପ୍ରସାଦ ସେବା ଶିବିର',
         subTitle: 'Ananda Bazar Mahaprasad & Sadhu Seva',
         src: 'assets/images/puri-mahaprasad-seva.svg',
@@ -380,18 +388,18 @@ let cityChaptersData = [
       },
       {
         id: 'nab-photo-12',
-        title: 'ବିଧାୟକ ତଥା ମୁଖ୍ୟ ଅତିଥିଙ୍କୁ ସ୍ମାରକପତ୍ର ପ୍ରଦାନ ଓ ଆଲୋଚନା',
-        subTitle: 'Memorandum Submission to Chief Guest & MLA, Nabarangpur',
+        title: 'ମାନ୍ୟବର ବିଧାୟକ ଶ୍ରୀ ନିତ୍ୟାନନ୍ଦ ଗଣ୍ଡଙ୍କୁ ସ୍ମାରକପତ୍ର ପ୍ରଦାନ',
+        subTitle: 'Memorandum Submission to Hon’ble MLA Shri Nityananda Gond',
         src: 'assets/images/nabarangpur-mla-memorandum-review.jpg',
-        desc: 'Parishad delegation and rural kirtan leaders presenting demand letter and memorandum to Chief Guest & MLA Manohar Randhari / Gouri Sankar Majhi for the welfare and patronization of traditional sankirtaniyas.',
+        desc: 'Parishad delegation and rural kirtan leaders presenting demand letter and memorandum to Hon’ble MLA Shri Nityananda Gond for the welfare and patronization of traditional sankirtaniyas and folk artistes.',
         year: '2024'
       },
       {
         id: 'nab-photo-13',
-        title: 'ଜିଲ୍ଲା ସଂକୀର୍ତ୍ତନ ନେତୃବୃନ୍ଦ ଓ ଅତିଥିଙ୍କ ସମାବେଶ',
-        subTitle: 'District Kirtan Leaders & Dignitaries Resolution Summit',
+        title: 'ମାନ୍ୟବର ବିଧାୟକ ଶ୍ରୀ ନିତ୍ୟାନନ୍ଦ ଗଣ୍ଡଙ୍କ ସହ ଚାର୍ଟର ସମୀକ୍ଷା',
+        subTitle: 'Charter Review with Hon’ble MLA Shri Nityananda Gond',
         src: 'assets/images/nabarangpur-dignitaries-kirtan-leaders-assembly.jpg',
-        desc: 'Rural sankirtan mandali leaders and Parishad sevaks reviewing cultural preservation charter with dignitaries and key organizers at Nabarangpur.',
+        desc: 'Rural sankirtan mandali leaders and Parishad sevaks reviewing cultural preservation charter and memorandum demands with Hon’ble MLA Shri Nityananda Gond at Nabarangpur.',
         year: '2024'
       },
       {
@@ -740,6 +748,19 @@ let cityChaptersData = [
 let activitiesData = [
   // 1. Puri
   {
+    id: 'photo-puri-0',
+    title: 'ଶ୍ରୀକ୍ଷେତ୍ର ବଡ଼ଦାଣ୍ଡ ରଥଯାତ୍ରା ଆକାଶ ମାର୍ଗ ଦର୍ଶନ',
+    city: 'Puri Dham',
+    cityKey: 'puri',
+    category: 'sankirtan',
+    categoryLabel: 'Ratha Yatra & Harinam',
+    year: '2024',
+    imageSrc: 'assets/images/puri-badadanda-rath-yatra-aerial-darshan.jpg',
+    desc: 'Spectacular aerial night view of holy Nandighosha, Taladhwaja, and Darpadalana chariots on Badadanda surrounded by lakhs of chanting devotees before illuminated Srimandir.',
+    location: 'Grand Road (Badadanda), Puri',
+    tags: ['Puri', 'Ratha Yatra', 'Badadanda', 'Aerial Darshan', 'Harinam']
+  },
+  {
     id: 'photo-puri-1',
     title: 'ଶ୍ରୀକ୍ଷେତ୍ର ସିଂହଦ୍ୱାର ପ୍ରତିଦିନ ସଂକୀର୍ତ୍ତନ ମଣ୍ଡଳୀ ଓ ହରିନାମ',
     city: 'Puri Dham',
@@ -955,16 +976,16 @@ let activitiesData = [
   },
   {
     id: 'photo-nabrangpur-4',
-    title: 'ବିଧାୟକ ତଥା ମୁଖ୍ୟ ଅତିଥିଙ୍କୁ ସ୍ମାରକପତ୍ର ପ୍ରଦାନ',
+    title: 'ମାନ୍ୟବର ବିଧାୟକ ଶ୍ରୀ ନିତ୍ୟାନନ୍ଦ ଗଣ୍ଡଙ୍କୁ ସ୍ମାରକପତ୍ର ପ୍ରଦାନ',
     city: 'Nabarangpur',
     cityKey: 'nabrangpur',
     category: 'satsang',
     categoryLabel: 'Official Meeting',
     year: '2024',
     imageSrc: 'assets/images/nabarangpur-mla-memorandum-review.jpg',
-    desc: 'Parishad delegation presenting memorandum and demand letter to Hon’ble MLA for rural sankirtan welfare.',
+    desc: 'Parishad delegation and kirtan leaders presenting memorandum and demand letter to Hon’ble MLA Shri Nityananda Gond for rural sankirtan welfare.',
     location: 'District Samabesa Venue, Nabarangpur',
-    tags: ['Nabarangpur', 'MLA', 'Memorandum', 'Sankirtan Seva']
+    tags: ['Nabarangpur', 'Nityananda Gond', 'MLA', 'Memorandum', 'Sankirtan Seva']
   },
 
   // 5. Dhenkanal

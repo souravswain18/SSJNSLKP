@@ -46,8 +46,8 @@ public class DataLoader implements CommandLineRunner {
             }
         });
                 chapterRepository.findByCityKey("puri").ifPresent(ch -> {
-            if (ch.getPhotoCount() != 6) {
-                ch.setPhotoCount(6);
+            if (ch.getPhotoCount() != 7) {
+                ch.setPhotoCount(7);
                 chapterRepository.save(ch);
             }
         });
@@ -169,7 +169,7 @@ public class DataLoader implements CommandLineRunner {
         List<CityChapter> chapters = Arrays.asList(
             // 1. Puri
             new CityChapter("puri", "Puri Dham", "ଶ୍ରୀକ୍ଷେତ୍ର ପୁରୀ • Mula Peetha & Central Headquarters",
-                "Shri Jagannath Seva Samiti & Senior Kirtan Acharyas", "+91 94370 XXXXX", "Mula Peetha", 6,
+                "Shri Jagannath Seva Samiti & Senior Kirtan Acharyas", "+91 94370 XXXXX", "Mula Peetha", 7,
                 Arrays.asList(
                     "Daily Badadanda Harinam Nagar Sankirtan & Prabhat Pheri",
                     "Grand Ratha Yatra & Snana Yatra Seva Shivir along chariot route",
@@ -355,6 +355,11 @@ public class DataLoader implements CommandLineRunner {
     private void seedPhotos() {
         List<ActivityPhoto> photos = Arrays.asList(
             // 1. Puri
+            new ActivityPhoto("photo-puri-0", "ଶ୍ରୀକ୍ଷେତ୍ର ବଡ଼ଦାଣ୍ଡ ରଥଯାତ୍ରା ଆକାଶ ମାର୍ଗ ଦର୍ଶନ", "Puri Dham", "puri",
+                "sankirtan", "Ratha Yatra & Harinam", "2024", "assets/images/puri-badadanda-rath-yatra-aerial-darshan.jpg",
+                "Spectacular aerial night view of holy Nandighosha, Taladhwaja, and Darpadalana chariots on Badadanda surrounded by lakhs of chanting devotees before illuminated Srimandir.",
+                "Grand Road (Badadanda), Puri",
+                Arrays.asList("Puri", "Ratha Yatra", "Badadanda", "Aerial Darshan", "Harinam")),
             new ActivityPhoto("photo-puri-1", "ଶ୍ରୀକ୍ଷେତ୍ର ସିଂହଦ୍ୱାର ପ୍ରତିଦିନ ସଂକୀର୍ତ୍ତନ ମଣ୍ଡଳୀ ଓ ହରିନାମ", "Puri Dham", "puri",
                 "sankirtan", "Harinam Sankirtan", "2024", "assets/images/puri-singhadwara-daily-sankirtan-mandali.jpg",
                 "Daily divine Harinam Sankirtan at holy Sri Jagannath Mandir Singhadwara with senior acharyas and rural mandalis.",
@@ -458,11 +463,11 @@ public class DataLoader implements CommandLineRunner {
                 "Parishad leadership presenting ceremonial Uttariya to District Collector & Magistrate Shri Kamal Lochan Mishra, IAS.",
                 "Collectorate Office, Nabarangpur",
                 Arrays.asList("Nabarangpur", "District Collector", "Official Meeting")),
-            new ActivityPhoto("photo-nabrangpur-4", "ବିଧାୟକ ତଥା ମୁଖ୍ୟ ଅତିଥିଙ୍କୁ ସ୍ମାରକପତ୍ର ପ୍ରଦାନ", "Nabarangpur", "nabrangpur",
+            new ActivityPhoto("photo-nabrangpur-4", "ମାନ୍ୟବର ବିଧାୟକ ଶ୍ରୀ ନିତ୍ୟାନନ୍ଦ ଗଣ୍ଡଙ୍କୁ ସ୍ମାରକପତ୍ର ପ୍ରଦାନ", "Nabarangpur", "nabrangpur",
                 "satsang", "Official Meeting", "2024", "assets/images/nabarangpur-mla-memorandum-review.jpg",
-                "Parishad delegation presenting memorandum and demand letter to Hon’ble MLA for rural sankirtan welfare.",
+                "Parishad delegation and kirtan leaders presenting memorandum and demand letter to Hon’ble MLA Shri Nityananda Gond for rural sankirtan welfare.",
                 "District Samabesa Venue, Nabarangpur",
-                Arrays.asList("Nabarangpur", "MLA", "Memorandum", "Sankirtan Seva")),
+                Arrays.asList("Nabarangpur", "Nityananda Gond", "MLA", "Memorandum", "Sankirtan Seva")),
 
             // 5. Dhenkanal
             new ActivityPhoto("photo-dhenkanal-1", "Kapilash Kshetra Akhanda Harinam Yajna", "Dhenkanal", "dhenkanal",
