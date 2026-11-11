@@ -470,10 +470,10 @@ let cityChaptersData = [
     photos: [
       {
         id: 'sambalpur-photo-1',
-        title: 'ସମ୍ବଲପୁର ପ୍ରଶାସନ ଓ ଜିଲ୍ଲାପାଳଙ୍କୁ ସମ୍ବର୍ଦ୍ଧନା ଓ ଆଲୋଚନା',
-        subTitle: 'Official Meeting with Sambalpur District Administration & Collectorate',
+        title: 'ଜିଲ୍ଲାପାଳ ଶ୍ରୀ ସିଦ୍ଧେଶ୍ୱର ବଳିରାମ ବୋନ୍ଦାର, IASଙ୍କ ସହ ଆଲୋଚନା ଓ ସମ୍ବର୍ଦ୍ଧନା',
+        subTitle: 'Meeting with District Collector & Magistrate Shri Siddheshwar Baliram Bondar, IAS',
         src: 'assets/images/sambalpur-collector-meeting.jpg',
-        desc: 'Parishad State President Sri Sidhartha Sankar Swain along with women kirtan seva mandali representatives in traditional Sambalpuri sarees presenting sacred uttariya and floral greeting to Sambalpur administrative officers for district-wide Lok Kala and Sankirtan patronization.',
+        desc: 'Parishad State President Sri Sidhartha Sankar Swain along with women kirtan seva mandali representatives in traditional Sambalpuri sarees presenting sacred uttariya and floral bouquet to District Collector & Magistrate Shri Siddheshwar Baliram Bondar, IAS, for district-wide Lok Kala and Sankirtan patronization.',
         year: '2024'
       },
       {
@@ -1019,16 +1019,16 @@ let activitiesData = [
   // 6. Sambalpur (Real Ground Photo & Folk Activities)
   {
     id: 'photo-sambalpur-1',
-    title: 'ସମ୍ବଲପୁର ପ୍ରଶାସନିକ ଆଲୋଚନା ଓ ମଣ୍ଡଳୀ ସମ୍ବର୍ଦ୍ଧନା',
+    title: 'ଜିଲ୍ଲାପାଳ ଶ୍ରୀ ସିଦ୍ଧେଶ୍ୱର ବଳିରାମ ବୋନ୍ଦାର, IASଙ୍କ ସହ ଆଲୋଚନା ଓ ସମ୍ବର୍ଦ୍ଧନା',
     city: 'Sambalpur',
     cityKey: 'sambalpur',
     category: 'satsang',
     categoryLabel: 'Official Meeting',
     year: '2024',
     imageSrc: 'assets/images/sambalpur-collector-meeting.jpg',
-    desc: 'State President Sri Sidhartha Sankar Swain and women seva mandali members in traditional Sambalpuri sarees meeting district administration.',
+    desc: 'Parishad State President Sri Sidhartha Sankar Swain and women seva mandali members in traditional Sambalpuri sarees presenting sacred uttariya and floral bouquet to District Collector & Magistrate Shri Siddheshwar Baliram Bondar, IAS.',
     location: 'District Collectorate Office, Sambalpur',
-    tags: ['Sambalpur', 'District Administration', 'Official Meeting', 'Women Seva']
+    tags: ['Sambalpur', 'District Collector', 'Siddheshwar Baliram Bondar', 'Official Meeting', 'Women Seva']
   },
   {
     id: 'photo-sambalpur-2',

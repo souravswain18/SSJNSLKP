@@ -482,11 +482,11 @@ public class DataLoader implements CommandLineRunner {
                 Arrays.asList("Dhenkanal", "Pala", "Lok Kala")),
 
             // 6. Sambalpur (Real Ground Photo & Folk Activities)
-            new ActivityPhoto("photo-sambalpur-1", "ସମ୍ବଲପୁର ପ୍ରଶାସନିକ ଆଲୋଚନା ଓ ମଣ୍ଡଳୀ ସମ୍ବର୍ଦ୍ଧନା", "Sambalpur", "sambalpur",
+            new ActivityPhoto("photo-sambalpur-1", "ଜିଲ୍ଲାପାଳ ଶ୍ରୀ ସିଦ୍ଧେଶ୍ୱର ବଳିରାମ ବୋନ୍ଦାର, IASଙ୍କ ସହ ଆଲୋଚନା ଓ ସମ୍ବର୍ଦ୍ଧନା", "Sambalpur", "sambalpur",
                 "satsang", "Official Meeting", "2024", "assets/images/sambalpur-collector-meeting.jpg",
-                "State President Sri Sidhartha Sankar Swain and women seva mandali members in traditional Sambalpuri sarees meeting district administration.",
+                "Parishad State President Sri Sidhartha Sankar Swain and women seva mandali members in traditional Sambalpuri sarees presenting sacred uttariya and floral bouquet to District Collector & Magistrate Shri Siddheshwar Baliram Bondar, IAS.",
                 "District Collectorate Office, Sambalpur",
-                Arrays.asList("Sambalpur", "District Administration", "Official Meeting", "Women Seva")),
+                Arrays.asList("Sambalpur", "District Collector", "Siddheshwar Baliram Bondar", "Official Meeting", "Women Seva")),
             new ActivityPhoto("photo-sambalpur-2", "Maa Samaleswari Mahotsav Kirtan", "Sambalpur", "sambalpur",
                 "sankirtan", "Harinam Sankirtan", "2025", "assets/images/sambalpur-kirtan-samavesh.svg",
                 "Western Odisha grand kirtan congregation where village mandalis unite with mridanga beats.",
