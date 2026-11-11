@@ -33,6 +33,18 @@ public class DataLoader implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
+        chapterRepository.findByCityKey("koraput").ifPresent(ch -> {
+            if (ch.getPhotoCount() != 7) {
+                ch.setPhotoCount(7);
+                ch.setActivities(Arrays.asList(
+                    "District Level Sankirtan and Loka Kala Mahasamabesa at Jeypore Dussehra Padia",
+                    "Grand Nagar Sankirtan Shobhayatra from Jeypore Jagannath Mandir with 14 blocks",
+                    "Preservation of tribal folk arts, Chadeia-Chadeiani dance, and indigenous music",
+                    "Felicitation of traditional kirtan acharyas and musical instrument distribution"
+                ));
+                chapterRepository.save(ch);
+            }
+        });
         chapterRepository.findByCityKey("nabrangpur").ifPresent(ch -> {
             if (ch.getPhotoCount() != 11) {
                 ch.setPhotoCount(11);
@@ -146,13 +158,13 @@ public class DataLoader implements CommandLineRunner {
                 )),
 
             // 3. Koraput
-            new CityChapter("koraput", "Koraput", "କୋରାପୁଟ • Sabara Srikhetra Devotional Chapter",
-                "Sabara Srikhetra Jagannath Mandir Seva Dal", "+91 94390 XXXXX", "Sabara Srikhetra", 2,
+            new CityChapter("koraput", "Koraput", "କୋରାପୁଟ • Sabara Srikhetra & Jeypore Devotional Chapter",
+                "Sabara Srikhetra Jagannath Mandir Seva Dal & Koraput District Samabesa Sangha", "+91 94390 XXXXX", "Sabara Srikhetra", 7,
                 Arrays.asList(
-                    "Celebrating Sabara Srikhetra traditional tribal-Jagannath festivals",
-                    "Pahari Bhajan Mandali Sammelan uniting 30+ hill community groups",
-                    "Spiritual empowerment camps and devotional music workshops",
-                    "Preservation of tribal devotional folk songs and rhythm traditions"
+                    "District Level Sankirtan and Loka Kala Mahasamabesa at Jeypore Dussehra Padia",
+                    "Grand Nagar Sankirtan Shobhayatra from Jeypore Jagannath Mandir with 14 blocks",
+                    "Preservation of tribal folk arts, Chadeia-Chadeiani dance, and indigenous music",
+                    "Felicitation of traditional kirtan acharyas and musical instrument distribution"
                 )),
 
             // 4. Nabarangpur
@@ -373,17 +385,22 @@ public class DataLoader implements CommandLineRunner {
                 "Malkangiri Town Seva Peetha",
                 Arrays.asList("Malkangiri", "Banner", "Devotees", "Lok Kala")),
 
-            // 3. Koraput
-            new ActivityPhoto("photo-koraput-1", "Sabara Srikhetra Jagannath Utsav", "Koraput", "koraput",
-                "lok-kala", "Lok Kala & Music", "2025", "assets/images/koraput-sabara-srikhetra.svg",
-                "Celebrating sacred tribal-Jagannath brotherhood and devotional sangeet at Sabara Srikhetra.",
-                "Sabara Srikhetra, Koraput Town",
-                Arrays.asList("Koraput", "Sabara Srikhetra", "Lok Kala")),
-            new ActivityPhoto("photo-koraput-2", "Pahari Bhajan & Traditional Mandali Sammelan", "Koraput", "koraput",
-                "sankirtan", "Harinam Sankirtan", "2024", "assets/images/koraput-tribal-bhajan.svg",
-                "Over thirty hill community devotional groups joining together with traditional dholak and mridanga.",
-                "Jeypore & Sunabeda Foothills, Koraput",
-                Arrays.asList("Koraput", "Pahari Bhajan", "Sankirtan")),
+            // 3. Koraput (Real Photos from Official District Samabesa)
+            new ActivityPhoto("photo-koraput-1", "ଜୟପୁର ଶ୍ରୀ ଜଗନ୍ନାଥ ମନ୍ଦିରରୁ ନଗର ସଂକୀର୍ତ୍ତନ ଶୋଭାଯାତ୍ରା", "Koraput", "koraput",
+                "sankirtan", "Harinam Sankirtan", "2024", "assets/images/koraput-jeypore-nagar-sankirtan-shobhayatra.jpg",
+                "Massive street shobhayatra from holy Jeypore Jagannath temple with thousands of devotees, senior MLAs, and Parishad leadership.",
+                "Main Road & Dussehra Padia, Jeypore, Koraput",
+                Arrays.asList("Koraput", "Jeypore", "Nagar Sankirtan", "Shobhayatra")),
+            new ActivityPhoto("photo-koraput-2", "ଜିଲ୍ଲାପାଳଙ୍କ ସହ ପ୍ରଶାସନିକ ଆଲୋଚନା ଓ ନିମନ୍ତ୍ରଣ", "Koraput", "koraput",
+                "satsang", "Official Meeting", "2024", "assets/images/koraput-collector-meeting.jpg",
+                "Parishad State President Sri Sidhartha Sankar Swain and delegation meeting Koraput Collector Shri Manoj Satyawan Mahajan, IAS.",
+                "Collectorate Office, Koraput",
+                Arrays.asList("Koraput", "District Collector", "Official Meeting")),
+            new ActivityPhoto("photo-koraput-3", "ଚଢେଇଆ-ଚଢେଇଆଣୀ ପାରମ୍ପରିକ ଲୋକକଳା ସଂରକ୍ଷଣ", "Koraput", "koraput",
+                "lok-kala", "Lok Kala & Music", "2024", "assets/images/koraput-chadeia-dance-awareness.jpg",
+                "Revival and preservation of authentic tribal Chadeia-Chadeiani folk dance and music across Koraput district villages.",
+                "Kotpad & Jeypore Cultural Mandap, Koraput",
+                Arrays.asList("Koraput", "Chadeia Dance", "Lok Kala", "Tribal Art")),
 
             // 4. Nabarangpur (Real Photos from Official District Samabesa)
             new ActivityPhoto("photo-nabrangpur-1", "ଜିଲ୍ଲାସ୍ତରୀୟ ସଂକୀର୍ତ୍ତନ ଓ ଲୋକ କଳା ମହା ଶୋଭାଯାତ୍ରା", "Nabarangpur", "nabrangpur",

@@ -154,17 +154,75 @@ let cityChaptersData = [
   {
     id: 'koraput',
     name: 'Koraput',
-    subName: 'କୋରାପୁଟ • Sabara Srikhetra Devotional Chapter',
-    coordinator: 'Sabara Srikhetra Jagannath Mandir Seva Dal',
+    subName: 'କୋରାପୁଟ • Sabara Srikhetra & Jeypore Devotional Chapter',
+    coordinator: 'Sabara Srikhetra Jagannath Mandir Seva Dal & Koraput District Samabesa Sangha',
     contact: '+91 94390 XXXXX',
     badge: 'Sabara Srikhetra',
     activities: [
-      'Celebrating Sabara Srikhetra traditional tribal-Jagannath festivals',
-      'Pahari Bhajan Mandali Sammelan uniting 30+ hill community groups',
-      'Spiritual empowerment camps and devotional music workshops',
-      'Preservation of tribal devotional folk songs and rhythm traditions'
+      'District Level Sankirtan and Loka Kala Mahasamabesa at Jeypore Dussehra Padia',
+      'Grand Nagar Sankirtan Shobhayatra from Jeypore Jagannath Mandir with 14 blocks',
+      'Preservation of tribal folk arts, Chadeia-Chadeiani dance, and indigenous music',
+      'Felicitation of traditional kirtan acharyas and musical instrument distribution'
     ],
-    photoCount: 2
+    photoCount: 7,
+    photos: [
+      {
+        id: 'koraput-photo-1',
+        title: 'କୋରାପୁଟ ଜିଲ୍ଲାପାଳଙ୍କ ସହ ଆଲୋଚନା ଓ ନିମନ୍ତ୍ରଣ',
+        subTitle: 'Meeting with District Magistrate & Collector, Koraput',
+        src: 'assets/images/koraput-collector-meeting.jpg',
+        desc: 'Parishad State President Sri Sidhartha Sankar Swain and delegation meeting Koraput Collector Shri Manoj Satyawan Mahajan, IAS, regarding the grand District Sankirtan & Loka Kala Mahasamabesa.',
+        year: '2024'
+      },
+      {
+        id: 'koraput-photo-2',
+        title: '‘୨୪ରେ ଲୋକକଳାର ମହାସମାବେଶ’ ସାମ୍ବାଦିକ ସମ୍ମିଳନୀ',
+        subTitle: 'Press Conference Announcement by State President Sidhartha Sankar Swain',
+        src: 'assets/images/koraput-press-conference-announcement.jpg',
+        desc: 'Front-page news report of the high-level press meet announcing the historic assembly of 25,000 devotees across 14 blocks of Koraput district to preserve indigenous Lok Kala.',
+        year: '2024'
+      },
+      {
+        id: 'koraput-photo-3',
+        title: 'ଚଢେଇଆ-ଚଢେଇଆଣୀ ପାରମ୍ପରିକ ଲୋକନୃତ୍ୟ ସଚେତନତା',
+        subTitle: 'The Sakala Press Coverage — Indigenous Folk Dance & Cultural Revival',
+        src: 'assets/images/koraput-chadeia-dance-awareness.jpg',
+        desc: 'Feature article in The Sakala celebrating the revival of ancient tribal Chadeia-Chadeiani folk dance with full patron support from Parishad President Sri Sidhartha Sankar Swain.',
+        year: '2024'
+      },
+      {
+        id: 'koraput-photo-4',
+        title: 'ଜିଲ୍ଲାପାଳ, ଏସ.ପି. ଓ ଉପଜିଲ୍ଲାପାଳଙ୍କ ସହ ପ୍ରଶାସନିକ ଆଲୋଚନା',
+        subTitle: '4-in-1 Administrative Meetings: Collector, SP & Deputy Collector Koraput',
+        src: 'assets/images/koraput-administrative-delegations-collage.jpg',
+        desc: 'Official delegation summits with Koraput Collectorate, Superintendent of Police, Deputy Collector Koraput, and revenue administration for event coordination.',
+        year: '2024'
+      },
+      {
+        id: 'koraput-photo-5',
+        title: 'ଜିଲ୍ଲା ସ୍ତରୀୟ ସଂକୀର୍ତ୍ତନ ଓ ଲୋକ କଳା ମହାସମାବେଶ ମୁଖ୍ୟ ବ୍ୟାନର',
+        subTitle: 'Official Koraput District Banner — Dussehra Padia, Jeypore',
+        src: 'assets/images/koraput-district-sammilani-banner.jpg',
+        desc: 'Official banner of Sri Sri Jagannath Nama Sankirtan Loka Kala Parishad Odisha, Koraput District Branch (IGR Regd No 87/8201800077 of 2018-19) for the Dussehra Ground, Jeypore gathering.',
+        year: '2024'
+      },
+      {
+        id: 'koraput-photo-6',
+        title: '‘ଧରିତ୍ରୀ’ ଖବରକାଗଜରେ ଜୟପୁର ଆଧ୍ୟାତ୍ମିକ ସମାବେଶ ଓ ନଗର ସଂକୀର୍ତ୍ତନ',
+        subTitle: 'The Dharitri Press Coverage — Jeypore Grand Nagar Sankirtan Shobhayatra',
+        src: 'assets/images/koraput-jeypore-nagar-sankirtan-shobhayatra.jpg',
+        desc: 'Extensive reportage by The Dharitri showing MLAs Tara Prasad Bahinipati, Raghuram Majhi, and Parishad President Sidhartha Sankar Swain leading massive Harinam street procession from Jeypore Jagannath Mandir.',
+        year: '2024'
+      },
+      {
+        id: 'koraput-photo-7',
+        title: '‘ସମ୍ବାଦ’ ଖବରକାଗଜରେ ଦଶହରା ପଡ଼ିଆ ମହାସମାବେଶ',
+        subTitle: 'The Sambad Press Coverage — Dussehra Padia Grand Congregation',
+        src: 'assets/images/koraput-sambad-mahasamabesa-darshan.jpg',
+        desc: 'Front-page publication by The Sambad: "କଳିଯୁଗର ସୁରକ୍ଷା କବଚ ସଂକୀର୍ତ୍ତନ ମହାମନ୍ତ୍ର" featuring the grand dais and thousands of congregational devotees at Jeypore Dussehra Padia.',
+        year: '2024'
+      }
+    ]
   },
   {
     id: 'nabrangpur',
@@ -654,32 +712,45 @@ let activitiesData = [
     tags: ['Malkangiri', 'Banner', 'Devotees', 'Lok Kala']
   },
 
-  // 3. Koraput
+  // 3. Koraput (Real Photos from Official District Samabesa)
   {
     id: 'photo-koraput-1',
-    title: 'Sabara Srikhetra Jagannath Utsav',
-    city: 'Koraput',
-    cityKey: 'koraput',
-    category: 'lok-kala',
-    categoryLabel: 'Lok Kala & Music',
-    year: '2025',
-    imageSrc: 'assets/images/koraput-sabara-srikhetra.svg',
-    desc: 'Celebrating sacred tribal-Jagannath brotherhood and devotional sangeet at Sabara Srikhetra.',
-    location: 'Sabara Srikhetra, Koraput Town',
-    tags: ['Koraput', 'Sabara Srikhetra', 'Lok Kala']
-  },
-  {
-    id: 'photo-koraput-2',
-    title: 'Pahari Bhajan & Traditional Mandali Sammelan',
+    title: 'ଜୟପୁର ଶ୍ରୀ ଜଗନ୍ନାଥ ମନ୍ଦିରରୁ ନଗର ସଂକୀର୍ତ୍ତନ ଶୋଭାଯାତ୍ରା',
     city: 'Koraput',
     cityKey: 'koraput',
     category: 'sankirtan',
     categoryLabel: 'Harinam Sankirtan',
     year: '2024',
-    imageSrc: 'assets/images/koraput-tribal-bhajan.svg',
-    desc: 'Over thirty hill community devotional groups joining together with traditional dholak and mridanga.',
-    location: 'Jeypore & Sunabeda Foothills, Koraput',
-    tags: ['Koraput', 'Pahari Bhajan', 'Sankirtan']
+    imageSrc: 'assets/images/koraput-jeypore-nagar-sankirtan-shobhayatra.jpg',
+    desc: 'Massive street shobhayatra from holy Jeypore Jagannath temple with thousands of devotees, senior MLAs, and Parishad leadership.',
+    location: 'Main Road & Dussehra Padia, Jeypore, Koraput',
+    tags: ['Koraput', 'Jeypore', 'Nagar Sankirtan', 'Shobhayatra']
+  },
+  {
+    id: 'photo-koraput-2',
+    title: 'ଜିଲ୍ଲାପାଳଙ୍କ ସହ ପ୍ରଶାସନିକ ଆଲୋଚନା ଓ ନିମନ୍ତ୍ରଣ',
+    city: 'Koraput',
+    cityKey: 'koraput',
+    category: 'satsang',
+    categoryLabel: 'Official Meeting',
+    year: '2024',
+    imageSrc: 'assets/images/koraput-collector-meeting.jpg',
+    desc: 'Parishad State President Sri Sidhartha Sankar Swain and delegation meeting Koraput Collector Shri Manoj Satyawan Mahajan, IAS.',
+    location: 'Collectorate Office, Koraput',
+    tags: ['Koraput', 'District Collector', 'Official Meeting']
+  },
+  {
+    id: 'photo-koraput-3',
+    title: 'ଚଢେଇଆ-ଚଢେଇଆଣୀ ପାରମ୍ପରିକ ଲୋକକଳା ସଂରକ୍ଷଣ',
+    city: 'Koraput',
+    cityKey: 'koraput',
+    category: 'lok-kala',
+    categoryLabel: 'Lok Kala & Music',
+    year: '2024',
+    imageSrc: 'assets/images/koraput-chadeia-dance-awareness.jpg',
+    desc: 'Revival and preservation of authentic tribal Chadeia-Chadeiani folk dance and music across Koraput district villages.',
+    location: 'Kotpad & Jeypore Cultural Mandap, Koraput',
+    tags: ['Koraput', 'Chadeia Dance', 'Lok Kala', 'Tribal Art']
   },
 
   // 4. Nabarangpur (Real Photos from Official District Samabesa)
