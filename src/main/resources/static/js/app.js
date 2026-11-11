@@ -222,7 +222,7 @@ let cityChaptersData = [
       'Preservation of tribal folk arts, Chadeia-Chadeiani dance, and indigenous music',
       'Felicitation of traditional kirtan acharyas and musical instrument distribution'
     ],
-    photoCount: 7,
+    photoCount: 8,
     photos: [
       {
         id: 'koraput-photo-1',
@@ -279,6 +279,25 @@ let cityChaptersData = [
         src: 'assets/images/koraput-sambad-mahasamabesa-darshan.jpg',
         desc: 'Front-page publication by The Sambad: "କଳିଯୁଗର ସୁରକ୍ଷା କବଚ ସଂକୀର୍ତ୍ତନ ମହାମନ୍ତ୍ର" featuring the grand dais and thousands of congregational devotees at Jeypore Dussehra Padia.',
         year: '2024'
+      },
+      {
+        id: 'koraput-photo-8',
+        title: '‘ଆର୍ଗସ ନ୍ୟୁଜ’ରେ ଆଦିବାସୀ ଲୋକନୃତ୍ୟ ସଚେତନତା ପ୍ରସାରଣ',
+        subTitle: 'Argus News Telecast — Chadeia Folk Dance Social Awareness',
+        src: 'assets/images/koraput-chadeia-dance-broadcast-thumb.jpg',
+        desc: 'Argus News television broadcast snapshot highlighting traditional Chadeia-Chadeiani folk dance performance for social awareness and indigenous art preservation patronized by Parishad leadership.',
+        year: '2024'
+      }
+    ],
+    videoCount: 1,
+    videos: [
+      {
+        id: 'koraput-video-1',
+        title: 'ଆଦିବାସୀ ଚଢେଇଆ-ଚଢେଇଆଣୀ ଲୋକନୃତ୍ୟ ଓ ସଚେତନତା (Tribal Folk Dance Awareness - Argus News)',
+        subTitle: 'Traditional Indigenous Folk Dance & Cultural Heritage Awareness Broadcast',
+        src: 'assets/videos/koraput-tribal-folk-dance-awareness-argus.mp4',
+        desc: 'Official television broadcast on Argus News: Traditional Chadeia-Chadeiani tribal folk dance awareness performance showcasing indigenous artistes, folk music, and cultural revival under the patronage of Sri Sri Jagannath Nam Sankirtan Loka Kala Parishad Odisha.',
+        sizeBadge: '44 MB HD MP4'
       }
     ]
   },
@@ -932,6 +951,19 @@ let activitiesData = [
     desc: 'Revival and preservation of authentic tribal Chadeia-Chadeiani folk dance and music across Koraput district villages.',
     location: 'Kotpad & Jeypore Cultural Mandap, Koraput',
     tags: ['Koraput', 'Chadeia Dance', 'Lok Kala', 'Tribal Art']
+  },
+  {
+    id: 'photo-koraput-4',
+    title: '‘ଆର୍ଗସ ନ୍ୟୁଜ’ରେ ଆଦିବାସୀ ଲୋକନୃତ୍ୟ ସଚେତନତା',
+    city: 'Koraput',
+    cityKey: 'koraput',
+    category: 'lok-kala',
+    categoryLabel: 'Lok Kala & Music',
+    year: '2024',
+    imageSrc: 'assets/images/koraput-chadeia-dance-broadcast-thumb.jpg',
+    desc: 'Argus News television broadcast coverage of traditional Chadeia-Chadeiani tribal folk dance awareness performance supported by Parishad.',
+    location: 'District Cultural Awareness Venue, Koraput',
+    tags: ['Koraput', 'Argus News', 'Chadeia Dance', 'Lok Kala', 'Awareness']
   },
 
   // 4. Nabarangpur (Real Photos from Official District Samabesa)

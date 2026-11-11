@@ -189,7 +189,7 @@ public class DataLoader implements CommandLineRunner {
 
             // 3. Koraput
             new CityChapter("koraput", "Koraput", "କୋରାପୁଟ • Sabara Srikhetra & Jeypore Devotional Chapter",
-                "Sabara Srikhetra Jagannath Mandir Seva Dal & Koraput District Samabesa Sangha", "+91 94390 XXXXX", "Sabara Srikhetra", 7,
+                "Sabara Srikhetra Jagannath Mandir Seva Dal & Koraput District Samabesa Sangha", "+91 94390 XXXXX", "Sabara Srikhetra", 8,
                 Arrays.asList(
                     "District Level Sankirtan and Loka Kala Mahasamabesa at Jeypore Dussehra Padia",
                     "Grand Nagar Sankirtan Shobhayatra from Jeypore Jagannath Mandir with 14 blocks",
@@ -446,6 +446,11 @@ public class DataLoader implements CommandLineRunner {
                 "Revival and preservation of authentic tribal Chadeia-Chadeiani folk dance and music across Koraput district villages.",
                 "Kotpad & Jeypore Cultural Mandap, Koraput",
                 Arrays.asList("Koraput", "Chadeia Dance", "Lok Kala", "Tribal Art")),
+            new ActivityPhoto("photo-koraput-4", "‘ଆର୍ଗସ ନ୍ୟୁଜ’ରେ ଆଦିବାସୀ ଲୋକନୃତ୍ୟ ସଚେତନତା", "Koraput", "koraput",
+                "lok-kala", "Lok Kala & Music", "2024", "assets/images/koraput-chadeia-dance-broadcast-thumb.jpg",
+                "Argus News television broadcast coverage of traditional Chadeia-Chadeiani tribal folk dance awareness performance supported by Parishad.",
+                "District Cultural Awareness Venue, Koraput",
+                Arrays.asList("Koraput", "Argus News", "Chadeia Dance", "Lok Kala", "Awareness")),
 
             // 4. Nabarangpur (Real Photos from Official District Samabesa)
             new ActivityPhoto("photo-nabrangpur-1", "ଜିଲ୍ଲାସ୍ତରୀୟ ସଂକୀର୍ତ୍ତନ ଓ ଲୋକ କଳା ମହା ଶୋଭାଯାତ୍ରା", "Nabarangpur", "nabrangpur",
