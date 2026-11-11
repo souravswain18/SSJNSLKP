@@ -463,11 +463,11 @@ public class DataLoader implements CommandLineRunner {
                 "Parishad leadership presenting ceremonial Uttariya to District Collector & Magistrate Shri Maheswar Swain, IAS.",
                 "Collectorate Office, Nabarangpur",
                 Arrays.asList("Nabarangpur", "District Collector", "Official Meeting")),
-            new ActivityPhoto("photo-nabrangpur-4", "ମାନ୍ୟବର ବିଧାୟକ ଶ୍ରୀ ନିତ୍ୟାନନ୍ଦ ଗଣ୍ଡଙ୍କୁ ସ୍ମାରକପତ୍ର ପ୍ରଦାନ", "Nabarangpur", "nabrangpur",
-                "satsang", "Official Meeting", "2024", "assets/images/nabarangpur-mla-memorandum-review.jpg",
-                "Parishad delegation and kirtan leaders presenting memorandum and demand letter to Hon’ble MLA Shri Nityananda Gond for rural sankirtan welfare.",
+            new ActivityPhoto("photo-nabrangpur-4", "ମାନ୍ୟବର କ୍ୟାବିନେଟ ମନ୍ତ୍ରୀ ଶ୍ରୀ ନିତ୍ୟାନନ୍ଦ ଗଣ୍ଡଙ୍କୁ ସ୍ମାରକପତ୍ର ପ୍ରଦାନ", "Nabarangpur", "nabrangpur",
+                "satsang", "Ministerial Meeting", "2024", "assets/images/nabarangpur-minister-memorandum-review.jpg",
+                "Parishad delegation and kirtan leaders presenting memorandum and demand letter to Hon’ble Cabinet Minister Shri Nityananda Gond (Minister of School & Mass Education, ST & SC Development, Minorities & Backward Classes Welfare, Govt. of Odisha) for rural sankirtan welfare.",
                 "District Samabesa Venue, Nabarangpur",
-                Arrays.asList("Nabarangpur", "Nityananda Gond", "MLA", "Memorandum", "Sankirtan Seva")),
+                Arrays.asList("Nabarangpur", "Nityananda Gond", "Cabinet Minister", "Memorandum", "Sankirtan Seva")),
 
             // 5. Dhenkanal
             new ActivityPhoto("photo-dhenkanal-1", "Kapilash Kshetra Akhanda Harinam Yajna", "Dhenkanal", "dhenkanal",

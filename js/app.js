@@ -388,18 +388,18 @@ let cityChaptersData = [
       },
       {
         id: 'nab-photo-12',
-        title: 'ମାନ୍ୟବର ବିଧାୟକ ଶ୍ରୀ ନିତ୍ୟାନନ୍ଦ ଗଣ୍ଡଙ୍କୁ ସ୍ମାରକପତ୍ର ପ୍ରଦାନ',
-        subTitle: 'Memorandum Submission to Hon’ble MLA Shri Nityananda Gond',
-        src: 'assets/images/nabarangpur-mla-memorandum-review.jpg',
-        desc: 'Parishad delegation and rural kirtan leaders presenting demand letter and memorandum to Hon’ble MLA Shri Nityananda Gond for the welfare and patronization of traditional sankirtaniyas and folk artistes.',
+        title: 'ମାନ୍ୟବର କ୍ୟାବିନେଟ ମନ୍ତ୍ରୀ ଶ୍ରୀ ନିତ୍ୟାନନ୍ଦ ଗଣ୍ଡଙ୍କୁ ସ୍ମାରକପତ୍ର ପ୍ରଦାନ',
+        subTitle: 'Memorandum Submission to Hon’ble Cabinet Minister Shri Nityananda Gond',
+        src: 'assets/images/nabarangpur-minister-memorandum-review.jpg',
+        desc: 'Parishad delegation and rural kirtan leaders presenting demand letter and memorandum to Hon’ble Cabinet Minister Shri Nityananda Gond (Minister of School & Mass Education, ST & SC Development, Minorities & Backward Classes Welfare, Govt. of Odisha) for the welfare and patronization of traditional sankirtaniyas and tribal folk artistes.',
         year: '2024'
       },
       {
         id: 'nab-photo-13',
-        title: 'ମାନ୍ୟବର ବିଧାୟକ ଶ୍ରୀ ନିତ୍ୟାନନ୍ଦ ଗଣ୍ଡଙ୍କ ସହ ଚାର୍ଟର ସମୀକ୍ଷା',
-        subTitle: 'Charter Review with Hon’ble MLA Shri Nityananda Gond',
+        title: 'ମାନ୍ୟବର କ୍ୟାବିନେଟ ମନ୍ତ୍ରୀ ଶ୍ରୀ ନିତ୍ୟାନନ୍ଦ ଗଣ୍ଡଙ୍କ ସହ ଚାର୍ଟର ସମୀକ୍ଷା',
+        subTitle: 'Charter & Demands Review with Hon’ble Cabinet Minister Shri Nityananda Gond',
         src: 'assets/images/nabarangpur-dignitaries-kirtan-leaders-assembly.jpg',
-        desc: 'Rural sankirtan mandali leaders and Parishad sevaks reviewing cultural preservation charter and memorandum demands with Hon’ble MLA Shri Nityananda Gond at Nabarangpur.',
+        desc: 'Rural sankirtan mandali leaders and Parishad sevaks reviewing cultural preservation charter and memorandum demands with Hon’ble Cabinet Minister Shri Nityananda Gond (Minister of School & Mass Education, ST & SC Development, Minorities & Backward Classes Welfare, Govt. of Odisha) at Nabarangpur.',
         year: '2024'
       },
       {
@@ -976,16 +976,16 @@ let activitiesData = [
   },
   {
     id: 'photo-nabrangpur-4',
-    title: 'ମାନ୍ୟବର ବିଧାୟକ ଶ୍ରୀ ନିତ୍ୟାନନ୍ଦ ଗଣ୍ଡଙ୍କୁ ସ୍ମାରକପତ୍ର ପ୍ରଦାନ',
+    title: 'ମାନ୍ୟବର କ୍ୟାବିନେଟ ମନ୍ତ୍ରୀ ଶ୍ରୀ ନିତ୍ୟାନନ୍ଦ ଗଣ୍ଡଙ୍କୁ ସ୍ମାରକପତ୍ର ପ୍ରଦାନ',
     city: 'Nabarangpur',
     cityKey: 'nabrangpur',
     category: 'satsang',
     categoryLabel: 'Official Meeting',
     year: '2024',
-    imageSrc: 'assets/images/nabarangpur-mla-memorandum-review.jpg',
-    desc: 'Parishad delegation and kirtan leaders presenting memorandum and demand letter to Hon’ble MLA Shri Nityananda Gond for rural sankirtan welfare.',
+    imageSrc: 'assets/images/nabarangpur-minister-memorandum-review.jpg',
+    desc: 'Parishad delegation and kirtan leaders presenting memorandum and demand letter to Hon’ble Cabinet Minister Shri Nityananda Gond (Minister of School & Mass Education, ST & SC Development, Minorities & Backward Classes Welfare, Govt. of Odisha) for rural sankirtan welfare.',
     location: 'District Samabesa Venue, Nabarangpur',
-    tags: ['Nabarangpur', 'Nityananda Gond', 'MLA', 'Memorandum', 'Sankirtan Seva']
+    tags: ['Nabarangpur', 'Nityananda Gond', 'Cabinet Minister', 'Memorandum', 'Sankirtan Seva']
   },
 
   // 5. Dhenkanal
