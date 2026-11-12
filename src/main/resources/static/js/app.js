@@ -2230,6 +2230,21 @@ const DEFAULT_AUTH_DOCUMENTS = [
     fileSizeFormatted: '742 KB',
     verifiedStatus: true,
     uploadDate: '2026-11-08'
+  },
+  {
+    id: 7,
+    title: 'Income Tax Department - Permanent Account Number (PAN) Card',
+    category: 'tax',
+    documentNumber: 'PAN: ....... 4L',
+    issuingAuthority: 'Income Tax Department, Govt. of India (भारत सरकार)',
+    issueYear: '2024',
+    description: 'Official Permanent Account Number (PAN) card issued by the Income Tax Department, Government of India, to Sri Sri Jagannath Nama Sankirtan Lok Kala Parisad Odisha (Date of Incorporation/Formation: 20/04/2024). Valid statutory tax identity card for all legal and banking operations.',
+    fileName: 'income-tax-pan-card.jpg',
+    fileUrl: 'assets/docs/income-tax-pan-card.jpg',
+    fileType: 'IMAGE',
+    fileSizeFormatted: '398 KB',
+    verifiedStatus: true,
+    uploadDate: '2026-11-12'
   }
 ];
 

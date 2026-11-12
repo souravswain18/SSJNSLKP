@@ -163,19 +163,35 @@ public class DataLoader implements CommandLineRunner {
         }
         if (documentRepository.count() == 0) {
             seedDocuments();
-        } else if (documentRepository.searchDocuments("srisrijagannath@sbi").isEmpty()) {
-            documentRepository.save(new AuthDocument(
-                "Official Bank Account & UPI Donation QR (State Bank of India)",
-                "donation",
-                "UPI ID: srisrijagannath@sbi",
-                "State Bank of India (SBI) • SRI SRIJAGANNATH NAMA SANKIRT",
-                "2026",
-                "Helping hand to poor tribal artists and hari bhaktas , all donations are used in distribution of musical instruments, clothings and mahaprasad annadan, Youth seva, etc.",
-                "sbi-upi-donation-qr.png",
-                "assets/docs/sbi-upi-donation-qr.png",
-                "IMAGE",
-                "742 KB"
-            ));
+        } else {
+            if (documentRepository.searchDocuments("srisrijagannath@sbi").isEmpty()) {
+                documentRepository.save(new AuthDocument(
+                    "Official Bank Account & UPI Donation QR (State Bank of India)",
+                    "donation",
+                    "UPI ID: srisrijagannath@sbi",
+                    "State Bank of India (SBI) • SRI SRIJAGANNATH NAMA SANKIRT",
+                    "2026",
+                    "Helping hand to poor tribal artists and hari bhaktas , all donations are used in distribution of musical instruments, clothings and mahaprasad annadan, Youth seva, etc.",
+                    "sbi-upi-donation-qr.png",
+                    "assets/docs/sbi-upi-donation-qr.png",
+                    "IMAGE",
+                    "742 KB"
+                ));
+            }
+            if (documentRepository.searchDocuments("income-tax-pan-card").isEmpty() && documentRepository.searchDocuments("PAN").isEmpty()) {
+                documentRepository.save(new AuthDocument(
+                    "Income Tax Department - Permanent Account Number (PAN) Card",
+                    "tax",
+                    "PAN: ....... 4L",
+                    "Income Tax Department, Govt. of India (भारत सरकार)",
+                    "2024",
+                    "Official Permanent Account Number (PAN) card issued by the Income Tax Department, Government of India, to Sri Sri Jagannath Nama Sankirtan Lok Kala Parisad Odisha (Date of Incorporation/Formation: 20/04/2024). Valid statutory tax identity card for all legal and banking operations.",
+                    "income-tax-pan-card.jpg",
+                    "assets/docs/income-tax-pan-card.jpg",
+                    "IMAGE",
+                    "398 KB"
+                ));
+            }
         }
         System.out.println("🕉️ Sri Sri Jagannath Nam Sankirtan Loka Kala parisad Odisha: 18 Chapters & Auth Docs Initialized!");
     }
@@ -795,6 +811,18 @@ public class DataLoader implements CommandLineRunner {
                 "assets/docs/sbi-upi-donation-qr.png",
                 "IMAGE",
                 "742 KB"
+            ),
+            new AuthDocument(
+                "Income Tax Department - Permanent Account Number (PAN) Card",
+                "tax",
+                "PAN: ....... 4L",
+                "Income Tax Department, Govt. of India (भारत सरकार)",
+                "2024",
+                "Official Permanent Account Number (PAN) card issued by the Income Tax Department, Government of India, to Sri Sri Jagannath Nama Sankirtan Lok Kala Parisad Odisha (Date of Incorporation/Formation: 20/04/2024). Valid statutory tax identity card for all legal and banking operations.",
+                "income-tax-pan-card.jpg",
+                "assets/docs/income-tax-pan-card.jpg",
+                "IMAGE",
+                "398 KB"
             )
         );
 
