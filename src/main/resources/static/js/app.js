@@ -502,7 +502,7 @@ let cityChaptersData = [
         title: 'ନାମ ସଂକୀର୍ତ୍ତନ ପାଇଁ ଜାଗା ଓ ଘରର ବ୍ୟବସ୍ଥା — ଜିଲ୍ଲାପାଳଙ୍କ ସମ୍ବର୍ଦ୍ଧନା',
         subTitle: 'Collector Saroj Kumar Sethi Announcing Dedicated Mandap & Land Support',
         src: 'assets/images/dhenkanal-collector-kirtan-mandap-press.jpg',
-        desc: 'Dhenkanal District Collector Saroj Kumar Sethi, IAS, being felicitated by Parishad State President Biprabar Sahu and District President Sidhartha Sankar Swain at the massive gathering of 20,000+ kirtaniyas across 8 blocks and 3 NACs.',
+        desc: 'Dhenkanal District Collector Saroj Kumar Sethi, IAS, and District President Sidhartha Sankar Swain at the massive gathering of 20,000+ kirtaniyas across 8 blocks and 3 NACs.',
         year: '2022'
       },
       {
