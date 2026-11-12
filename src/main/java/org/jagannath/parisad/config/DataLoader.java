@@ -94,13 +94,18 @@ public class DataLoader implements CommandLineRunner {
             if (!chapterRepository.existsByCityKey("jharsuguda")) {
                 chapterRepository.save(new CityChapter("jharsuguda", "Jharsuguda", 
                     "ଝାରସୁଗୁଡ଼ା • Brajrajnagar & Paschima Odisha Industrial-Tribal Sankirtan Peetha",
-                    "Jharsuguda District Seva Sangha & Mridanga Mandali Acharyas", "+91 94378 XXXXX", "Paschima Odisha Kirtan", 2,
+                    "Jharsuguda District Seva Sangha & Mridanga Mandali Acharyas", "+91 94378 XXXXX", "Paschima Odisha Kirtan", 4,
                     Arrays.asList(
                         "Grand Nagar Sankirtan & Prabhat Pheri across Jharsuguda, Brajrajnagar & Belpahar",
                         "Preservation of traditional Sambalpuri-Jagannath folk kirtan & Dhol-Nishan seva",
                         "Gramin Annadan seva shivir & warm clothes distribution for industrial and rural laborers",
                         "Youth Mridanga (Khol) training camps and Ramachandi-Jagannath satsang sabhas"
                     )));
+            } else {
+                chapterRepository.findByCityKey("jharsuguda").ifPresent(ch -> {
+                    ch.setPhotoCount(4);
+                    chapterRepository.save(ch);
+                });
             }
             if (!chapterRepository.existsByCityKey("kalahandi")) {
                 chapterRepository.save(new CityChapter("kalahandi", "Kalahandi", 
@@ -117,14 +122,24 @@ public class DataLoader implements CommandLineRunner {
         if (photoRepository.count() == 0) {
             seedPhotos();
         } else {
-            if (photoRepository.findByCityKey("jharsuguda").isEmpty()) {
+            if (photoRepository.findByCityKey("jharsuguda").size() < 4) {
                 photoRepository.saveAll(Arrays.asList(
-                    new ActivityPhoto("photo-jharsuguda-1", "Jharsuguda & Brajrajnagar Nagar Sankirtan", "Jharsuguda", "jharsuguda",
+                    new ActivityPhoto("photo-jharsuguda-1", "ଝାରସୁଗୁଡ଼ା ମହିଳା ସଂକୀର୍ତ୍ତନ ସେବା ମଣ୍ଡଳୀର ମହାସମାବେଶ", "Jharsuguda", "jharsuguda",
+                        "sankirtan", "Women Sankirtan Mandali", "2024", "assets/images/jharsuguda-women-sankirtan-samavesh.jpg",
+                        "Parishad State President Sri Sidhartha Sankar Swain with the vibrant Jharsuguda women sankirtan seva mandali in traditional Sambalpuri handloom sarees, dedicated to preserving Western Odisha Harinam folk traditions.",
+                        "Jharsuguda District Headquarters, Jharsuguda",
+                        Arrays.asList("Jharsuguda", "Women Mandali", "Sambalpuri Handloom", "Sankirtan Seva")),
+                    new ActivityPhoto("photo-jharsuguda-2", "ଝାରସୁଗୁଡ଼ା ମହିଳା ମଣ୍ଡଳୀ ଆଲୋଚନା ଓ ବେତ ଫୁଲତୋଡ଼ା ସମ୍ବର୍ଦ୍ଧନା", "Jharsuguda", "jharsuguda",
+                        "satsang", "Meeting & Felicitation", "2024", "assets/images/jharsuguda-women-mandali-felicitation.jpg",
+                        "Parishad State President Sri Sidhartha Sankar Swain being welcomed and felicitated with handcrafted traditional cane bouquets by Jharsuguda women sankirtan seva mandali members and cultural organizers.",
+                        "Jharsuguda Seva Bhavan, Jharsuguda",
+                        Arrays.asList("Jharsuguda", "Felicitation", "Women Mandali", "Traditional Cane Bouquet")),
+                    new ActivityPhoto("photo-jharsuguda-3", "Jharsuguda & Brajrajnagar Nagar Sankirtan", "Jharsuguda", "jharsuguda",
                         "sankirtan", "Harinam Sankirtan", "2025", "assets/images/jharsuguda-kirtan-mandali.svg",
                         "Harinam Sankirtan procession through Jharsuguda and Brajrajnagar town peethas with dhol and mridanga.",
                         "Jharsuguda & Brajrajnagar Towns, Jharsuguda",
                         Arrays.asList("Jharsuguda", "Brajrajnagar", "Nagar Sankirtan")),
-                    new ActivityPhoto("photo-jharsuguda-2", "Paschima Odisha Tribal & Gramin Seva", "Jharsuguda", "jharsuguda",
+                    new ActivityPhoto("photo-jharsuguda-4", "Paschima Odisha Tribal & Gramin Seva", "Jharsuguda", "jharsuguda",
                         "annadan", "Annadan Seva", "2025", "assets/images/jharsuguda-gramin-seva.svg",
                         "Community Annadan and warm clothes distribution for industrial and rural laborers in Kolabira and Laikera.",
                         "Kolabira & Laikera Blocks, Jharsuguda",
@@ -331,7 +346,7 @@ public class DataLoader implements CommandLineRunner {
 
             // 17. Jharsuguda
             new CityChapter("jharsuguda", "Jharsuguda", "ଝାରସୁଗୁଡ଼ା • Brajrajnagar & Paschima Odisha Industrial-Tribal Sankirtan Peetha",
-                "Jharsuguda District Seva Sangha & Mridanga Mandali Acharyas", "+91 94378 XXXXX", "Paschima Odisha Kirtan", 2,
+                "Jharsuguda District Seva Sangha & Mridanga Mandali Acharyas", "+91 94378 XXXXX", "Paschima Odisha Kirtan", 4,
                 Arrays.asList(
                     "Grand Nagar Sankirtan & Prabhat Pheri across Jharsuguda, Brajrajnagar & Belpahar",
                     "Preservation of traditional Sambalpuri-Jagannath folk kirtan & Dhol-Nishan seva",
@@ -670,12 +685,22 @@ public class DataLoader implements CommandLineRunner {
                 Arrays.asList("Bargarh", "Nrusinghanath", "Gramin Seva")),
 
             // 17. Jharsuguda
-            new ActivityPhoto("photo-jharsuguda-1", "Jharsuguda & Brajrajnagar Nagar Sankirtan", "Jharsuguda", "jharsuguda",
+            new ActivityPhoto("photo-jharsuguda-1", "ଝାରସୁଗୁଡ଼ା ମହିଳା ସଂକୀର୍ତ୍ତନ ସେବା ମଣ୍ଡଳୀର ମହାସମାବେଶ", "Jharsuguda", "jharsuguda",
+                "sankirtan", "Women Sankirtan Mandali", "2024", "assets/images/jharsuguda-women-sankirtan-samavesh.jpg",
+                "Parishad State President Sri Sidhartha Sankar Swain with the vibrant Jharsuguda women sankirtan seva mandali in traditional Sambalpuri handloom sarees, dedicated to preserving Western Odisha Harinam folk traditions.",
+                "Jharsuguda District Headquarters, Jharsuguda",
+                Arrays.asList("Jharsuguda", "Women Mandali", "Sambalpuri Handloom", "Sankirtan Seva")),
+            new ActivityPhoto("photo-jharsuguda-2", "ଝାରସୁଗୁଡ଼ା ମହିଳା ମଣ୍ଡଳୀ ଆଲୋଚନା ଓ ବେତ ଫୁଲତୋଡ଼ା ସମ୍ବର୍ଦ୍ଧନା", "Jharsuguda", "jharsuguda",
+                "satsang", "Meeting & Felicitation", "2024", "assets/images/jharsuguda-women-mandali-felicitation.jpg",
+                "Parishad State President Sri Sidhartha Sankar Swain being welcomed and felicitated with handcrafted traditional cane bouquets by Jharsuguda women sankirtan seva mandali members and cultural organizers.",
+                "Jharsuguda Seva Bhavan, Jharsuguda",
+                Arrays.asList("Jharsuguda", "Felicitation", "Women Mandali", "Traditional Cane Bouquet")),
+            new ActivityPhoto("photo-jharsuguda-3", "Jharsuguda & Brajrajnagar Nagar Sankirtan", "Jharsuguda", "jharsuguda",
                 "sankirtan", "Harinam Sankirtan", "2025", "assets/images/jharsuguda-kirtan-mandali.svg",
                 "Harinam Sankirtan procession through Jharsuguda and Brajrajnagar town peethas with dhol and mridanga.",
                 "Jharsuguda & Brajrajnagar Towns, Jharsuguda",
                 Arrays.asList("Jharsuguda", "Brajrajnagar", "Nagar Sankirtan")),
-            new ActivityPhoto("photo-jharsuguda-2", "Paschima Odisha Tribal & Gramin Seva", "Jharsuguda", "jharsuguda",
+            new ActivityPhoto("photo-jharsuguda-4", "Paschima Odisha Tribal & Gramin Seva", "Jharsuguda", "jharsuguda",
                 "annadan", "Annadan Seva", "2025", "assets/images/jharsuguda-gramin-seva.svg",
                 "Community Annadan and warm clothes distribution for industrial and rural laborers in Kolabira and Laikera.",
                 "Kolabira & Laikera Blocks, Jharsuguda",
