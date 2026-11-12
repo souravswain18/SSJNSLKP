@@ -220,7 +220,7 @@ public class DataLoader implements CommandLineRunner {
 
             // 6. Sambalpur
             new CityChapter("sambalpur", "Sambalpur", "ସମ୍ବଲପୁର • Western Odisha Lok Kala & Mridanga Hub",
-                "Maa Samaleswari Bhakti Sangha & Sambalpur District Seva Mandali", "+91 99380 XXXXX", "Western Odisha Hub", 3,
+                "Maa Samaleswari Bhakti Sangha & Sambalpur District Seva Mandali", "+91 99380 XXXXX", "Western Odisha Hub", 4,
                 Arrays.asList(
                     "Administrative coordination & patronization of traditional Sambalpuri folk artistes",
                     "Paschima Odisha Grand Kirtan Samavesh (50+ Village Mandalis)",
@@ -502,6 +502,11 @@ public class DataLoader implements CommandLineRunner {
                 "Free residential workshop training village youth in the rhythmic arts of authentic Odissi Khol.",
                 "Burla & Hirakud Cultural Centre, Sambalpur",
                 Arrays.asList("Sambalpur", "Mridanga", "Lok Kala")),
+            new ActivityPhoto("photo-sambalpur-4", "ଜିଲ୍ଲାପାଳ ଶ୍ରୀ ସିଦ୍ଧେଶ୍ୱର ବଳିରାମ ବୋନ୍ଦାର, IASଙ୍କୁ ପୁଷ୍ପଗୁଚ୍ଛ ସମ୍ବର୍ଦ୍ଧନା", "Sambalpur", "sambalpur",
+                "satsang", "Official Meeting", "2024", "assets/images/sambalpur-collector-felicitation-closeup.jpg",
+                "Ceremonial close-up felicitation of Sambalpur District Collector & Magistrate Shri Siddheshwar Baliram Bondar, IAS, by State President Sri Sidhartha Sankar Swain and women kirtan seva mandali.",
+                "District Collectorate Office, Sambalpur",
+                Arrays.asList("Sambalpur", "District Collector", "Siddheshwar Baliram Bondar", "Felicitation", "Women Seva")),
 
             // 7. Khordha
             new ActivityPhoto("photo-khordha-1", "Barunei Peetha Prabhat Pheri", "Khordha", "khordha",

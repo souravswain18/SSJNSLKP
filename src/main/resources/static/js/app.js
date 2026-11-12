@@ -485,18 +485,26 @@ let cityChaptersData = [
       'Free training camps for youth in traditional Mridanga (Khol) & Jhanja',
       'Gramin Seva Yatra, women kirtan mandali empowerment & evening sanskar camps'
     ],
-    photoCount: 3,
+    photoCount: 4,
     photos: [
       {
         id: 'sambalpur-photo-1',
-        title: 'ଜିଲ୍ଲାପାଳ ଶ୍ରୀ ସିଦ୍ଧେଶ୍ୱର ବଳିରାମ ବୋନ୍ଦାର, IASଙ୍କ ସହ ଆଲୋଚନା ଓ ସମ୍ବର୍ଦ୍ଧନା',
-        subTitle: 'Meeting with District Collector & Magistrate Shri Siddheshwar Baliram Bondar, IAS',
+        title: 'ସମ୍ବଲପୁର ଜିଲ୍ଲାପାଳଙ୍କ ସହ ପ୍ରତିନିଧି ଦଳ ଓ ମହିଳା ମଣ୍ଡଳୀ ଆଲୋଚନା',
+        subTitle: 'Parishad Delegation & Women Mandali Meeting with Collector Shri Siddheshwar Baliram Bondar, IAS',
         src: 'assets/images/sambalpur-collector-meeting.jpg',
-        desc: 'Parishad State President Sri Sidhartha Sankar Swain along with women kirtan seva mandali representatives in traditional Sambalpuri sarees presenting sacred uttariya and floral bouquet to District Collector & Magistrate Shri Siddheshwar Baliram Bondar, IAS, for district-wide Lok Kala and Sankirtan patronization.',
+        desc: 'Parishad State President Sri Sidhartha Sankar Swain along with women kirtan seva mandali representatives in traditional Sambalpuri sarees in official conference with Sambalpur District Collector & Magistrate Shri Siddheshwar Baliram Bondar, IAS.',
         year: '2024'
       },
       {
         id: 'sambalpur-photo-2',
+        title: 'ଜିଲ୍ଲାପାଳ ଶ୍ରୀ ସିଦ୍ଧେଶ୍ୱର ବଳିରାମ ବୋନ୍ଦାର, IASଙ୍କୁ ପୁଷ୍ପଗୁଚ୍ଛ ଓ ଉତ୍ତରୀୟ ସମ୍ବର୍ଦ୍ଧନା',
+        subTitle: 'Ceremonial Bouquet & Uttariya Felicitation to District Collector Shri Siddheshwar Baliram Bondar, IAS',
+        src: 'assets/images/sambalpur-collector-felicitation-closeup.jpg',
+        desc: 'Auspicious close-up darshan of Parishad State President Sri Sidhartha Sankar Swain and women sankirtan mandali leader presenting ceremonial sacred floral bouquet, traditional Sambalpuri handloom gift pack, and uttariya to Sambalpur Collector & DM Shri Siddheshwar Baliram Bondar, IAS.',
+        year: '2024'
+      },
+      {
+        id: 'sambalpur-photo-3',
         title: 'ମା’ ସମଲେଶ୍ଵରୀ ମହୋତ୍ସବ ସଂକୀର୍ତ୍ତନ ସମାବେଶ',
         subTitle: 'Maa Samaleswari Mahotsav Kirtan Samavesh',
         src: 'assets/images/sambalpur-kirtan-samavesh.svg',
@@ -504,7 +512,7 @@ let cityChaptersData = [
         year: '2025'
       },
       {
-        id: 'sambalpur-photo-3',
+        id: 'sambalpur-photo-4',
         title: 'ପାରମ୍ପରିକ ଖୋଳ-ମୃଦଙ୍ଗ ଓ ଝାଞ୍ଜ ପ୍ରଶିକ୍ଷଣ ଶିବିର',
         subTitle: 'Traditional Mridanga (Khol) & Folk Rhythm Training Camp',
         src: 'assets/images/sambalpur-mridanga-seva.svg',
@@ -1087,6 +1095,19 @@ let activitiesData = [
     desc: 'Free residential workshop training village youth in the rhythmic arts of authentic Odissi Khol.',
     location: 'Burla & Hirakud Cultural Centre, Sambalpur',
     tags: ['Sambalpur', 'Mridanga', 'Lok Kala']
+  },
+  {
+    id: 'photo-sambalpur-4',
+    title: 'ଜିଲ୍ଲାପାଳ ଶ୍ରୀ ସିଦ୍ଧେଶ୍ୱର ବଳିରାମ ବୋନ୍ଦାର, IASଙ୍କୁ ପୁଷ୍ପଗୁଚ୍ଛ ସମ୍ବର୍ଦ୍ଧନା',
+    city: 'Sambalpur',
+    cityKey: 'sambalpur',
+    category: 'satsang',
+    categoryLabel: 'Official Meeting',
+    year: '2024',
+    imageSrc: 'assets/images/sambalpur-collector-felicitation-closeup.jpg',
+    desc: 'Ceremonial close-up felicitation of Sambalpur District Collector & Magistrate Shri Siddheshwar Baliram Bondar, IAS, by State President Sri Sidhartha Sankar Swain and women kirtan seva mandali.',
+    location: 'District Collectorate Office, Sambalpur',
+    tags: ['Sambalpur', 'District Collector', 'Siddheshwar Baliram Bondar', 'Felicitation', 'Women Seva']
   },
 
   // 7. Khordha
