@@ -461,36 +461,84 @@ let cityChaptersData = [
     id: 'dhenkanal',
     name: 'Dhenkanal',
     subName: 'ଢେଙ୍କାନାଳ • Kapilash & Mahima Peetha Devotional Wing',
-    coordinator: 'Kapilash Kshetra Bhakti Parishad',
+    coordinator: 'Kapilash Kshetra Bhakti Parishad & Dhenkanal District Branch',
     contact: '+91 94382 XXXXX',
     badge: 'Lok Kala & Heritage',
     activities: [
       'District Level Sankirtan Mahasamabesa in Zilla Parishad Hall with 20,000+ devotees',
       'Administrative coordination with District Collector for dedicated Sankirtan Mandap & land',
-      '24-Hour Akhanda Harinam Maha-Yajna in sacred Kapilash foothills',
-      'Revival & preservation of traditional Odia Pala and Daskathia art',
+      'Grand Nagar Sankirtan Shobhayatra authorized by Sub-Collector & SDM Dhenkanal',
+      'Revival & preservation of traditional Odia Pala, Daskathia & rural folk arts',
       'District & municipal working committee meetings at sacred Sri Sri Dadhi Vaman Temple'
     ],
-    photoCount: 6,
+    photoCount: 10,
     photos: [
       {
         id: 'dhenkanal-photo-1',
-        title: '‘ସଂକୀର୍ତ୍ତନ ପାଇଁ ଖୁବ୍‌ଶୀଘ୍ର ଗୃହ’ — ଜିଲ୍ଲା ମହାସମାବେଶ',
-        subTitle: 'Press Coverage — District Sankirtan Mahasamabesa in Zilla Parishad Hall',
-        src: 'assets/images/dhenkanal-district-sankirtan-mahasamabesa-press.jpg',
-        desc: 'Official newspaper coverage of the grand Dhenkanal District Jagannath Nam Sankirtan Mahasamabesa in Old Zilla Parishad Conference Hall, inaugurated by District Collector Saroj Kumar Sethi, IAS, with massive Harinam Shobhayatra and patronage for traditional artists.',
-        year: '2024'
+        title: 'ଢେଙ୍କାନାଳ ଜିଲ୍ଲା ସଂକୀର୍ତ୍ତନ ମହାସମାବେଶ ସରକାରୀ ନିମନ୍ତ୍ରଣ ପତ୍ର',
+        subTitle: 'Official Invitation Card — Dhenkanal District Sankirtan Mahasamabesa',
+        src: 'assets/images/dhenkanal-official-invitation-card-2022.jpg',
+        desc: 'Official printed invitation card for the historic Dhenkanal District Sankirtan Mahasamabesa held at Old Zilla Parishad Hall, featuring District Collector Saroj Kumar Sethi, IAS as Chief Guest and Parishad leadership.',
+        year: '2022'
       },
       {
         id: 'dhenkanal-photo-2',
+        title: 'ଉପଜିଲ୍ଲାପାଳ ଓ ଏସ.ଡି.ଏମ.ଙ୍କ ଶୋଭାଯାତ୍ରା ପ୍ରଶାସନିକ ଅନୁମୋଦନ ଆଦେଶ',
+        subTitle: 'Official SDM Judicial Order — Kirtan Mandali Procession Permission',
+        src: 'assets/images/dhenkanal-sdm-procession-govt-order-2022.jpg',
+        desc: 'Statutory administrative order from the Office of Sub-Collector & SDM Dhenkanal formally authorizing District President Siddhartha Sankar Swain for the grand Kirtan Mandali procession and loudspeaker usage.',
+        year: '2022'
+      },
+      {
+        id: 'dhenkanal-photo-3',
+        title: '‘ସଂକୀର୍ତ୍ତନ ପାଇଁ ଖୁବ୍‌ଶୀଘ୍ର ଗୃହ’ — ଜିଲ୍ଲା ମହାସମାବେଶ',
+        subTitle: 'Press Coverage — District Sankirtan Mahasamabesa in Zilla Parishad Hall',
+        src: 'assets/images/dhenkanal-district-sankirtan-mahasamabesa-press.jpg',
+        desc: 'Official newspaper coverage of the grand Dhenkanal District Jagannath Nam Sankirtan Mahasamabesa in Old Zilla Parishad Conference Hall, inaugurated by District Collector Saroj Kumar Sethi, IAS, with massive Harinam Shobhayatra.',
+        year: '2022'
+      },
+      {
+        id: 'dhenkanal-photo-4',
         title: 'ନାମ ସଂକୀର୍ତ୍ତନ ପାଇଁ ଜାଗା ଓ ଘରର ବ୍ୟବସ୍ଥା — ଜିଲ୍ଲାପାଳଙ୍କ ସମ୍ବର୍ଦ୍ଧନା',
         subTitle: 'Collector Saroj Kumar Sethi Announcing Dedicated Mandap & Land Support',
         src: 'assets/images/dhenkanal-collector-kirtan-mandap-press.jpg',
         desc: 'Dhenkanal District Collector Saroj Kumar Sethi, IAS, being felicitated by Parishad State President Biprabar Sahu and District President Sidhartha Sankar Swain at the massive gathering of 20,000+ kirtaniyas across 8 blocks and 3 NACs.',
-        year: '2024'
+        year: '2022'
       },
       {
-        id: 'dhenkanal-photo-3',
+        id: 'dhenkanal-photo-5',
+        title: 'ଜିଲ୍ଲା ପରିଷଦ ହଲରେ ବିଶାଳ ଭକ୍ତ ସମାବେଶ ଓ ମହିଳା ସଂକୀର୍ତ୍ତନ ଶୋଭାଯାତ୍ରା',
+        subTitle: 'Packed Auditorium Congregation & Vibrant Women Sankirtan Procession',
+        src: 'assets/images/dhenkanal-hall-congregation-women-shobhayatra.jpg',
+        desc: 'Ground photographic archive of the packed Zilla Parishad conference hall with hundreds of devotees, traditional women sankirtan mandalis marching in traditional attire, and signed validation by District President Sidhartha Sankar Swain.',
+        year: '2022'
+      },
+      {
+        id: 'dhenkanal-photo-6',
+        title: 'ଜିଲ୍ଲା ସଭାପତି ଶ୍ରୀ ସିଦ୍ଧାର୍ଥ ଶଙ୍କର ସ୍ୱାଇଁଙ୍କ ଅଭିଭାଷଣ ଓ ମଞ୍ଚ କାର୍ଯ୍ୟକ୍ରମ',
+        subTitle: 'Presidential Address by Sidhartha Sankar Swain & Dignitaries on Dais',
+        src: 'assets/images/dhenkanal-presidential-address-dais-proceedings.jpg',
+        desc: 'District President Sri Sidhartha Sankar Swain delivering presidential address from the podium, Lord Jagannath prayer rituals, and distinguished dais proceedings with state cultural leadership.',
+        year: '2022'
+      },
+      {
+        id: 'dhenkanal-photo-7',
+        title: 'ନଗର ସଂକୀର୍ତ୍ତନ ଶୋଭାଯାତ୍ରା ଓ ମୁଖ୍ୟ ବ୍ୟାନର ସମ୍ମିଳନୀ ମଞ୍ଚ',
+        subTitle: 'Nagar Sankirtan Open-Jeep Procession & Executive Dais Congregation',
+        src: 'assets/images/dhenkanal-nagar-sankirtan-dais-leaders-collage.jpg',
+        desc: 'Historic collage documenting open-vehicle Harinam procession with leaders in prayer posture, Biju Patnaik memorial homage, and full 7-dignitary dais assembly in front of the Parishad banner.',
+        year: '2022'
+      },
+      {
+        id: 'dhenkanal-photo-8',
+        title: 'ଢେଙ୍କାନାଳ ସହର ପରିକ୍ରମା ଶୋଭାଯାତ୍ରା ଓ ସମାବେଶ ରେକର୍ଡ',
+        subTitle: 'Town Parikrama Street March & Convention Archival Endorsement',
+        src: 'assets/images/dhenkanal-grand-shobhayatra-samabesa-archive.jpg',
+        desc: 'Archival photographic record showcasing extensive street shobhayatra from Alasua Hata to Zilla Parishad Hall, audience devotion, and official sign-off by District President Sidhartha Sankar Swain.',
+        year: '2022'
+      },
+      {
+        id: 'dhenkanal-photo-9',
         title: 'ସାଂସଦ ମହେଶ ସାହୁଙ୍କ ମୁଖ୍ୟ ଆତିଥ୍ୟରେ ପରିଷଦର କାର୍ଯ୍ୟକାରୀ ବୈଠକ',
         subTitle: 'Executive Meeting with Dhenkanal MP Shri Mahesh Sahoo',
         src: 'assets/images/dhenkanal-mp-mahesh-sahoo-executive-meeting.jpg',
@@ -498,28 +546,12 @@ let cityChaptersData = [
         year: '2024'
       },
       {
-        id: 'dhenkanal-photo-4',
+        id: 'dhenkanal-photo-10',
         title: 'ଶ୍ରୀ ଶ୍ରୀ ଦଧିବାମନ ମନ୍ଦିର ପ୍ରସ୍ତୁତି ବୈଠକ — ଜାଗ୍ରତ ଭାରତ ନ୍ୟୁଜ',
         subTitle: 'Jagrat Bharat News — Preparatory Meeting at Sacred Dadhi Vaman Temple, Rathgada',
         src: 'assets/images/dhenkanal-dadhi-vaman-temple-preparatory-meet.jpg',
         desc: 'Special news report on the preparatory committee assembly at sacred Dadhi Vaman temple premises, Rathgada, Dhenkanal, chaired by District President Sidhartha Sankar Swain for district-wide sankirtan coordination.',
         year: '2024'
-      },
-      {
-        id: 'dhenkanal-photo-5',
-        title: 'କପିଳାସ କ୍ଷେତ୍ର ଅଖଣ୍ଡ ହରିନାମ ଯଜ୍ଞ',
-        subTitle: 'Kapilash Kshetra Akhanda Harinam Yajna',
-        src: 'assets/images/dhenkanal-kapilash-yajna.svg',
-        desc: 'Continuous 24-hour non-stop Akhanda Sankirtan mahayajna in sacred Kapilash foothills uniting village mandalis.',
-        year: '2024'
-      },
-      {
-        id: 'dhenkanal-photo-6',
-        title: 'ପାରମ୍ପରିକ ପାଲା ଓ ଦାସକାଠିଆ ଲୋକକଳା ସମ୍ମିଳନୀ',
-        subTitle: 'Traditional Pala & Daskathia Folk Heritage Festival',
-        src: 'assets/images/dhenkanal-lok-kala.svg',
-        desc: 'Celebrating classical Odia Pala and Daskathia performers enacting sacred pastimes of Mahaprabhu Jagannath.',
-        year: '2025'
       }
     ]
   },
@@ -1079,35 +1111,87 @@ let activitiesData = [
     tags: ['Nabarangpur', 'Nityananda Gond', 'Cabinet Minister', 'Memorandum', 'Sankirtan Seva']
   },
 
-  // 5. Dhenkanal (Real Press Coverage & Folk Activities)
+  // 5. Dhenkanal (Real Press Coverage, Govt Orders & Ground Archives)
   {
     id: 'photo-dhenkanal-1',
+    title: 'ଢେଙ୍କାନାଳ ଜିଲ୍ଲା ସଂକୀର୍ତ୍ତନ ମହାସମାବେଶ ସରକାରୀ ନିମନ୍ତ୍ରଣ ପତ୍ର',
+    city: 'Dhenkanal',
+    cityKey: 'dhenkanal',
+    category: 'satsang',
+    categoryLabel: 'Official Document',
+    year: '2022',
+    imageSrc: 'assets/images/dhenkanal-official-invitation-card-2022.jpg',
+    desc: 'Official printed invitation card for the historic Dhenkanal District Sankirtan Mahasamabesa at Old Zilla Parishad Hall, with Collector Saroj Kumar Sethi, IAS as Chief Guest.',
+    location: 'Old Zilla Parishad Hall, Dhenkanal',
+    tags: ['Dhenkanal', 'Invitation Card', 'Collectorate', 'Zilla Parishad', 'Official']
+  },
+  {
+    id: 'photo-dhenkanal-2',
+    title: 'ଉପଜିଲ୍ଲାପାଳ ଓ ଏସ.ଡି.ଏମ.ଙ୍କ ଶୋଭାଯାତ୍ରା ପ୍ରଶାସନିକ ଅନୁମୋଦନ ଆଦେଶ',
+    city: 'Dhenkanal',
+    cityKey: 'dhenkanal',
+    category: 'satsang',
+    categoryLabel: 'Official Document',
+    year: '2022',
+    imageSrc: 'assets/images/dhenkanal-sdm-procession-govt-order-2022.jpg',
+    desc: 'Administrative order from Office of Sub-Collector & SDM Dhenkanal authorizing District President Siddhartha Sankar Swain for Kirtan Mandali procession from Alasua Hata to Zilla Parishad Hall.',
+    location: 'Office of Sub-Collector & SDM, Dhenkanal',
+    tags: ['Dhenkanal', 'Sub-Collector', 'SDM Order', 'Govt Permission', 'Sankirtan Procession']
+  },
+  {
+    id: 'photo-dhenkanal-3',
     title: 'ଜିଲ୍ଲା ଜଗନ୍ନାଥ ନାମ ସଂକୀର୍ତ୍ତନ ମହାସମାବେଶ ଓ ଶୋଭାଯାତ୍ରା',
     city: 'Dhenkanal',
     cityKey: 'dhenkanal',
     category: 'sankirtan',
     categoryLabel: 'Harinam Sankirtan',
-    year: '2024',
+    year: '2022',
     imageSrc: 'assets/images/dhenkanal-district-sankirtan-mahasamabesa-press.jpg',
     desc: 'Grand Dhenkanal District Jagannath Nam Sankirtan Mahasamabesa in Old Zilla Parishad Hall with massive Harinam Shobhayatra, inaugurated by Collector Saroj Kumar Sethi, IAS.',
     location: 'Old Zilla Parishad Hall & Main Town, Dhenkanal',
     tags: ['Dhenkanal', 'Mahasamabesa', 'Harinam', 'Shobhayatra', 'Collectorate']
   },
   {
-    id: 'photo-dhenkanal-2',
+    id: 'photo-dhenkanal-4',
     title: 'ଜିଲ୍ଲାପାଳଙ୍କ ଦ୍ୱାରା ସଂକୀର୍ତ୍ତନ ମଣ୍ଡପ ଘୋଷଣା ଓ ସମ୍ବର୍ଦ୍ଧନା',
     city: 'Dhenkanal',
     cityKey: 'dhenkanal',
     category: 'satsang',
     categoryLabel: 'Official Meeting',
-    year: '2024',
+    year: '2022',
     imageSrc: 'assets/images/dhenkanal-collector-kirtan-mandap-press.jpg',
     desc: 'Dhenkanal District Collector Saroj Kumar Sethi, IAS, being felicitated and announcing dedicated land and kirtan mandap for 20,000+ village kirtaniyas.',
     location: 'Zilla Parishad Conference Hall, Dhenkanal',
     tags: ['Dhenkanal', 'District Collector', 'Saroj Kumar Sethi', 'Mandap Announcement']
   },
   {
-    id: 'photo-dhenkanal-3',
+    id: 'photo-dhenkanal-5',
+    title: 'ଜିଲ୍ଲା ପରିଷଦ ହଲରେ ବିଶାଳ ଭକ୍ତ ସମାବେଶ ଓ ମହିଳା ସଂକୀର୍ତ୍ତନ ଶୋଭାଯାତ୍ରା',
+    city: 'Dhenkanal',
+    cityKey: 'dhenkanal',
+    category: 'sankirtan',
+    categoryLabel: 'Harinam Sankirtan',
+    year: '2022',
+    imageSrc: 'assets/images/dhenkanal-hall-congregation-women-shobhayatra.jpg',
+    desc: 'Hundreds of devotees packing Zilla Parishad Hall, women kirtan mandalis marching in traditional attire, signed by District President Sidhartha Sankar Swain.',
+    location: 'Zilla Parishad Hall & Town Thoroughfares, Dhenkanal',
+    tags: ['Dhenkanal', 'Hall Congregation', 'Women Sankirtan', 'Shobhayatra']
+  },
+  {
+    id: 'photo-dhenkanal-6',
+    title: 'ଜିଲ୍ଲା ସଭାପତି ଶ୍ରୀ ସିଦ୍ଧାର୍ଥ ଶଙ୍କର ସ୍ୱାଇଁଙ୍କ ଅଭିଭାଷଣ ଓ ମଞ୍ଚ କାର୍ଯ୍ୟକ୍ରମ',
+    city: 'Dhenkanal',
+    cityKey: 'dhenkanal',
+    category: 'satsang',
+    categoryLabel: 'Official Meeting',
+    year: '2022',
+    imageSrc: 'assets/images/dhenkanal-presidential-address-dais-proceedings.jpg',
+    desc: 'District President Sri Sidhartha Sankar Swain addressing from podium, sacred Jagannath prayer rituals, and dais proceedings.',
+    location: 'Zilla Parishad Auditorium, Dhenkanal',
+    tags: ['Dhenkanal', 'Sidhartha Sankar Swain', 'Presidential Address', 'Dais']
+  },
+  {
+    id: 'photo-dhenkanal-7',
     title: 'ସାଂସଦ ମହେଶ ସାହୁଙ୍କ ଉପସ୍ଥିତିରେ ପରିଷଦର କାର୍ଯ୍ୟକାରୀ ବୈଠକ',
     city: 'Dhenkanal',
     cityKey: 'dhenkanal',
@@ -1120,7 +1204,7 @@ let activitiesData = [
     tags: ['Dhenkanal', 'MP Mahesh Sahoo', 'Executive Meeting', 'Jagannath Culture']
   },
   {
-    id: 'photo-dhenkanal-4',
+    id: 'photo-dhenkanal-8',
     title: 'ଦଧିବାମନ ମନ୍ଦିରରେ ପରିଷଦ ପ୍ରସ୍ତୁତି ସମାବେଶ',
     city: 'Dhenkanal',
     cityKey: 'dhenkanal',
@@ -1131,32 +1215,6 @@ let activitiesData = [
     desc: 'Working committee preparatory meeting at sacred Sri Sri Dadhi Vaman Temple, Rathgada, chaired by District President Sidhartha Sankar Swain.',
     location: 'Sri Sri Dadhi Vaman Temple, Rathgada, Dhenkanal',
     tags: ['Dhenkanal', 'Dadhi Vaman Temple', 'Rathgada', 'Preparatory Meeting']
-  },
-  {
-    id: 'photo-dhenkanal-5',
-    title: 'Kapilash Kshetra Akhanda Harinam Yajna',
-    city: 'Dhenkanal',
-    cityKey: 'dhenkanal',
-    category: 'sankirtan',
-    categoryLabel: 'Harinam Sankirtan',
-    year: '2024',
-    imageSrc: 'assets/images/dhenkanal-kapilash-yajna.svg',
-    desc: 'Continuous 24-hour non-stop Akhanda Sankirtan mahayajna in sacred Kapilash foothills.',
-    location: 'Kapilash Temple Foot, Dhenkanal',
-    tags: ['Dhenkanal', 'Kapilash', 'Akhanda Yajna']
-  },
-  {
-    id: 'photo-dhenkanal-6',
-    title: 'Traditional Pala & Devotional Sangeet',
-    city: 'Dhenkanal',
-    cityKey: 'dhenkanal',
-    category: 'lok-kala',
-    categoryLabel: 'Lok Kala & Music',
-    year: '2025',
-    imageSrc: 'assets/images/dhenkanal-lok-kala.svg',
-    desc: 'Celebrating classical Odia Pala and Daskathia performers enacting stories of Lord Jagannath.',
-    location: 'Dhenkanal Town Hall Auditorium',
-    tags: ['Dhenkanal', 'Pala', 'Lok Kala']
   },
 
   // 6. Sambalpur (Real Ground Photo & Folk Activities)
