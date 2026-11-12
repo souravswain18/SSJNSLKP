@@ -210,12 +210,13 @@ public class DataLoader implements CommandLineRunner {
 
             // 5. Dhenkanal
             new CityChapter("dhenkanal", "Dhenkanal", "ଢେଙ୍କାନାଳ • Kapilash & Mahima Peetha Devotional Wing",
-                "Kapilash Kshetra Bhakti Parishad", "+91 94382 XXXXX", "Lok Kala & Heritage", 2,
+                "Kapilash Kshetra Bhakti Parishad", "+91 94382 XXXXX", "Lok Kala & Heritage", 6,
                 Arrays.asList(
+                    "District Level Sankirtan Mahasamabesa in Zilla Parishad Hall with 20,000+ devotees",
+                    "Administrative coordination with District Collector for dedicated Sankirtan Mandap & land",
                     "24-Hour Akhanda Harinam Maha-Yajna in sacred Kapilash foothills",
                     "Revival & preservation of traditional Odia Pala and Daskathia art",
-                    "Recitation and singing shivirs for Jayadev's sacred Geet Govind",
-                    "Senior sadhu seva and spiritual retreats during auspicious festivals"
+                    "District & municipal working committee meetings at sacred Sri Sri Dadhi Vaman Temple"
                 )),
 
             // 6. Sambalpur
@@ -474,13 +475,33 @@ public class DataLoader implements CommandLineRunner {
                 "District Samabesa Venue, Nabarangpur",
                 Arrays.asList("Nabarangpur", "Nityananda Gond", "Cabinet Minister", "Memorandum", "Sankirtan Seva")),
 
-            // 5. Dhenkanal
-            new ActivityPhoto("photo-dhenkanal-1", "Kapilash Kshetra Akhanda Harinam Yajna", "Dhenkanal", "dhenkanal",
+            // 5. Dhenkanal (Real Press Coverage & Folk Activities)
+            new ActivityPhoto("photo-dhenkanal-1", "ଜିଲ୍ଲା ଜଗନ୍ନାଥ ନାମ ସଂକୀର୍ତ୍ତନ ମହାସମାବେଶ ଓ ଶୋଭାଯାତ୍ରା", "Dhenkanal", "dhenkanal",
+                "sankirtan", "Harinam Sankirtan", "2024", "assets/images/dhenkanal-district-sankirtan-mahasamabesa-press.jpg",
+                "Grand Dhenkanal District Jagannath Nam Sankirtan Mahasamabesa in Old Zilla Parishad Hall with massive Harinam Shobhayatra, inaugurated by Collector Saroj Kumar Sethi, IAS.",
+                "Old Zilla Parishad Hall & Main Town, Dhenkanal",
+                Arrays.asList("Dhenkanal", "Mahasamabesa", "Harinam", "Shobhayatra", "Collectorate")),
+            new ActivityPhoto("photo-dhenkanal-2", "ଜିଲ୍ଲାପାଳଙ୍କ ଦ୍ୱାରା ସଂକୀର୍ତ୍ତନ ମଣ୍ଡପ ଘୋଷଣା ଓ ସମ୍ବର୍ଦ୍ଧନା", "Dhenkanal", "dhenkanal",
+                "satsang", "Official Meeting", "2024", "assets/images/dhenkanal-collector-kirtan-mandap-press.jpg",
+                "Dhenkanal District Collector Saroj Kumar Sethi, IAS, being felicitated and announcing dedicated land and kirtan mandap for 20,000+ village kirtaniyas.",
+                "Zilla Parishad Conference Hall, Dhenkanal",
+                Arrays.asList("Dhenkanal", "District Collector", "Saroj Kumar Sethi", "Mandap Announcement")),
+            new ActivityPhoto("photo-dhenkanal-3", "ସାଂସଦ ମହେଶ ସାହୁଙ୍କ ଉପସ୍ଥିତିରେ ପରିଷଦର କାର୍ଯ୍ୟକାରୀ ବୈଠକ", "Dhenkanal", "dhenkanal",
+                "satsang", "Official Meeting", "2024", "assets/images/dhenkanal-mp-mahesh-sahoo-executive-meeting.jpg",
+                "Dhenkanal MP Shri Mahesh Sahoo addressing executive council meeting alongside District President Sidhartha Sankar Swain on Jagannath culture preservation.",
+                "Dhenkanal Town Hall / Executive Office",
+                Arrays.asList("Dhenkanal", "MP Mahesh Sahoo", "Executive Meeting", "Jagannath Culture")),
+            new ActivityPhoto("photo-dhenkanal-4", "ଦଧିବାମନ ମନ୍ଦିରରେ ପରିଷଦ ପ୍ରସ୍ତୁତି ସମାବେଶ", "Dhenkanal", "dhenkanal",
+                "satsang", "Official Meeting", "2024", "assets/images/dhenkanal-dadhi-vaman-temple-preparatory-meet.jpg",
+                "Working committee preparatory meeting at sacred Sri Sri Dadhi Vaman Temple, Rathgada, chaired by District President Sidhartha Sankar Swain.",
+                "Sri Sri Dadhi Vaman Temple, Rathgada, Dhenkanal",
+                Arrays.asList("Dhenkanal", "Dadhi Vaman Temple", "Rathgada", "Preparatory Meeting")),
+            new ActivityPhoto("photo-dhenkanal-5", "Kapilash Kshetra Akhanda Harinam Yajna", "Dhenkanal", "dhenkanal",
                 "sankirtan", "Harinam Sankirtan", "2024", "assets/images/dhenkanal-kapilash-yajna.svg",
                 "Continuous 24-hour non-stop Akhanda Sankirtan mahayajna in sacred Kapilash foothills.",
                 "Kapilash Temple Foot, Dhenkanal",
                 Arrays.asList("Dhenkanal", "Kapilash", "Akhanda Yajna")),
-            new ActivityPhoto("photo-dhenkanal-2", "Traditional Pala & Devotional Sangeet", "Dhenkanal", "dhenkanal",
+            new ActivityPhoto("photo-dhenkanal-6", "Traditional Pala & Devotional Sangeet", "Dhenkanal", "dhenkanal",
                 "lok-kala", "Lok Kala & Music", "2025", "assets/images/dhenkanal-lok-kala.svg",
                 "Celebrating classical Odia Pala and Daskathia performers enacting stories of Lord Jagannath.",
                 "Dhenkanal Town Hall Auditorium",
