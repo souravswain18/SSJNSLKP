@@ -122,6 +122,20 @@ public class DataLoader implements CommandLineRunner {
         if (photoRepository.count() == 0) {
             seedPhotos();
         } else {
+            if (photoRepository.findByCityKey("puri").stream().noneMatch(p -> p.getPhotoKey() != null && p.getPhotoKey().contains("video"))) {
+                photoRepository.saveAll(Arrays.asList(
+                    new ActivityPhoto("photo-puri-video-1", "‘ଆର୍ଗସ ନ୍ୟୁଜ’ ପ୍ରସାରଣ — ଶ୍ରୀକ୍ଷେତ୍ର ସିଂହଦ୍ୱାର ପ୍ରତିଦିନ ସଂକୀର୍ତ୍ତନ (Live Video)", "Puri Dham", "puri",
+                        "sankirtan", "🎥 Live Broadcast Video (Argus News)", "2024", "assets/images/puri-singhadwara-daily-sankirtan-mandali.jpg",
+                        "Official television broadcast on Argus News: Rural and state sankirtan mandalis performing daily devotional kirtan with mridanga and kartal before holy Singhadwara and Aruna Stambha of Sri Jagannath Mandir.",
+                        "Singhadwara & Aruna Stambha, Sri Jagannath Temple, Puri",
+                        Arrays.asList("Puri", "Argus News", "Live Video", "Singhadwara", "Harinam Sankirtan")),
+                    new ActivityPhoto("photo-puri-video-2", "‘ଆର୍ଗସ ନ୍ୟୁଜ’ ପ୍ରସାରଣ — ପୁରୀ ବଡ଼ଦାଣ୍ଡ ମହିଳା ଓ ଗ୍ରାମୀଣ ସଂକୀର୍ତ୍ତନ ଶୋଭାଯାତ୍ରା (Live Video)", "Puri Dham", "puri",
+                        "sankirtan", "🎥 Live Broadcast Video (Argus News)", "2024", "assets/images/puri-badadanda-women-sankirtan-shobhayatra.jpg",
+                        "Spectacular live coverage on Argus News: Hundreds of women sankirtaniyas in traditional attire performing Harinam along Puri Badadanda, with mridanga acharyas and on-field leadership interview on traditional artists patronage.",
+                        "Grand Road (Badadanda), Puri",
+                        Arrays.asList("Puri", "Argus News", "Live Video", "Women Mandali", "Shobhayatra", "Badadanda"))
+                ));
+            }
             if (photoRepository.findByCityKey("jharsuguda").size() < 4) {
                 photoRepository.saveAll(Arrays.asList(
                     new ActivityPhoto("photo-jharsuguda-1", "ଝାରସୁଗୁଡ଼ା ମହିଳା ସଂକୀର୍ତ୍ତନ ସେବା ମଣ୍ଡଳୀର ମହାସମାବେଶ", "Jharsuguda", "jharsuguda",
@@ -412,6 +426,16 @@ public class DataLoader implements CommandLineRunner {
                 "Parishad leadership addressing media on Puri Badadanda regarding statewide kirtaniyas welfare and cultural patronization.",
                 "Badadanda, Puri",
                 Arrays.asList("Puri", "Media Interview", "Leadership", "Badadanda")),
+            new ActivityPhoto("photo-puri-video-1", "‘ଆର୍ଗସ ନ୍ୟୁଜ’ ପ୍ରସାରଣ — ଶ୍ରୀକ୍ଷେତ୍ର ସିଂହଦ୍ୱାର ପ୍ରତିଦିନ ସଂକୀର୍ତ୍ତନ (Live Video)", "Puri Dham", "puri",
+                "sankirtan", "🎥 Live Broadcast Video (Argus News)", "2024", "assets/images/puri-singhadwara-daily-sankirtan-mandali.jpg",
+                "Official television broadcast on Argus News: Rural and state sankirtan mandalis performing daily devotional kirtan with mridanga and kartal before holy Singhadwara and Aruna Stambha of Sri Jagannath Mandir.",
+                "Singhadwara & Aruna Stambha, Sri Jagannath Temple, Puri",
+                Arrays.asList("Puri", "Argus News", "Live Video", "Singhadwara", "Harinam Sankirtan")),
+            new ActivityPhoto("photo-puri-video-2", "‘ଆର୍ଗସ ନ୍ୟୁଜ’ ପ୍ରସାରଣ — ପୁରୀ ବଡ଼ଦାଣ୍ଡ ମହିଳା ଓ ଗ୍ରାମୀଣ ସଂକୀର୍ତ୍ତନ ଶୋଭାଯାତ୍ରା (Live Video)", "Puri Dham", "puri",
+                "sankirtan", "🎥 Live Broadcast Video (Argus News)", "2024", "assets/images/puri-badadanda-women-sankirtan-shobhayatra.jpg",
+                "Spectacular live coverage on Argus News: Hundreds of women sankirtaniyas in traditional attire performing Harinam along Puri Badadanda, with mridanga acharyas and on-field leadership interview on traditional artists patronage.",
+                "Grand Road (Badadanda), Puri",
+                Arrays.asList("Puri", "Argus News", "Live Video", "Women Mandali", "Shobhayatra", "Badadanda")),
 
             // 2. Malkangiri (Authentic Ground Meeting Photos)
             new ActivityPhoto("photo-malkangiri-1", 

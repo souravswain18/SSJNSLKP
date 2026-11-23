@@ -120,7 +120,7 @@ let cityChaptersData = [
         subTitle: 'Grand Badadanda Nagar Sankirtan & Parishad Leadership Interview',
         src: 'assets/videos/puri-dham-women-shobhayatra-argus.mp4',
         desc: 'Spectacular live coverage on Argus News: Hundreds of women sankirtaniyas in traditional attire performing Harinam along Puri Badadanda, with mridanga acharyas and on-field leadership interview on traditional artists patronage.',
-        sizeBadge: '41 MB HD MP4'
+        sizeBadge: '64 MB HD MP4'
       },
       {
         id: 'puri-video-3',
@@ -941,6 +941,38 @@ let activitiesData = [
     tags: ['Puri', 'Media Interview', 'Leadership', 'Badadanda']
   },
 
+    {
+    id: 'photo-puri-video-1',
+    title: '‘ଆର୍ଗସ ନ୍ୟୁଜ’ ପ୍ରସାରଣ — ଶ୍ରୀକ୍ଷେତ୍ର ସିଂହଦ୍ୱାର ପ୍ରତିଦିନ ସଂକୀର୍ତ୍ତନ (Live Broadcast Video)',
+    city: 'Puri Dham',
+    cityKey: 'puri',
+    category: 'sankirtan',
+    categoryLabel: '🎥 Live HD Video (Argus News)',
+    year: '2024',
+    imageSrc: 'assets/images/puri-singhadwara-daily-sankirtan-mandali.jpg',
+    videoSrc: 'assets/videos/puri-dham-singhadwara-sankirtan-argus.mp4',
+    isVideo: true,
+    sizeBadge: '26 MB HD MP4',
+    desc: 'Official television broadcast on Argus News: Rural and state sankirtan mandalis performing daily devotional kirtan with mridanga and kartal before holy Singhadwara and Aruna Stambha of Sri Jagannath Mandir.',
+    location: 'Singhadwara & Aruna Stambha, Sri Jagannath Temple, Puri',
+    tags: ['Puri', 'Argus News', 'Live Video', 'Singhadwara', 'Harinam Sankirtan']
+  },
+  {
+    id: 'photo-puri-video-2',
+    title: '‘ଆର୍ଗସ ନ୍ୟୁଜ’ ପ୍ରସାରଣ — ପୁରୀ ବଡ଼ଦାଣ୍ଡ ମହିଳା ଓ ଗ୍ରାମୀଣ ସଂକୀର୍ତ୍ତନ ଶୋଭାଯାତ୍ରା (Live Broadcast Video)',
+    city: 'Puri Dham',
+    cityKey: 'puri',
+    category: 'sankirtan',
+    categoryLabel: '🎥 Live HD Video (Argus News)',
+    year: '2024',
+    imageSrc: 'assets/images/puri-badadanda-women-sankirtan-shobhayatra.jpg',
+    videoSrc: 'assets/videos/puri-dham-women-shobhayatra-argus.mp4',
+    isVideo: true,
+    sizeBadge: '64 MB HD MP4',
+    desc: 'Spectacular live coverage on Argus News: Hundreds of women sankirtaniyas in traditional attire performing Harinam along Puri Badadanda, with mridanga acharyas and on-field leadership interview on traditional artists patronage.',
+    location: 'Grand Road (Badadanda), Puri',
+    tags: ['Puri', 'Argus News', 'Live Video', 'Women Mandali', 'Shobhayatra', 'Badadanda']
+  },
   // 2. Malkangiri (Authentic Ground Meeting Photos)
   {
     id: 'photo-malkangiri-1',
@@ -1872,26 +1904,37 @@ function renderGalleryPhotos() {
   }
 
   DOM.galleryGrid.innerHTML = state.filteredPhotos.map((item, index) => `
-    <article class="photo-card" onclick="openLightbox(${index})" tabindex="0" role="button" aria-label="Open photo: ${item.title}">
+    <article class="photo-card ${item.isVideo ? 'photo-card-video' : ''}" onclick="openLightbox(${index})" tabindex="0" role="button" aria-label="Open: ${item.title}">
       <div class="photo-card-media">
         <img src="${item.imageSrc}" alt="${item.title}" class="photo-card-img" loading="lazy">
-        <div class="photo-card-overlay">
-          <div class="photo-zoom-icon">
-            <i class="fas fa-search-plus"></i>
+        ${item.isVideo ? `
+          <div class="photo-video-badge">
+            <i class="fas fa-play"></i> LIVE VIDEO
           </div>
-        </div>
+          <div class="photo-card-overlay video-overlay">
+            <div class="photo-zoom-icon play-icon-pulse">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+        ` : `
+          <div class="photo-card-overlay">
+            <div class="photo-zoom-icon">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+        `}
       </div>
 
       <div class="photo-card-info">
         <div class="photo-badge-row">
           <span class="photo-city-badge">📍 ${item.city}, Odisha</span>
-          <span class="photo-category-badge">${item.categoryLabel}</span>
+          <span class="photo-category-badge ${item.isVideo ? 'video-badge-highlight' : ''}">${item.categoryLabel}</span>
         </div>
         <h4 class="photo-title">${item.title}</h4>
         <p class="photo-desc">${item.desc}</p>
         <footer class="photo-footer">
           <span>✨ Year: ${item.year}</span>
-          <span>Click to view full photo</span>
+          <span>${item.isVideo ? '▶ Click to watch video (' + (item.sizeBadge || 'HD MP4') + ')' : 'Click to view full photo'}</span>
         </footer>
       </div>
     </article>
@@ -1995,16 +2038,50 @@ function updateLightboxContent(index) {
   const item = state.filteredPhotos[index];
   if (!item) return;
 
-  DOM.lightboxTitle.textContent = item.title;
-  DOM.lightboxCityTag.textContent = `📍 ${item.city}, Odisha • ${item.categoryLabel} (${item.year})`;
-  DOM.lightboxImg.src = item.imageSrc;
-  DOM.lightboxImg.alt = item.title;
-  DOM.lightboxDesc.textContent = item.desc;
-  DOM.lightboxMeta.textContent = `Location: ${item.location} • Tags: ${item.tags.join(', ')}`;
-  DOM.lightboxCounter.textContent = `${index + 1} / ${state.filteredPhotos.length}`;
+  if (DOM.lightboxTitle) DOM.lightboxTitle.textContent = item.title;
+  if (DOM.lightboxCityTag) DOM.lightboxCityTag.textContent = `📍 ${item.city}, Odisha • ${item.categoryLabel} (${item.year})`;
+  if (DOM.lightboxDesc) DOM.lightboxDesc.textContent = item.desc;
+  if (DOM.lightboxMeta) DOM.lightboxMeta.textContent = `Location: ${item.location} • Tags: ${(item.tags || []).join(', ')}`;
+  if (DOM.lightboxCounter) DOM.lightboxCounter.textContent = `${index + 1} / ${state.filteredPhotos.length}`;
+
+  const videoEl = document.getElementById('lightboxVideo');
+  const videoSrcEl = document.getElementById('lightboxVideoSrc');
+  const downloadBtn = document.getElementById('lightboxDownloadBtn');
+
+  if (item.videoSrc || item.isVideo) {
+    if (DOM.lightboxImg) DOM.lightboxImg.style.display = 'none';
+    if (videoEl) {
+      videoEl.style.display = 'block';
+      if (videoSrcEl) videoSrcEl.src = item.videoSrc;
+      videoEl.load();
+      videoEl.play().catch(() => {});
+    }
+    if (downloadBtn) {
+      downloadBtn.href = item.videoSrc;
+      downloadBtn.innerHTML = '<i class="fas fa-download"></i> Download Video';
+    }
+  } else {
+    if (videoEl) {
+      videoEl.pause();
+      videoEl.style.display = 'none';
+    }
+    if (DOM.lightboxImg) {
+      DOM.lightboxImg.style.display = 'block';
+      DOM.lightboxImg.src = item.imageSrc;
+      DOM.lightboxImg.alt = item.title;
+    }
+    if (downloadBtn) {
+      downloadBtn.href = item.imageSrc;
+      downloadBtn.innerHTML = '<i class="fas fa-download"></i> Download Photo';
+    }
+  }
 }
 
 window.closeLightbox = function() {
+  const videoEl = document.getElementById('lightboxVideo');
+  if (videoEl) {
+    videoEl.pause();
+  }
   if (!DOM.lightboxModal) return;
   if (typeof DOM.lightboxModal.close === 'function') {
     DOM.lightboxModal.close();
@@ -2690,6 +2767,22 @@ window.openDistrictGallery = function(cityId, initialTab = 'photos') {
 
   const photosHtml = `
     <div id="districtPhotosPane" style="display: ${initialTab === 'photos' ? 'block' : 'none'};">
+      ${hasVideo ? `
+        <div class="district-video-callout-banner" style="background: linear-gradient(135deg, rgba(184,134,11,0.22), rgba(80,0,0,0.55)); border: 1.5px solid var(--gold-light); border-radius: 8px; padding: 1.1rem 1.35rem; margin-bottom: 1.5rem; display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+          <div>
+            <div style="font-weight: 700; color: var(--gold-light); font-size: 1.08rem; display: flex; align-items: center; gap: 0.5rem;">
+              <i class="fas fa-play-circle text-gold" style="font-size: 1.35rem;"></i>
+              <span>🎥 ${videos.length} Live HD Broadcast Video${videos.length > 1 ? 's' : ''} Available for ${cityName}</span>
+            </div>
+            <div style="color: var(--text-light); font-size: 0.88rem; margin-top: 0.35rem; line-height: 1.45;">
+              ${cityId === 'puri' ? 'Includes official ‘Argus News’ live telecast of Singhadwara Daily Harinam (26 MB) & Badadanda Women Sankirtan Shobhayatra (64 MB).' : `Watch live video darshan of ${cityName} district sankirtan and cultural seva.`}
+            </div>
+          </div>
+          <button type="button" class="btn-primary" onclick="switchDistrictTab('video')" style="padding: 0.55rem 1.35rem; font-size: 0.92rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 0.45rem;">
+            <i class="fas fa-film"></i> Watch Videos (${videos.length})
+          </button>
+        </div>
+      ` : ''}
       ${photos.length === 0 ? `
         <div style="text-align: center; padding: 3rem; background: rgba(0,0,0,0.3); border-radius: 8px;">
           <i class="fas fa-camera" style="font-size: 2.5rem; color: var(--gold-light); margin-bottom: 0.75rem;"></i>
@@ -2698,6 +2791,34 @@ window.openDistrictGallery = function(cityId, initialTab = 'photos') {
         </div>
       ` : `
         <div class="district-modal-grid">
+          ${hasVideo ? videos.map((vid, vIdx) => `
+            <article class="district-modal-card" style="border: 1.5px solid var(--gold-light); box-shadow: 0 4px 15px rgba(212,175,55,0.2);">
+              <div class="district-modal-img-wrap" onclick="switchDistrictTab('video')" title="Click to play video">
+                <img src="${photos.length > vIdx ? photos[vIdx].src : (photos.length > 0 ? photos[0].src : '')}" alt="${vid.title}" class="district-modal-img" loading="lazy">
+                <div class="photo-video-badge"><i class="fas fa-play"></i> LIVE VIDEO</div>
+                <div class="city-photo-overlay" style="background: rgba(0,0,0,0.55);">
+                  <div class="photo-zoom-icon play-icon-pulse"><i class="fas fa-play"></i></div>
+                  <span style="font-weight: 700; color: var(--gold-light); margin-top: 0.5rem; font-size: 0.85rem;">Watch Video (${vid.sizeBadge || 'HD MP4'})</span>
+                </div>
+              </div>
+              <div class="district-modal-card-body">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem;">
+                  <span style="font-size: 0.75rem; color: var(--gold-light); font-weight: 700;"><i class="fas fa-video"></i> LIVE BROADCAST</span>
+                  <span class="tab-badge" style="background: linear-gradient(135deg, #B8860B, #FFD700); color: #120102; padding: 0.15rem 0.5rem; font-size: 0.72rem; font-weight: 700; border-radius: 4px;">${vid.sizeBadge || 'HD MP4'}</span>
+                </div>
+                <h4 class="district-modal-card-title">${vid.title}</h4>
+                <p class="district-modal-card-desc">${vid.desc}</p>
+                <div class="district-modal-card-footer">
+                  <button type="button" class="btn-primary" style="font-size: 0.8rem; padding: 0.35rem 0.75rem;" onclick="switchDistrictTab('video')">
+                    <i class="fas fa-play"></i> Watch Now
+                  </button>
+                  <a href="${vid.src}" download target="_blank" class="btn-secondary" style="font-size: 0.8rem; padding: 0.35rem 0.75rem; text-decoration: none;">
+                    <i class="fas fa-download"></i> Download
+                  </a>
+                </div>
+              </div>
+            </article>
+          `).join('') : ''}
           ${photos.map((p) => `
             <article class="district-modal-card">
               <div class="district-modal-img-wrap" onclick="openPhotoModal('${p.src}', '${(p.title || '').replace(/'/g, "\\'")}', '${(p.desc || '').replace(/'/g, "\\'")}', '${(p.subTitle || cityName).replace(/'/g, "\\'")}')" title="Click to zoom photo">
@@ -2808,14 +2929,52 @@ window.openPhotoModal = function(src, title, desc, subTitle) {
   const modalDesc = document.getElementById('photoModalDesc');
   const downloadLink = document.getElementById('photoModalDownload');
   if (!modal) return;
-  if (img) img.src = src;
-  if (modalTitle) modalTitle.textContent = title || 'Malkangiri Chapter Photo';
+
+  const isVideo = src && (src.endsWith('.mp4') || src.endsWith('.webm'));
+  let videoEl = document.getElementById('photoModalVideo');
+
+  if (isVideo) {
+    if (img) img.style.display = 'none';
+    if (!videoEl && img && img.parentNode) {
+      videoEl = document.createElement('video');
+      videoEl.id = 'photoModalVideo';
+      videoEl.controls = true;
+      videoEl.playsInline = true;
+      videoEl.style.maxWidth = '100%';
+      videoEl.style.maxHeight = '70vh';
+      videoEl.style.width = '100%';
+      videoEl.style.display = 'block';
+      videoEl.style.margin = 'auto';
+      img.parentNode.appendChild(videoEl);
+    }
+    if (videoEl) {
+      videoEl.style.display = 'block';
+      videoEl.src = src;
+      videoEl.load();
+      videoEl.play().catch(() => {});
+    }
+    if (downloadLink) {
+      downloadLink.href = src;
+      downloadLink.innerHTML = '<i class="fas fa-download"></i> Download Video';
+    }
+  } else {
+    if (videoEl) {
+      videoEl.pause();
+      videoEl.style.display = 'none';
+    }
+    if (img) {
+      img.style.display = 'block';
+      img.src = src;
+    }
+    if (downloadLink) {
+      downloadLink.href = src;
+      downloadLink.innerHTML = '<i class="fas fa-download"></i> Download Photo';
+    }
+  }
+
+  if (modalTitle) modalTitle.textContent = title || 'Chapter Darshan';
   if (modalSubTitle) modalSubTitle.textContent = subTitle || title || '';
   if (modalDesc) modalDesc.textContent = desc || '';
-  if (downloadLink) {
-    downloadLink.href = src;
-    downloadLink.setAttribute('download', (title || 'malkangiri-photo').replace(/[^a-zA-Z0-9_-]/g, '_') + '.jpg');
-  }
   modal.showModal();
 };
 

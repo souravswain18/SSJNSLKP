@@ -2326,3 +2326,60 @@ dialog#lightboxModal::backdrop {
   margin-top: auto;
 }
 
+
+
+/* ==========================================================================
+   Gallery Video Badges & Play Overlays
+   ========================================================================== */
+.photo-card-video {
+  border-color: rgba(212, 175, 55, 0.5) !important;
+  box-shadow: 0 4px 18px rgba(212, 175, 55, 0.15);
+}
+
+.photo-video-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: linear-gradient(135deg, #B8860B, #FFD700);
+  color: #120102;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.25rem 0.55rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  z-index: 3;
+  letter-spacing: 0.5px;
+}
+
+.photo-card-overlay.video-overlay {
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.photo-zoom-icon.play-icon-pulse {
+  background: linear-gradient(135deg, #DC143C, #B8860B);
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  font-size: 1.25rem;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+  animation: pulsePlay 2s infinite ease-in-out;
+}
+
+@keyframes pulsePlay {
+  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7); }
+  70% { transform: scale(1.08); box-shadow: 0 0 0 12px rgba(255, 215, 0, 0); }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
+}
+
+.video-badge-highlight {
+  background: linear-gradient(135deg, #DC143C, #8B0000) !important;
+  color: #FFF !important;
+  font-weight: 600;
+}
